@@ -20,7 +20,7 @@ This brings us to the present day setup! The new website is completely static an
 
 This is my first project utilizing Hugo, but I already love it! Like Jekyll, Hugo is a static website generator. Unlike Jekyll, however, Hugo offers a nearly infinite amount of customization and flexibility. I am so happy with it, in fact, that I fully intend to eventually move [my photography portfolio](https://serialphotog.com) off of WordPress and over to a similar setup. 
 
-I am using a modified version of the [M10C](https://github.com/vaga/hugo-theme-m10c) theme. My fork of the theme doesn't currently differ too awful much from the upstream version, but that will change as I implement some of those new features I alluded to earlier. Regardless, you can [view my fork of the theme](https://github.com/serialphotog/hugo-theme-m10c), if you so desire. 
+I am using a modified version of the [M10C](https://github.com/vaga/hugo-theme-m10c) theme. My fork of the theme doesn't currently differ too awful much from the upstream version, but that will change as I implement some of those new features I alluded to earlier. 
 
 ## The CI/CD Pipeline
 
@@ -32,16 +32,6 @@ Within Cloud Build, I have two triggers. One is the main build task that monitor
 
 ```yaml
 steps:
-- name: 'gcr.io/cloud-builders/git'
-  entrypoint: '/bin/sh'
-  args:
-  - '-c'
-  - |
-    # Get the theme git submodule
-    THEME_URL=$(git config -f .gitmodules --get-regexp '^submodule\..*\.url$' | awk '{ print $2 }')
-    THEME_DIR=$(git config -f .gitmodules --get-regexp '^submodule\..*\.path$' | awk '{ print $2 }')
-    rm -rf themes
-    git clone $$THEME_URL $$THEME_DIR
 
 - name: 'gcr.io/cloud-builders/curl'
   entrypoint: '/bin/sh'
@@ -63,7 +53,7 @@ steps:
     ./firebase deploy --project=$PROJECT_ID --only=hosting
 ```
 
-The first job simply fetches the repository that contains the hugo theme. Next, we download hugo and run the build on the site. Finally, the site is deployed to Firebase.
+The first job simply downloads hugo and run the build on the site. Finally, the site is deployed to Firebase.
 
 I can't overstate how much I love this setup!
 
