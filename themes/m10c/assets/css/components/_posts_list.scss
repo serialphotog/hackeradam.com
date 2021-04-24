@@ -14,4 +14,13 @@
 .posts-list-item-description {
   display: block;
   font-size: 0.8em;
+  margin: 0.5em 0;
+}
+
+.post-item-read-more {
+  a {
+    float: right;
+    display: block;
+    padding: 0.4em;
+  }
 }

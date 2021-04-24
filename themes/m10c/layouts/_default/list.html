@@ -12,6 +12,12 @@
             {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
             {{ .ReadingTime }} min read
           </span>
+          <div class="post-content">
+            {{ .Params.description }}
+          </div>
+          <span class="post-item-read-more clearfix">
+            <a href="{{ .Permalink }}">Read More ({{ .ReadingTime }} Minute Read)</a>
+          </span>
         </li>
       {{ end }}
     </ul>
