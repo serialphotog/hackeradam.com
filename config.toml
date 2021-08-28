@@ -12,11 +12,6 @@ paginate = 10
         url = "/"
         weight = 1
     [[menu.main]]
-        identifier = "lab-notebook"
-        name = "Lab Notebook"
-        url = "https://lab.hackeradam.com"
-        weight = 2
-    [[menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
