@@ -19,7 +19,7 @@ The default setup for WSL is anything but perfect but it’s possible to get a r
 
 The first thing we want to do is get rid of the God awful ConHost terminal that WSL uses by default. Luckily, Microsoft is working on rolling out a new Windows Terminal application that is much more modern. It’s still marked as a preview application, but it has been working great for me. You can download it from the [Microsoft App Store](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab).
 
-![Example of the new Windows Terminal](/blog/wsl-terminal-win10/SplitPanes.png)
+![Example of the new Windows Terminal](/blog/wsl-terminal-win10/SplitPanes.png#center)
 
 The new terminal app allows you to fully customize it, supports tabs and even allows you to split the view into multiple panes without needing a tool like Tmux.
 

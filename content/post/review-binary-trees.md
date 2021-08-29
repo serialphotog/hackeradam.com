@@ -16,7 +16,7 @@ A **tree**, unlike some other data structures, such as an array, linked list, st
 
 Let’s look at an example of what a tree might look like:
 
-![An Example Tree](/blog/binary-trees/ExampleTree.png)
+![An Example Tree](/blog/binary-trees/ExampleTree.png#center)
 
 In this example, A is the root of the tree. The nodes B and C are children of A and A is the parent of B and C. Similarly, D and E are children of B and F is a child of C.
 
@@ -114,13 +114,13 @@ We’ve already discussed that binary trees are a specific kind of tree, but it 
 
 A binary tree is considered to be a **full binary tree** simply if every node in the tree has 0 or 2 children. Here’s an example:
 
-![Full Binary Tree Example](/blog/binary-trees/FullTreeExample.png)
+![Full Binary Tree Example](/blog/binary-trees/FullTreeExample.png#center)
 
 ### Complete Binary Tree
 
 A binary tree is said to be a **complete binary tree** if all the levels, except potentially the last level, are completely filled and all the nodes are as far left as possible. Here’s an example:
 
-![Example of a complete binary tree](/blog/binary-trees/CompleteTreeExample.png)
+![Example of a complete binary tree](/blog/binary-trees/CompleteTreeExample.png#center)
 
 A great practical example of a complete binary tree structure would be a binary heap.
 
@@ -128,7 +128,7 @@ A great practical example of a complete binary tree structure would be a binary 
 
 A binary tree is a **perfect binary tree** if all of the internal nodes in the tree have two children and all of the leaf nodes are on the same level. Here’s an example:
 
-![Perfect binary tree example](/blog/binary-trees/PerfectTreeExample.png)
+![Perfect binary tree example](/blog/binary-trees/PerfectTreeExample.png#center)
 
 It’s worth noting a couple of interesting properties of a perfect binary tree. First, if L is the number of leaf nodes in the tree and I is the number of internal nodes, then
 
@@ -148,7 +148,7 @@ where n is the number of nodes in the tree. A simplified version of this definit
 
 So, a simple example of a balanced binary tree would be:
 
-![A simple balanced binary tree example](/blog/binary-trees/BalancedBinaryTree.png)
+![A simple balanced binary tree example](/blog/binary-trees/BalancedBinaryTree.png#center)
 
 There are a number of specific tree implementations that result in a balanced binary tree. For example, red-black trees are self-balancing binary trees that maintain their O(log n) height by ensuring that the number of black nodes on each root to leaf path is equal and that there are no adjacent red nodes. AVL trees maintain the O(log n) height constraint by ensuring that the difference between heights of the left and right sub-trees is at most 1 (like in our simplified definition above).
 
@@ -158,7 +158,7 @@ The reason one might want to concern themselves with maintaining a balanced bina
 
 A **pathological tree** (also known as a **degenerate tree**) is a tree in which every internal node only has one child. Here’s a simple example:
 
-![Example of a pathological binary tree](/blog/binary-trees/PathologicalTreeExample.png)
+![Example of a pathological binary tree](/blog/binary-trees/PathologicalTreeExample.png#center)
 
 It’s also worth noting that, in terms of performance, this is identical to a linked list, which should make sense if you think about it.
 
@@ -168,7 +168,7 @@ An important topic when discussing trees is how to go about traversing them. Unl
 
 Consider the following tree:
 
-![An Example Tree](/blog/binary-trees/ExampleTree.png)
+![An Example Tree](/blog/binary-trees/ExampleTree.png#center)
 
 There are two primary ways to traverse a tree: **depth-first** and **breadth-first**. The depth-first method is further divided into 3 (primary) methods for traversing the tree:
 
@@ -303,11 +303,11 @@ Let’s say that I had a binary tree and I wanted to insert a node into the firs
 
 So, let’s again consider this example tree:
 
-![An Example Tree](/blog/binary-trees/ExampleTree.png)
+![An Example Tree](/blog/binary-trees/ExampleTree.png#center)
 
 If I were to insert a node, say ‘Z’, into this tree, it would become the following:
 
-![The example tree after insertion](/blog/binary-trees/InorderInsertionExample.png)
+![The example tree after insertion](/blog/binary-trees/InorderInsertionExample.png#center)
 
 Now that we understand the principle, let’s see how we could add a level order insertion method to the example code from above:
 
@@ -349,11 +349,11 @@ Let’s say that you have a binary tree in which you want to delete a node in su
 
 Consider this example tree:
 
-![](/blog/binary-trees/PreDeletion.png)
+![](/blog/binary-trees/PreDeletion.png#center)
 
 If we were to delete the ‘B’ node using this method, we would get the following result:
 
-![](/blog/binary-trees/DeletionExample.png)
+![](/blog/binary-trees/DeletionExample.png#center)
 
 The algorithm for this works as follows:
 
@@ -363,7 +363,7 @@ The algorithm for this works as follows:
 
 So, for our above example, The process looks something like this:
 
-![Tree Deletion Flow Diagram](/blog/binary-trees/TreeDeletionFlow.png)
+![Tree Deletion Flow Diagram](/blog/binary-trees/TreeDeletionFlow.png#center)
 
 Now that we understand the mechanics of this deletion method, let’s take a look at how we could add it to our Java example code:
 

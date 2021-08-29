@@ -22,7 +22,7 @@ Before we get down to business and install the OpenCV library, we first need to 
 
 When installing, you need to make sure you select the option to install the **Visual C++ build tools**.
 
-![Install the Visual C++ Build Tools](/blog/opencv4-windows10/VisualStudioInstallCPPBuildTools.png)
+![Install the Visual C++ Build Tools](/blog/opencv4-windows10/VisualStudioInstallCPPBuildTools.png#center)
 
 Continue through the rest of the install process and you should end up with Visual Studio Community Edition 2017 installed on your system.
 
@@ -34,7 +34,7 @@ OpenCV uses CMake as its build system, so we’ll need to get that installed bef
 
 Now that we’ve satisfied those prerequisites, we can download the source files for both [OpenCV](https://github.com/opencv/opencv) and [OpenCV_Contrib](https://github.com/opencv/opencv_contrib). To do this, go to the respective Github pages and choose to download them as a ZIP archive.
 
-![Download the necessary Zip files from Github](/blog/opencv4-windows10/GithubDownloadZipArchiveOpenCV.png)
+![Download the necessary Zip files from Github](/blog/opencv4-windows10/GithubDownloadZipArchiveOpenCV.png#center)
 
 Note, make sure you complete this step for both the [OpenCV](https://github.com/opencv/opencv) and [OpenCV_Contrib](https://github.com/opencv/opencv) packages!
 
@@ -42,7 +42,7 @@ Once you have the archives downloaded, go ahead and extract them. You should end
 
 Finally, go ahead and create a directory called **build** alongside these two directories.
 
-![OpenCV Build Folder Structure](/blog/opencv4-windows10/OpenCVBuildFolderStructure.png)
+![OpenCV Build Folder Structure](/blog/opencv4-windows10/OpenCVBuildFolderStructure.png#center)
 
 ## Step 4: Generate the Visual Studio Project with CMake
 
@@ -50,11 +50,11 @@ We are finally getting close to being ready to build OpenCV, but we first need t
 
 Go ahead and launch CMake and you’ll be greeted with the following GUI:
 
-![The initial CMake GUI](/blog/opencv4-windows10/CMakeInitialGUIViewWindows.png)
+![The initial CMake GUI](/blog/opencv4-windows10/CMakeInitialGUIViewWindows.png#center)
 
 You will see two textboxes at the top, one for the source code and one for the path where the build files should go. In the source code box, navigate to the path of the **opencv-master** folder. In the build box place the path to the **build** folder we created a moment ago. Once that’s done, click the **Configure** button.
 
-![Initial CMake configuration](/blog/opencv4-windows10/OpenCVInitialCMakeConfiguration.png)
+![Initial CMake configuration](/blog/opencv4-windows10/OpenCVInitialCMakeConfiguration.png#center)
 
 This will open another dialog box to configure what sort of project we want to configure. In the dropdown, select **Visual Studio 15 2017 Win64** (Unless you want to build it as a 32-bit library, in which case you will choose Visual Studio 15 2017). Once that is done, click finish and wait for the configuration to complete.
 
@@ -62,13 +62,13 @@ This will open another dialog box to configure what sort of project we want to c
 
 **NOTE 2:** This process seems to work fine for Visual Studio 2019 as well.
 
-![Generator selector](/blog/opencv4-windows10/CMakeGeneratorSelection.png)
+![Generator selector](/blog/opencv4-windows10/CMakeGeneratorSelection.png#center)
 
 Once this step completes you will be presented with a whole bunch of configuration options. For the most part, we will be leaving these as their default values. I wouldn’t change these unless you know what you’re doing.
 
 That is, except for one option that we do need to change. In the search box at the top, type the word ***path***. This will limit the display to just a few options. The option we want to adjust is the one called **OPENCV_EXTRA_MODULES_PATH**. We want to change this value to be the path to the **modules** directory located within the **opencv_contrib-master** directory we created earlier.
 
-![OpenCV contrib path](/blog/opencv4-windows10/CMakeOpenCVContribPath.png)
+![OpenCV contrib path](/blog/opencv4-windows10/CMakeOpenCVContribPath.png#center)
 
 Once you enter this new value hit the **Configure** button and wait once again. This process should be much quicker this time around.
 
@@ -82,13 +82,13 @@ Did I mention that this is an involved, somewhat painful process?! The good news
 
 If you take a look in the build directory we created you should see a whole bunch of files, including one called **OpenCV.sln**. This is the solution file for the Visual Studio project. Double click it and it should open up the project in Visual Studio.
 
-![Locate the solution file](/blog/opencv4-windows10/OpenCVSolutionFile.png)
+![Locate the solution file](/blog/opencv4-windows10/OpenCVSolutionFile.png#center)
 
 **NOTE: It may take awhile for Visual Studio to fully load this project. It has a whole bunch of files to index!**
 
 We’ll go ahead and build both the debug and the release versions of the library here. To start with, ensure that your build configuration is set to Debug. If not go ahead and change it. Next, go ahead and choose **Build Solution** from the **Build** menu (or just hit F6 on the keyboard).
 
-![Select Debug in Visual Studio](/blog/opencv4-windows10/SelectDebugVisualStudioOpenCV.png)
+![Select Debug in Visual Studio](/blog/opencv4-windows10/SelectDebugVisualStudioOpenCV.png#center)
 
 Keep in mind that building the library will likely take quite a bit of time!
 
@@ -96,7 +96,7 @@ When this debug build completes, go ahead and change the build configuration to 
 
 After both of these builds are complete, find the ***INSTALL*** entry in the solution explorer, right-click on it, and choose **Build**.
 
-![Build install entry](/blog/opencv4-windows10/BuildINSTALLEntry.png)
+![Build install entry](/blog/opencv4-windows10/BuildINSTALLEntry.png#center)
 
 Once again, you will need to do this step for both the **Release** and **Debug** configurations. This build process shouldn’t take nearly as much time as the two previous!
 
@@ -106,7 +106,7 @@ This step is really optional, but it’s one that I recommend doing to make your
 
 Once you are finished with all the build processes outlined in step five your build directory will contain a whole bunch of files. Most of these are files that we no longer need. Also, if you did this like me, you probably just built this in your Downloads folder, which isn’t an ideal place to keep the library.
 
-![The final build directory](/blog/opencv4-windows10/FinalBuildDirectory.png)
+![The final build directory](/blog/opencv4-windows10/FinalBuildDirectory.png#center)
 
 We no longer need the vast majority of these files!
 What I like to do is create a directory in the root of my **C:\\** drive for OpenCV. This way the files are easily accessible when I need them. I then copy the necessary files over to this new directory.
@@ -115,7 +115,7 @@ What files do we need, you ask?
 
 Well, within that cluttered build folder there should be a directory called **install**. This is the folder that contains the build files that we need. Just copy the contents of this folder over to your newly created OpenCV folder.
 
-![The final library directory](/blog/opencv4-windows10/FinalLibraryDirectory.png)
+![The final library directory](/blog/opencv4-windows10/FinalLibraryDirectory.png#center)
 
 ## Finished
 

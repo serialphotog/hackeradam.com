@@ -18,7 +18,7 @@ Suppose you had a round table with five silent philosophers sat around the table
 
  The whole idea of the problem is to design a concurrent algorithm that prevents a deadlock situation. That is to say, we want to design an algorithm that allows the philosophers to forever go on thinking and eating.
 
-![An illustration of the dining philosopher's problem](/blog/misc/An_illustration_of_the_dining_philosophers_problem.png)
+![An illustration of the dining philosopher's problem](/blog/misc/An_illustration_of_the_dining_philosophers_problem.png#center)
 [Photo courtesy of Wikimedia Commons](https://en.wikipedia.org/wiki/File:An_illustration_of_the_dining_philosophers_problem.png).
 
 ## Solving the Problem
@@ -202,6 +202,6 @@ Finally, we release both chopsticks and send a signal that the chopsticks have b
 
 If you build and run the code you should be able to let it run as long as you want without ever running into a deadlock state!
 
-![The working solution running](/blog/misc/DiningPhilosophersSolution.png)
+![The working solution running](/blog/misc/DiningPhilosophersSolution.png#center)
 
 Hopefully, you’ll agree that, while it may not necessarily be an obvious solution, it’s not terribly difficult to solve the dining philosophers problem!

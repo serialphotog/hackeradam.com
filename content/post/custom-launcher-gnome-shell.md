@@ -65,6 +65,6 @@ Categories=Development;
 
 Mere seconds after I saved this file I could see Ghidra listed in the Gnome applications menu!
 
-![The new launcher](/blog/misc/GnomeShellLaunchers.png)
+![The new launcher](/blog/misc/GnomeShellLaunchers.png#center)
 
-Hopefully, you found this post at least somewhat useful. I’m sure I’ll have a bunch of other quick tip type posts as I continue to tweak my installation. If you have any questions, comments, etc. you can [get in touch with me on Twitter](https://twitter.com/serialphotog).
+Hopefully, you found this post at least somewhat useful. I’m sure I’ll have a bunch of other quick tip type posts as I continue to tweak my installation.

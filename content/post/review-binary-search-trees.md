@@ -22,7 +22,7 @@ A **Binary Search Tree (BST)** is a binary tree such that the following holds tr
 
 Here’s an example of a valid binary search tree:
 
-![Example binary search tree](/blog/binary-search-trees/ExampleBinarySearchTree.png)
+![Example binary search tree](/blog/binary-search-trees/ExampleBinarySearchTree.png#center)
 
 The ordering that these properties enforce is what gives the binary search tree its power. By having all of the values (or keys) ordered, operations like searching and finding the max/min value can be done relatively quickly. In fact, the time complexity for operations on a BST turns out to be O(h), where h is the height of the tree.
 
@@ -55,7 +55,7 @@ When searching for a location to insert a new node into a binary search tree, we
 
 Consider inserting the value 16 into the following BST:
 
-![BST insertion](/blog/binary-search-trees/BSTInsertion.png)
+![BST insertion](/blog/binary-search-trees/BSTInsertion.png#center)
 
 Let’s take a look at what this insertion code might look like in Java:
 

@@ -29,7 +29,7 @@ Have I sold you on the idea yet? If so, continue on to get a rundown of setting 
 
 For my setup I am going to be running my Pi-Hole server on a Raspberry Pi 3. The first step will be to set up the raspberry pi with an operating system (I chose to use Ubuntu). This can be easily accomplished by using the [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/).
 
-![Raspberry Pi Imager](/blog/pihole-setup/InstallOSOnRaspberryPi.png)
+![Raspberry Pi Imager](/blog/pihole-setup/InstallOSOnRaspberryPi.png#center)
 
 Once you get an operating system on your Pi you will need to go through the usual steps of setting up user accounts, SSH access, etc. Since this varies from OS to OS I will leave these steps up to you.
 
@@ -45,11 +45,11 @@ Now I know that the security conscious out there are cringing at the idea of pip
 
 **NOTE: It’s also worth mentioning that you’ll want your Pi-Hole to have a static IP address!**
 
-![Installing Pi-Hole](/blog/pihole-setup/InstallingPiHole.png)
+![Installing Pi-Hole](/blog/pihole-setup/InstallingPiHole.png#center)
 
 Regardless of how you go about doing it, you’ll end up with a fresh install of the Pi-Hole software. You’ll get a confirmation screen confirming that the install was successful, along with information about how to access the admin interface (including a password for the interface).
 
-![Install Done](/blog/pihole-setup/InstallDone.png)
+![Install Done](/blog/pihole-setup/InstallDone.png#center)
 
 ## Set Pi-Hole as the Default DNS Server
 
@@ -57,7 +57,7 @@ In order for the Pi-Hole to actually do it’s job you will of course need to se
 
 Instead, go into your router and set it to use the Pi-Hole as the primary DNS server. Just like configuring the OS, this varies from device to device, so it’ll be up to you to figure out how to set this up on your specific router.
 
-![Set Router's DNS](/blog/pihole-setup/SetDNSOnRouter.png)
+![Set Router's DNS](/blog/pihole-setup/SetDNSOnRouter.png#center)
 
 ## DNS Not Resolving?
 
@@ -65,17 +65,17 @@ With my particular router I was having issues getting my DNS to resolve correctl
 
 I was able to get around this problem by enabling the DHCP server within the Pi-Hole settings and then disabling my router’s built in DHCP server.
 
-![Built-in DHCP server](/blog/pihole-setup/PiHoleDHCP.png)
+![Built-in DHCP server](/blog/pihole-setup/PiHoleDHCP.png#center)
 
 ## Adding More Blacklists
 
 While the blacklists that are built into Pi-Hole by default are absolutely fantastic, you also have the ability to add your own lists. This can be done by going to **Group Management -> Adlists** in the Pi-Hole admin interface.
 
-![Adlists](/blog/pihole-setup/Adlists.png)
+![Adlists](/blog/pihole-setup/Adlists.png#center)
 
 After you’ve added to these lists you’ll need to tell your Pi-Hole to update its lists. You can do this by going to **Tools -> Update Gravity**.
 
-![Update Gravity](/blog/pihole-setup/UpdateGravity.png)
+![Update Gravity](/blog/pihole-setup/UpdateGravity.png#center)
 
 Here are some of the lists that I’ve added to mine:
 
@@ -93,4 +93,4 @@ Here are some of the lists that I’ve added to mine:
 
 After you go through this fairly straight-forward process you should be fully up and running with a functional Pi-Hole setup. Not only will you benefit from the privacy benefits of the blocking, but you’ll also get a great dashboard full of nifty statistics (this is amazing if you’re a nerd like me)!
 
-![Pi-Hole Dashboard](/blog/pihole-setup/Dashboard.png)
+![Pi-Hole Dashboard](/blog/pihole-setup/Dashboard.png#center)

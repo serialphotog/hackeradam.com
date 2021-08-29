@@ -16,7 +16,7 @@ One of the ways I’ll be doing this is by working on crackmes. This one in part
 
 ## Initial Look
 
-![Initial look at the files](/blog/crackme5/seVegbCrackme05Files.png)
+![Initial look at the files](/blog/crackme5/seVegbCrackme05Files.png#center)
 
 When I extracted the archive I was greeted with 3 files. The first two are binary files, the only difference presumably being one is built for 32-bit and the other for 64-bit. The third is a readme, which contains a simple description of the challenge:
 
@@ -30,15 +30,15 @@ Invoke the crackme with the –help or -h flag for additional help.
 
 Fair enough! Let’s start by running the executable (note, I’m just going to focus on the 32-bit version with the assumption the logic is identical in both). Running it with no arguments or with the ***-h*** flag gives us the same general message as the readme, as well as specifying that we should pass the key as the first argument to the program.
 
-![The initial run of the executable](/blog/crackme5/InitialRun.png)
+![The initial run of the executable](/blog/crackme5/InitialRun.png#center)
 
 If we try running the program with some random input as the first argument we get an error that tells us that the serial isn’t 19 chars. This sure seems like some progress already!
 
-![](/blog/crackme5/Not19Chars.png)
+![](/blog/crackme5/Not19Chars.png#center)
 
 And sure enough, if we try it again with a 19-character string we get a new error:
 
-![](/blog/crackme5/Wrong.png)
+![](/blog/crackme5/Wrong.png#center)
 
 While this is some helpful progress, we’re far from done. I think this is probably about all we’re going to ascertain from simply running the program, however, so let’s jump into reverse-engineering the thing!
 
@@ -568,7 +568,7 @@ serial[16] = conditional_random(lambda x: x + serial[17] > 170 and serial[1] + s
 
 There’s just one final thing to do to finish up the keygen. If you run it in this state you’ll see one small issue… it’s outputting a byte-array instead of a string:
 
-![](/blog/crackme5/ByteArray.png)
+![](/blog/crackme5/ByteArray.png#center)
 
 So, we just need to add a quick conversion:
 
@@ -621,11 +621,11 @@ print("".join([chr(c) for c in serial]))
 
 Running the program now will output a string that looks something like this:
 
-![](/blog/crackme5/GeneratedKey.png)
+![](/blog/crackme5/GeneratedKey.png#center)
 
 The question is, does it work? Let’s find out!
 
-![Success!](/blog/crackme5/Success.png)
+![Success!](/blog/crackme5/Success.png#center)
 
 Bingo! We’ve successfully reverse-engineered the serial checking algorithm of this application and implemented a working keygen for it.
 

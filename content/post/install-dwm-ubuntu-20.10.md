@@ -16,7 +16,7 @@ aliases:
 
 Unfortunately, it isn’t a simple apt-get away in Ubuntu, but it’s still an easy process to get up and running. Here’s how it’s done.
 
-![DWM running on Ubuntu 20.10 LTS](/blog/misc/dwm.png)
+![DWM running on Ubuntu 20.10 LTS](/blog/misc/dwm.png#center)
 
 ## Installation
 

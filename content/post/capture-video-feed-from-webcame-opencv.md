@@ -36,4 +36,4 @@ cv2.destroyAllWindows()
 
 Not too surprisingly, running this simple script will open up a window displaying a live video feed from the default webcam. The window can be closed by hitting the escape key. I think this code is pretty self-explanatory, so I won’t dive into it here, but feel free to hit me up if you have any questions!
 
-![Example Webcam Capture](/blog/python-opencv-webcam/result.png)
+![Example Webcam Capture](/blog/python-opencv-webcam/result.png#center)

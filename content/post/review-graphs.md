@@ -16,7 +16,7 @@ If you look at the formal definition of a graph, such as the one that you might 
 
 $$g: A \rightarrow \\{\\{x, y\\}\\} \mid x \in N \\,\\, and \\,\\, y \in N \\}$$
 
-![What?!](/blog/gifs/what_breaking_bad.gif)
+![What?!](/blog/gifs/what_breaking_bad.gif#center)
 
 Now, perhaps it’s just me, but that isn’t the easiest of definitions to wrap one’s head around! In fact, when I first encountered this definition in school I wasn’t terribly keen on graphs, but it’s really not hard once you understand what’s going on!
 
@@ -29,7 +29,7 @@ To get slightly more formal, a graph is a data structure that has the following 
 
 Let’s take a look at a very simple, undirected graph:
 
-![An example graph](/blog/graphs/ExampleGraph.png)
+![An example graph](/blog/graphs/ExampleGraph.png#center)
 
 This example contains 5 nodes (numbered 0-4) and 5 edges.
 
@@ -43,7 +43,7 @@ From this, you can probably guess that a directed graph is one in which the edge
 
 Here’s a simple example of a directed graph:
 
-![Example of a directed graph](/blog/graphs/ExampleDirectedGraph.png)
+![Example of a directed graph](/blog/graphs/ExampleDirectedGraph.png#center)
 
 In this example, we again have an edge connecting node 1 to node 4. This time around, however, we are dealing with a directed graph. In this particular case, the edge connects node 1 to node 4, but not vice versa!
 
@@ -61,7 +61,7 @@ A topic that sometimes comes up when dealing with graphs (admittedly more in a f
 
 Let’s consider an example:
 
-![Example of the degree of a node in a graph](/blog/graphs/CompleteGraphExample.png)
+![Example of the degree of a node in a graph](/blog/graphs/CompleteGraphExample.png#center)
 
 Consider the green node. It should hopefully be pretty clear, despite my terrible artistry, that this node has degree 5.
 
@@ -69,23 +69,23 @@ Consider the green node. It should hopefully be pretty clear, despite my terribl
 
 There’s one more simple piece of terminology we should get out the way before we continue on. A **loop** is simply an edge that connects a vertex to itself. So, in the below example, there is a loop on node A.
 
-![Example of a loop in a graph](/blog/graphs/GraphLoopExample.png)
+![Example of a loop in a graph](/blog/graphs/GraphLoopExample.png#center)
 
 ## Simple Graphs
 
 A **simple graph** is simply a graph that has no loops and no parallel edges. Let’s look at an example:
 
-![Example of a simple graph](/blog/graphs/SimpleGraphExample.png)
+![Example of a simple graph](/blog/graphs/SimpleGraphExample.png#center)
 
 ## Connected Graph
 
 A graph is said to be a **connected graph** if there is a path between every pair of vertices. Here’s an example of a connected graph:
 
-![Example of a connected graph](/blog/graphs/ConnectedGraphExample.png)
+![Example of a connected graph](/blog/graphs/ConnectedGraphExample.png#center)
 
 As you can see, there does not necessarily need to be a direct connection between every node for a graph to be connected. There just needs to be a path to reach every node. To further illustrate this point, let’s look at an example of a graph that is **not connected**:
 
-![Example of a graph that is not connected](/blog/graphs/NonConnectedGraphExample.png)
+![Example of a graph that is not connected](/blog/graphs/NonConnectedGraphExample.png#center)
 
 Since there is a node that has no path to it (the red node) this graph is not connected.
 
@@ -95,7 +95,7 @@ A graph is said to be **complete** if every node is connected by an edge. A more
 
 Here’s an example:
 
-![Example of a complete graph](/blog/graphs/CompleteGraph.png)
+![Example of a complete graph](/blog/graphs/CompleteGraph.png#center)
 
 You may also notice that the example graph I used when discussing the degree of a node is also complete.
 
@@ -113,13 +113,13 @@ The various rows and columns in the adjacency matrix represent the vertices in a
 
 I think this is more clear if we look at an example. Consider the following graph:
 
-![Adjacency example](/blog/graphs/AdjacencyExample.png)
+![Adjacency example](/blog/graphs/AdjacencyExample.png#center)
 
 First of all, excuse the fact that I can’t draw to save my life! Other than that, it’s important to note that this is an undirected graph (we’ll revisit that in a moment).
 
 Let’s now take a look at the adjacency matrix for this, which we know should be 16 entries (4 rows and 4 columns), since there are 4 nodes in this graph:
 
-![Example adjacency matrix](/blog/graphs/AdjacencyMatrix.png)
+![Example adjacency matrix](/blog/graphs/AdjacencyMatrix.png#center)
 
 Reading this is pretty simple. We can see that there is a single edge from node 1 to nodes 1, 2, and 3. There are two edges from node 4 to node 3 and 2 edges from node 3 to node 4.
 
@@ -129,11 +129,11 @@ I think the concept is really quite clear if you compare the graph to the adjace
 
 For completeness, let’s look at an example with a directed graph:
 
-![Adjacency example with a directed graph](/blog/graphs/DirectedGraphAdjacencyExample.png)
+![Adjacency example with a directed graph](/blog/graphs/DirectedGraphAdjacencyExample.png#center)
 
 Once again paying no attention to my poor drawing (hey, I’m an engineer, not an artist!), we can see that the adjacency matrix for this graph would be:
 
-![Adjacency matrix for a directed graph](/blog/graphs/DirectedAdjacencyMatrix.png)
+![Adjacency matrix for a directed graph](/blog/graphs/DirectedAdjacencyMatrix.png#center)
 
 This time around we don’t have the symmetry that we’d expect to see in the adjacency matrix for an undirected graph, which should make intuitive sense.
 
@@ -141,7 +141,7 @@ Again, I think it’s pretty easy to ascertain what’s going on here.
 
 One interesting property to note is that the diagonal will indicate the loops in our graph (though there are none in our example):
 
-![Example of loops in an adjacency matrix](/blog/graphs/AdjacencyMatrixLoops.png)
+![Example of loops in an adjacency matrix](/blog/graphs/AdjacencyMatrixLoops.png#center)
 
 #### The Pros of an Adjacency Matrix
 
@@ -229,19 +229,19 @@ The way if works is that we essentially store an array of linked lists for each 
 
 Let’s start with an example of an adjacency list for an undirected graph:
 
-![Adjacency list example graph](/blog/graphs/AdjacencyListExampleGraph.png)
+![Adjacency list example graph](/blog/graphs/AdjacencyListExampleGraph.png#center)
 
 The adjacency list for this graph will look something like this:
 
-![An adjacency list for an undirected graph](/blog/graphs/AdjacencyListForUndirectedGraph.png)
+![An adjacency list for an undirected graph](/blog/graphs/AdjacencyListForUndirectedGraph.png#center)
 
 Again, with my poor artistry and terrible handwriting out of the way, I think it’s pretty clear what’s going on here if you just compare the graph to the adjacency list.
 
 Let’s look at one more example, this time with a directed graph (notice how much less redundancy there is this time):
 
-![Directed graph adjacency list example](/blog/graphs/DirectedGraphAdjacencyExampled.png)
+![Directed graph adjacency list example](/blog/graphs/DirectedGraphAdjacencyExampled.png#center)
 
-![An adjacency list for a directed graph](/blog/graphs/DirectedGraphAdjacencyList.png)
+![An adjacency list for a directed graph](/blog/graphs/DirectedGraphAdjacencyList.png#center)
 
 #### Example Implementation in Java
 

@@ -24,11 +24,11 @@ The first thing we are going to do is edit the **PATH** variable on Windows to i
 
 First, open up the start menu and start typing environment variables. An option should appear called ***Edit environment variables for your account***. Click that.
 
-![Search for the edit environment variables application](/blog/opencv4-visual-studio/EditEnvironmentVariablesStartMenu.png)
+![Search for the edit environment variables application](/blog/opencv4-visual-studio/EditEnvironmentVariablesStartMenu.png#center)
 
 In the dialog that opens, double click the Path item, which will in turn open another dialog. In this new dialog, click the Browse… button and browse to the folder containing your OpenCV files. Within that directory, you want to find the bin folder for your architecture. In my case, these files are in **C:\OpenCV4\x64\vc15\bin**.
 
-![Add environment variable](/blog/opencv4-visual-studio/AddEnvironmentVariable.png)
+![Add environment variable](/blog/opencv4-visual-studio/AddEnvironmentVariable.png#center)
 
 Once you are finished, click OK on both of those dialogs.
 
@@ -38,37 +38,37 @@ Once you are finished, click OK on both of those dialogs.
 
 With the OpenCV files now in our Path, we are ready to start setting up the project. Open up Visual Studio and go to File->New->Project. Within the new project wizard, we are going to create a Windows C++ console application. I’ll call my **OpenCV Testing**.
 
-![Create the Visual Studio Project](/blog/opencv4-visual-studio/CreateProjectInVisualStudio.png)
+![Create the Visual Studio Project](/blog/opencv4-visual-studio/CreateProjectInVisualStudio.png#center)
 
-Once you create the project you’ll be greeted with a standard, boilerplate console app.
+Once you create the project you’ll be greeted with a standard, boilerplate console app. 
 
-![Console app boiler plate](/blog/opencv4-visual-studio/BoilerPlateConsoleApp.png)
+![Console app boiler plate](/blog/opencv4-visual-studio/BoilerPlateConsoleApp.png#center)
 
 ## Step 3: Add Your Build Dependencies
 
 Now we’ve got a C++ project setup in Visual Studio, but we still need to tell VS where it can locate all of the OpenCV dependencies. To get started, right-click on your project in the solution explorer and choose ***Properties***.
 
-![Edit solution properties](/blog/opencv4-visual-studio/EditSolutionProperties.png)
+![Edit solution properties](/blog/opencv4-visual-studio/EditSolutionProperties.png#center)
 
 There are several things that we need to adjust in here. To start with, though, make sure you are set to be editing the settings for ***All Configurations***.
 
-![Edit all configurations](/blog/opencv4-visual-studio/EditAllConfigurations.png)
+![Edit all configurations](/blog/opencv4-visual-studio/EditAllConfigurations.png#center)
 
 ### VC++ Directories
 
 On the right-hand side, go to the **VC++ Directories** section. First, we need to tell Visual Studio to include the header files for the OpenCV library. To do this, edit the **Include Directories** entry.
 
-![Edit include directories](/blog/opencv4-visual-studio/EditIncludeDirectories.png)
+![Edit include directories](/blog/opencv4-visual-studio/EditIncludeDirectories.png#center)
 
 This will open another dialog where you can edit this setting. In here, click the button to add a new folder and browse for the include directory in the folder containing your OpenCV files. In my case, this is at **C:\OpenCV4\include**.
 
-![Add include directory](/blog/opencv4-visual-studio/AddIncludeDirectory.png)
+![Add include directory](/blog/opencv4-visual-studio/AddIncludeDirectory.png#center)
 
 Once you have added the include directory just hit **OK**.
 
 Next, we need to add the library path by editing the Library Directories entry. Set this to the lib folder, located in the directory containing your platform’s build of OpenCV. In my case, this is at **C:\OpenCV4\x64\vc15\lib**.
 
-![Add library path](/blog/opencv4-visual-studio/AddLibraryPath.png)
+![Add library path](/blog/opencv4-visual-studio/AddLibraryPath.png#center)
 
 ### Linker --> Input
 
@@ -76,7 +76,7 @@ Now we need to configure the linker. First, select the **Linker --> Input** sect
 
 Note that, for these settings, we will need different values for the debug and release configurations. You can change between the two using the drop-down at the top of the properties dialog.
 
-![Change configuration](/blog/opencv4-visual-studio/ChangeConfiguration.png)
+![Change configuration](/blog/opencv4-visual-studio/ChangeConfiguration.png#center)
 
 #### Debug 
 
@@ -88,7 +88,7 @@ dir /w *d.lib > debugLibs.txt
 
 Doing so will save a text file, named debugLibs.txt, within the directory. You can then copy the library names from here to make your life a little easier.
 
-![Additional dependencies](/blog/opencv4-visual-studio/AddAllDebugLibraries.png)
+![Additional dependencies](/blog/opencv4-visual-studio/AddAllDebugLibraries.png#center)
 
 #### Release
 
@@ -121,7 +121,7 @@ int main()
 
 All this program does is display a video feed from a webcam. If we did everything correctly we should be able to run the application and see video from the webcam.
 
-![Working example](/blog/opencv4-visual-studio/WorkingExample.png)
+![Working example](/blog/opencv4-visual-studio/WorkingExample.png#center)
 
 And, as you can see, everything builds and runs correctly, which means that we successfully set everything up correctly! Note that you should be sure to test both your debug and your release builds!
 

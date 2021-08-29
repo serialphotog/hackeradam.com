@@ -14,11 +14,11 @@ Merge sort is among the divide and conquer algorithms. That is to say, it divide
 
 Merge sort can be a bit hard to wrap your head around when you first hear it, so let’s take a look at how the process looks on an example array. Consider that you have the following, unsorted array of integers:
 
-![Unsorted example](/blog/merge-sort/MergeSort_UnsortedExample.png)
+![Unsorted example](/blog/merge-sort/MergeSort_UnsortedExample.png#center)
 
 If we apply merge sort to this data, it’s going to recursively split the array in half until we have done this over the entire length of the data. At this point, it will then start merging the arrays together in the correct, sorted order. The process looks something like this:
 
-![The merge sort process](/blog/merge-sort/MergeSortCallStack.png)
+![The merge sort process](/blog/merge-sort/MergeSortCallStack.png#center)
 
 I personally think things make a lot more sense when you work through a diagram of the algorithm, such as this one. What makes things even more clear for me, however, is simply seeing the implementation!
 
