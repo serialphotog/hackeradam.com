@@ -203,7 +203,7 @@ $$f(5) = 11$$
 
 We can represent this graphically as follows:
 
-![An exaxmple function](/blog/set-theory/ExampleFunction.png)
+![An exaxmple function](/blog/set-theory/ExampleFunction.png#center)
 
 Additionally, there are a few other properties of functions that we must keep in mind:
 
@@ -215,19 +215,19 @@ Additionally, there are a few other properties of functions that we must keep in
 
 A function, f(), is a 1-1 (one-to-one) function if, for any two elements, a and b, of the domain, S, then f(a) != f(b). In simpler terms, different elements of the domain S will map to different elements in the range T.
 
-![A 1-1 function](/blog/set-theory/1-1Function.png)
+![A 1-1 function](/blog/set-theory/1-1Function.png#center)
 
 #### Onto Functions (Surjective)
 
 A function, f(), is an onto function if **every** element of the range, T, has at least one element of the domain, S, which maps to it. In other words, all elements of the range must have an element that maps to them.
 
-![Example of an onto function](/blog/set-theory/ontoFunction.png)
+![Example of an onto function](/blog/set-theory/ontoFunction.png#center)
 
 #### 1-1 AND Onto Function (Bijective)
 
 As one may conjecture at this point, a function is 1-1 and onto if it meets the requirements for both a 1-1 function and an onto function.
 
-![Example of 1-1 and onto](/blog/set-theory/1-1andonto.png)
+![Example of 1-1 and onto](/blog/set-theory/1-1andonto.png#center)
 
 ### Proving Equal Cardinality of Infinite Sets
 
