@@ -4,6 +4,10 @@ description: "DWM is a great tiling window manager, but it's sadly not a simple 
 date: '2021-01-10'
 tags: [Linux, Ubuntu, DWM]
 draft: false
+cover:
+    image: "/blog/misc/dwm.png"
+    alt: "Install DWM on Ubuntu 20.10 LTS"
+showToc: false
 aliases:
     - /installing-dwm-on-ubuntu-20-10-lts
 ---

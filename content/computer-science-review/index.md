@@ -1,5 +1,6 @@
 ---
 title: "Computer Science Review"
+showToc: false
 ---
 
 Computer science is a vast topic that covers a number of different areas of study. Here you can find my ongoing attempt to write useful review content to help those pursuing a career in a computer science related field.

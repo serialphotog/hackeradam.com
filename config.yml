@@ -1,0 +1,83 @@
+baseURL: "https://hackeradam.com"
+languageCode: "en-us"
+title: "Adam Hacks"
+theme: "PaperMod"
+paginate: 10
+copyright: "Copyright © 2021, Adam Thompson. All rights reserved."
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS 
+    - JSON
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/about"
+      weight: 3
+    - name: "Projects"
+      url: "/projects"
+      weight: 4
+    - name: "References"
+      url: "/references"
+      weight: 5
+    - name: "Search"
+      url: "/search"
+      weight: 6
+
+params:
+  env: production
+  author: "Adam Thompson"
+  description: "Thoughts on computer science, math, and general geekery from Adam Thompson."
+  email: "adam@hackeradam.com"
+  keywords: ["Hacking", "Computer Science", "Programming", "Math"]
+  defaultTheme: auto
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: true
+  comments: false 
+  showtoc: true
+
+  socialIcons:
+  - name: "github"
+    url: "https://github.com/serialphotog"
+  - name: "twitter"
+    url: "https://twitter.com/AdamHacksThings"
+
+  homeInfoParams:
+    Title: "Adam Hacks"
+    Content: > 
+      👋 My name is **Adam Thompson**. 💻 I am a Software Engineer interested in security and low-level systems. 🔗 This is my little corner of the internet to ramble about **hacking**, **software engineering**, and **general geekery**.
+  
+  params:
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.5
+        minMatchCharLength: 1
+        keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

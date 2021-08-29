@@ -4,6 +4,9 @@ description: "An issue I recently ran into while running Gnome was that I needed
 date: '2020-08-20'
 tags: [Linux, Gnome]
 draft: false
+cover: 
+    image: "/blog/misc/GnomeShellLaunchers.png"
+    alt: "Adding a custom launcher to Gnome Shell."
 aliases:
     - /adding-custom-launcher-to-gnome-shell
 ---

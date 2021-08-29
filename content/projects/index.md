@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+showTOC: false
 aliases:
     - /software
 ---

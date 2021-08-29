@@ -4,6 +4,9 @@ description: "I've had a long history of having a very long list of gripes about
 date: '2019-01-14'
 tags: [WSL, Windows-10, Windows-Terminal]
 draft: false
+cover:
+    image: "/blog/wsl-terminal-win10/SplitPanes.png"
+    alt: "Setting up WSL and Windows Terminal on Windows 10."
 aliases: 
     - /how-i-setup-wsl-in-windows-10-with-the-windows-terminal-app
 ---
