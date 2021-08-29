@@ -46,7 +46,8 @@ params:
   description: "Thoughts on computer science, math, and general geekery from Adam Thompson."
   email: "adam@hackeradam.com"
   keywords: ["Hacking", "Computer Science", "Programming", "Math"]
-  defaultTheme: auto
+  defaultTheme: dark
+  disableThemeToggle: true
 
   ShowReadingTime: true
   ShowShareButtons: false
