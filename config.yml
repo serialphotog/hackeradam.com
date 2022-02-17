@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "Adam Hacks"
 theme: "PaperMod"
 paginate: 10
-copyright: "Copyright © 2021, Adam Thompson. All rights reserved."
+copyright: "Copyright © 2022, Adam Thompson. All rights reserved."
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -60,8 +60,6 @@ params:
   socialIcons:
   - name: "github"
     url: "https://github.com/serialphotog"
-  - name: "twitter"
-    url: "https://twitter.com/AdamHacksThings"
 
   homeInfoParams:
     Title: "Adam Hacks"

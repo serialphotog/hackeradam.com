@@ -9,12 +9,11 @@ My name is Adam Thompson. I am a software engineer interested in security and lo
 
 ### Contact Me
 
-If you'd like to get in contact with me you can email me at: adam [at] thisdomain.com. 
+If you'd like to get in contact with me you can email me at: adam [at] {thisdomain.com}. 
 
 #### Where Else to Find Me
 
 You can find me elsewhere on the internet:
 
 * [Github](https://github.com/serialphotog)
-* [Twitter](https://twitter.com/AdamHacksThings)
 * [My Photography](https://adamthompsonphoto.com)
