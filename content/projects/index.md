@@ -42,7 +42,3 @@ This is a simple command line utility that converts waypoints in a GPX file into
 ### NOAA Animator
 
 This is a simple PHP application that downloads weather radar images from [NOAA](https://www.noaa.gov/) and converts them into animated GIFs. It is intended to run on some interval as a CRON job. You can view the project on [Github](https://github.com/serialphotog/NOAA-Animator).
-
-Here's an example of the generated GIF:
-
-![Kentucky's Current Cloud Forecast Loop](https://exploredbnf.com/noaa-maps/Sky/Sky_kentucky.gif)
