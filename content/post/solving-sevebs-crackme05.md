@@ -8,11 +8,7 @@ aliases:
     - /solving-sevebs-crackme05
 ---
 
-A skill set that I haven’t quite had the chance to foster just yet is that of reverse engineering software. It’s not so much that I lack any fundamental understanding of high-level software development, low-level software concepts, or operating system concepts, but more that I just haven’t taken the time to practice and develop the skill.
-
-I’ve decided it’s time to change that!
-
-One of the ways I’ll be doing this is by working on crackmes. This one in particular is from Crackmes.de user seVeb and is called **[crackme05](http://crackmes.cf/users/seveb/crackme05/)**. It’s marked as a C/C++ program compiled for Linux and is rated as being very easy for newbies. Sounds like a perfect place to start!
+I've recently found myself wanting to further my reverse engineering skills. One of the ways I’ll be doing this is by working on crackmes. This one in particular is from Crackmes.de user seVeb and is called **[crackme05](http://crackmes.cf/users/seveb/crackme05/)**. It’s marked as a C/C++ program compiled for Linux and is rated as being very easy for newbies. Sounds like a perfect place to start!
 
 ## Initial Look
 
@@ -628,11 +624,3 @@ The question is, does it work? Let’s find out!
 ![Success!](/blog/crackme5/Success.png#center)
 
 Bingo! We’ve successfully reverse-engineered the serial checking algorithm of this application and implemented a working keygen for it.
-
-## Reflections
-
-This has been my first serious attempt at solving a keygenme. I thou roughly enjoyed the exercise and I feel like I learned a fair bit from this little challenge, even if it is an extremely simple one.
-
-The biggest hurdle I faced wasn’t figuring out the logic in the application. That part was actually pretty easy. The challenge was more getting used to working with Ghidra. I feel like I’ve got a decent grasp on the basics of it now, but I’m sure there’s still plenty of room for me to improve in this regard. I originally attempted solving this using the free version of IDA, but I find IDA to be extremely non-intuitive to use. I’m sure this is just from a lack of experience on my part, but I had a much easier time jumping into Ghidra.
-
-Going forward, I plan to continue these sorts of challenges and would like to eventually get a grasp on IDA as well as some of the more advanced features of Ghidra. But those are tasks for another day!
