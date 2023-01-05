@@ -39,13 +39,13 @@ paginate = 10
     [[params.social]]
         icon = "link"
         name = "Photography Portfolio"
-        url = "https://serialphotog.com"
+        url = "https://adamthompsonphoto.com"
     [params.style]
         darkestColor = "#242930"
         darkColor = "#353b43"
         lightColor = "#afbac4"
         lightestColor = "#fff"
-         primaryColor = "#57cc8a"
+         primaryColor = "#2e95f2"
 
 [markup]
     [markup.goldmark]
