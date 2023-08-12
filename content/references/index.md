@@ -1,6 +1,7 @@
 ---
 title: "Technical References"
-showToc: false
+description: "Various technical references"
+hideToc: true
 ---
 
 Here you can find various technical references that I have put together in hopes that they may prove useful to someone other than just myself.

@@ -6,6 +6,7 @@ tags: [Programming, Python]
 draft: false
 aliases:
     - /how-to-route-urllib2-through-tor-python
+    - /post/how-to-route-urllib2-through-tor-python
 ---
 
 I’ve recently been experimenting on a new project to scrape data from webpages located on the Tor network. For simplicity’s sake, I decided to write this bit of code in Python and use the handy urllib2 library to handle the HTTP requests.

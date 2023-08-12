@@ -9,6 +9,7 @@ cover:
     alt: "Blocking ads and trackers with Pi-Hole"
 aliases:
     - /blocking-ads-and-trackers-with-pi-hole
+    - /post/blocking-ads-and-trackers-with-pi-hole
 ---
 
 There are about a million different pieces of ad/tracker blocking software out there, all with various pros and cons. The most common of these come in the form of browser extensions.

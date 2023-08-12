@@ -9,6 +9,7 @@ cover:
     alt: "Adding a custom launcher to Gnome Shell."
 aliases:
     - /adding-custom-launcher-to-gnome-shell
+    - /post/adding-custom-launcher-to-gnome-shell
 ---
 
 I have a long history of using Linux and it has always been my preferred operating system. Due to the needs of [my photography workflow](https://serialphotog.com), however, I’ve been using Windows as my primary OS for the past few years. That’s until recently, however.

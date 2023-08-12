@@ -6,6 +6,7 @@ tags: [OpenCV, Windows-10]
 draft: false
 aliases:
     - /installing-opencv-4-on-windows-10
+    - /post/installing-opencv-4-on-windows-10
 ---
 
 I love working with the OpenCV library, but it can be a royal pain in the butt to get it installed and running on your machine. This is especially true for Microsoft Windows. Despite a Google search turning up plenty of results for articles promising to show you how to do it, they all seem to have issues or be incomplete. This results in a rather frustrating experience when you just want to get things up and running.

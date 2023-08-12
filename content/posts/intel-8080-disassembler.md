@@ -6,6 +6,7 @@ tags: [C, Programming, Intel-8080]
 draft: false
 aliases:
     - /lets-write-a-simple-disassembler-for-the-intel-8080-microprocessor
+    - /post/lets-write-a-simple-disassembler-for-the-intel-8080-microprocessor
 ---
 
 Typically my weekends are spent [hiking with my camera](https://serialphotog.com/), but this past weekend I was knocked down by a pretty nasty cold. As a result, I found myself toying around with various programming projects I’ve had laying around. Here for a while, I’ve been curious how emulators work, so I took this opportunity to start venturing down that rabbit hole. During this excursion, I decided to start my foray into emulators by writing one for the game Space Invaders, which ran on an Intel 8080 microprocessor. It seemed only natural to get started by writing a disassembler for the 8080 to get things started.

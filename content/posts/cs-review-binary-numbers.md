@@ -6,6 +6,7 @@ tags: [Computer-Science, Math]
 draft: false
 aliases: 
     - /cs-review-binary-numbers
+    - /post/cs-review-binary-numbers
 ---
 
 Welcome to what will be the first in an ongoing series aimed at reviewing computer science topics. Today we will be diving into binary number representation. Understanding binary is an important step in gaining a better understanding of how the computer works on a lower level.

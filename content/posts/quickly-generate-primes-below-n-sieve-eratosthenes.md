@@ -6,6 +6,7 @@ tags: [Math, Python, Programming, Algorithms]
 draft: false
 aliases: 
   - /quickly-generating-primes-below-n-with-the-sieve-of-eratosthenes
+  - /post/quickly-generating-primes-below-n-with-the-sieve-of-eratosthenes
 ---
 
 The uses for prime numbers in computer science are nearly endless. They are useful for everything from hashing, cryptology, factorization, and all sorts of applications in-between.

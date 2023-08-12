@@ -6,6 +6,7 @@ tags: [Computer-Science, Programming, Algorithms]
 draft: false
 aliases:
     - /cs-review-merge-sort
+    - /post/cs-review-merge-sort
 ---
 
 Merge sort is among the divide and conquer algorithms. That is to say, it divides the input array into half, calls itself on both halves. This process is done recursively over the entire array. When we’re done, all the individually sorted pieces are merged back together to form the fully sorted array.

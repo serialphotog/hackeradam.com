@@ -6,6 +6,7 @@ tags: [Computer-Science, Programming, Discrete-Math]
 draft: false
 aliases:
     - /a-review-of-binary-search-trees
+    - /post/a-review-of-binary-search-trees
 ---
 
 My previous computer science review post took a look at [the tree data structure](https://hackeradam.com/a-review-of-binary-trees/). This time around we will be exploring a specific kind of binary tree: The Binary Search Tree.

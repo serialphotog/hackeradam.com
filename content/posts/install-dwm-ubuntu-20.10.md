@@ -10,6 +10,7 @@ cover:
 showToc: false
 aliases:
     - /installing-dwm-on-ubuntu-20-10-lts
+    - /post/installing-dwm-on-ubuntu-20-10-lts
 ---
 
 [DWM](https://dwm.suckless.org/) is a dynamic, keyboard-driven, tiling window manager developed by [Suckless](https://suckless.org/). It’s a great, light-weight window manager that perfectly fits the bill for my malware analysis lab machine.

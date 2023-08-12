@@ -4,6 +4,8 @@ description: "A cheatsheet I've made for myself to aid in working with CTAGS in 
 date: '2021-07-30'
 tags: [Vim, ctags]
 draft: false
+aliases: 
+    - /post/ctags-cheatsheet
 ---
 
 The longer I work with computers and software development the more I fall in love with a VIM based workflow. Recently I've discovered the joys of CTAGS. This is a simple cheatsheet to help me as I'm initially learning to integrate this tool into my workflow. Perhaps you'll find it useful as well.

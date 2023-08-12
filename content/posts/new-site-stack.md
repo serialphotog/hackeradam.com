@@ -4,6 +4,8 @@ description: "I completely redid the tech stack for this site. Here's a behind t
 date: '2021-04-05'
 tags: [Web-Development, Hugo, CI-CD, Google-Cloud]
 draft: false
+aliases:
+  - /post/new-site-stack
 ---
 
 I just finished moving this website over to a brand new tech stack. To be a bit more specific, the site is now using Hugo and is deployed to Google's Cloud. This post will take a look at the old setup, the new setup, and I will talk a bit about some future plans.

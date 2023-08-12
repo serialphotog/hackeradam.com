@@ -1,53 +1,30 @@
 baseURL = "https://hackeradam.com"
 languageCode = "en-us"
 title = "Adam Hacks"
-theme = "m10c"
-avatar = "/static/avatar.jpg"
+theme = "poison"
 paginate = 10
 
-[menu]
-    [[menu.main]]
-        identifier = "home"
-        name = "Home"
-        url = "/"
-        weight = 1
-    [[menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-        weight = 3
-    [[menu.main]]
-        identifier = "projects"
-        name = "Projects"
-        url = "/projects"
-        weight = 4
-    [[menu.main]]
-        identifier = "references"
-        name = "References"
-        url = "/references"
-        weight = 5
-
 [params]
-    author = "Adam Thompson"
+    brand = "Adam Hacks"
+    brand_image = "/images/avatar.jpg"
+    dark_mode = true
     description = "Thoughts on computer science, math, and general geekery from Adam Thompson."
-    email = "adam@hackeradam.com"
 
-    [[params.social]]
-        icon = "github"
-        name = "Github"
-        url = "https://github.com/serialphotog"
-    [[params.social]]
-        icon = "link"
-        name = "Photography Portfolio"
-        url = "https://adamthompsonphoto.com"
-    [params.style]
-        darkestColor = "#242930"
-        darkColor = "#353b43"
-        lightColor = "#afbac4"
-        lightestColor = "#fff"
-         primaryColor = "#2e95f2"
+    github_url = "https://github.com/serialphotog"
+    email_url = "mailto://adam@hackeradam.com"
+    rss_icon = true
+    rss_section = "posts"
 
-[markup]
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-            unsafe = true
+    menu = [
+        {Name = "About", External = true, URL = "/about/", HasChildren = false},
+        {Name = "References", External = true, URL = "/references", HasChildren = false},
+        {Name = "Projects", External = true, URL = "/projects/", HasChildren = false},
+        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+    ]
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[taxonomies]
+    series = 'series'
+    tags = 'tags'

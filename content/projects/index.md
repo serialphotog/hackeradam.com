@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+description: "Various open source projects by Adam Thompson."
 showTOC: false
 aliases:
     - /software

@@ -6,6 +6,7 @@ tags: [Computer-Science, Programming, Algorithms]
 draft: false
 aliases:
     - /cs-review-quicksort
+    - /post/cs-review-quicksort
 ---
 
 Quicksort is another one of the divide and conquer sorting algorithms. It works by partitioning the array around some chosen pivot point, which there are a few different ways to choose.

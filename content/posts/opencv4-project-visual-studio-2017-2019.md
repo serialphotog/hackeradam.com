@@ -6,6 +6,7 @@ tags: [OpenCV, Windows-10, Visual-Studio, Programming]
 draft: false
 aliases:
     - /creating-an-opencv-4-project-in-visual-studio-2017-2019
+    - /post/creating-an-opencv-4-project-in-visual-studio-2017-2019
 ---
 
 In my [previous tutorial](https://hackeradam.com/installing-opencv-4-on-windows-10/), I outlined how to build the OpenCV 4 library on Microsoft Windows 10. In that tutorial, however, I did not mention how to use that library in an actual project. This time around I will be showing you how to create an OpenCV 4 project within Microsoft Visual Studio 2017.

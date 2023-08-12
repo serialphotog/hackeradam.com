@@ -9,6 +9,7 @@ cover:
     alt: "Setting up WSL and Windows Terminal on Windows 10."
 aliases: 
     - /how-i-setup-wsl-in-windows-10-with-the-windows-terminal-app
+    - /post/how-i-setup-wsl-in-windows-10-with-the-windows-terminal-app
 ---
 
 I’ve had a long history of not being a fan of the Windows operating system. While Windows 7 was a decent release of the OS, version eight was an absolute dumpster fire and the early builds of Windows 10 weren’t much better. The more recent builds of Windows 10, however, have certainly started to win me over, especially when Microsoft surprised everyone by coming out with the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).

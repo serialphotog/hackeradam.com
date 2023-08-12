@@ -6,6 +6,7 @@ tags: [Computer-Science, Programming, Discrete-Math]
 draft: false
 aliases:
     - /a-review-of-binary-trees
+    - /post/a-review-of-binary-trees
 ---
 
 In my previous review series, I wrote a [brief review of set theory](https://hackeradam.com/a-brief-review-of-set-theory/). This time around we’ll take a look at the binary tree data structure. The tree structure is very common, incredibly useful data structure in the field of computer science and it’s essential that any engineer understand how they work.

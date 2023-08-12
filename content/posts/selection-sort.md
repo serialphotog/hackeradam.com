@@ -6,6 +6,7 @@ tags: [Computer-Science, Programming, Algorithms]
 draft: false
 aliases:
     - /cs-review-selection-sort
+    - /post/cs-review-selection-sort
 ---
 
 The previous sorting algorithm we took a look at was [bubble sort](https://hackeradam.com/cs-review-bubble-sort/). This time around we will be taking a look at selection sort, which is slightly more complex than bubble sort, but only by a tiny bit.
