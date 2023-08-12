@@ -1,0 +1,1 @@
+This is a customized version of the [Poison Theme for Hugo](https://github.com/lukeorth/poison) that I use for [my blog](https://hackeradam.com).
