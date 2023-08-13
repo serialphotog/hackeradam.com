@@ -16,6 +16,8 @@ I’ve had a long history of not being a fan of the Windows operating system. Wh
 
 The default setup for WSL is anything but perfect but it’s possible to get a really nice looking, highly functional setup with just a little bit of work. Let’s take a look at how I have everything set up.
 
+<!--more-->
+
 ## Windows Termianl
 
 The first thing we want to do is get rid of the God awful ConHost terminal that WSL uses by default. Luckily, Microsoft is working on rolling out a new Windows Terminal application that is much more modern. It’s still marked as a preview application, but it has been working great for me. You can download it from the [Microsoft App Store](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab).

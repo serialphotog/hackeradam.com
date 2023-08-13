@@ -11,6 +11,8 @@ aliases:
 
 You may have noticed that I’ve been putting a lot more work into writing posts for my [Computer Science Review series](https://hackeradam.com/computer-science-review/) lately. The last installment of this series took a look at [binary search trees](https://hackeradam.com/a-review-of-binary-search-trees/). This time around we will be taking some time to review one of my favorite data structures: Graphs.
 
+<!--more-->
+
 ## What is a Graph?
 
 If you look at the formal definition of a graph, such as the one that you might get in a discrete mathematics course, you’ll get something along these lines: A graph is an ordered triple (N, A, g) where N is a nonempty set of nodes or vertices, A is a set of arcs or edges, and g is a function associating each arc a with an unordered pair {x, y} of nodes. x and y are the endpoints of the arc and g is a function:

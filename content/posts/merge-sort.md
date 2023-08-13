@@ -11,6 +11,8 @@ aliases:
 
 Merge sort is among the divide and conquer algorithms. That is to say, it divides the input array into half, calls itself on both halves. This process is done recursively over the entire array. When we’re done, all the individually sorted pieces are merged back together to form the fully sorted array.
 
+<!--more-->
+
 ## A Closer Look at the Functionality
 
 Merge sort can be a bit hard to wrap your head around when you first hear it, so let’s take a look at how the process looks on an example array. Consider that you have the following, unsorted array of integers:

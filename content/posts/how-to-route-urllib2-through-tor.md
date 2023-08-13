@@ -13,6 +13,8 @@ I’ve recently been experimenting on a new project to scrape data from webpages
 
 For those that don’t know, Tor runs a SOCKS5 proxy, which, by default, runs on **127.0.0.1:9050**. I thought things would be as simple as telling urllib2 to use a proxy located at IP *127.0.0.1* and port *9050*, but I quickly found that this doesn’t work.
 
+<!--more-->
+
 Luckily, after a bit of digging, I found a solution. It turns out that urllib2 uses Python’s socket module, which contains the method **create_connection()**. If we take a look at the code for this method we can see where our problem lies:
 
 ```python

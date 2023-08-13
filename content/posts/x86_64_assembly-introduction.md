@@ -12,6 +12,8 @@ It's also worth quickly mentioning that x86_64 is a superset of x86. As such, by
 
 Let's go ahead and dive right on in!
 
+<!--more-->
+
 ## Required Base Knowledge
 
 Before we really get going I feel that I should mention that there is a certain level of base knowledge that I'm expecting you, the reader, to have when approaching this guide. I've attempted to write this guide in such a way that it will be approachable by the beginner and intermediate levels alike, but there is still some base knowledge that will, at the very least, make this guide a whole lot easier to understand. They are:

@@ -20,6 +20,8 @@ One of the things I’ve found that I’ve needed to do a bit of while setting e
 
 Let’s take a look!
 
+<!--more-->
+
 ## Creating a Launcher
 
 To create a new launcher, we just need to create a .desktop file in the following path:

@@ -13,6 +13,8 @@ The dining philosophers problem is a classic problem in the realm of computer sc
 
 Today we will take a look at the problem and look at an example of how we can solve it.
 
+<!--more-->
+
 ## The Problem
 
 Suppose you had a round table with five silent philosophers sat around the table. Between each pair of adjacent philosophers is a chopstick (so, 5 total chopsticks) and there is a bowl of rice in the center of the table. In order for a hungry philosopher to eat from the bowl he needs to have both the left and right chopstick available for his use, otherwise, he must sit down his chopstick and go back to thinking.

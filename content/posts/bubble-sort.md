@@ -15,6 +15,8 @@ While this is great from a simplicity standpoint, it’s a pretty awful solution
 
 As you can see, this algorithm is not suitable for any sufficiently large datasets.
 
+<!--more-->
+
 ## Implementation
 
 This algorithm is so simple that I think we can just jump right into the implementation without worrying about too much more explanation.

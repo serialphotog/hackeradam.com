@@ -11,6 +11,8 @@ aliases:
 
 In my previous review series, I wrote a [brief review of set theory](https://hackeradam.com/a-brief-review-of-set-theory/). This time around we’ll take a look at the binary tree data structure. The tree structure is very common, incredibly useful data structure in the field of computer science and it’s essential that any engineer understand how they work.
 
+<!--more-->
+
 ## The Tree Data Structure
 
 A **tree**, unlike some other data structures, such as an array, linked list, stack, or queue, is a hierarchical data structure. Each entry in the tree is called a **node** and the topmost node in the tree is called the **root** of the tree (or the root node). The elements that are directly under a node are referred to as **child** nodes and the node that the children fall under is called a **parent** node.

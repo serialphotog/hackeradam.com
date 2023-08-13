@@ -14,6 +14,8 @@ aliases:
 
 Have you ever written code to interface with a webcam? Well, if you have then you know that it can be a royal pain in the ass. And God forbid you want it to be a cross-platform solution! The good news is that there is a ready-made solution that can help us out: OpenCV. Yes, you heard me right. Not only is OpenCV and amazing computer vision library, but it also provides a handy, cross-platform way of interfacing with webcams. Let’s take a look at how simple OpenCV makes this. I’ll be using Python for these examples, but the API is similar in other languages.
 
+<!--more-->
+
 ## Shut Up and Show me the Code!
 
 Okay, okay, we’ll take a look at the code already :)

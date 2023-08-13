@@ -13,6 +13,8 @@ Set theory is the branch of mathematics that, unsurprisingly, deals with sets. I
 
 In this post, I’ll go over a brief review of basic set theory as it pertains to those pursuing an interest in computer science. Let’s just jump right in!
 
+<!--more-->
+
 ## What is a Set?
 
 The first and most logical question we can answer about set theory is just what is a set? Well, a set is simply an **unordered** collection of objects that **contains no duplicates**.

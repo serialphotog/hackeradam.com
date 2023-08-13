@@ -13,6 +13,8 @@ The uses for prime numbers in computer science are nearly endless. They are usef
 
 There exists a great number of algorithms that allow us to quickly generate primes, but today we are going to take a look at a popular method known as a **prime sieve**. There are a number of different implementations of prime sieves, but one of the simplest to implement is known as the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes). This algorithm is great for quickly generating smaller prime numbers (but it may not be the best choice for generating very large primes).
 
+<!--more-->
+
 ## How it Works
 
 In general, the Sieve of Eratosthenes works by generating a list of numbers from **2 to n**. The algorithm will then work through the list, marking all the composite numbers. Here is a more detailed breakdown of the implementation:

@@ -13,6 +13,8 @@ Quicksort is another one of the divide and conquer sorting algorithms. It works 
 
 Quicksort is generally preferred over [merge sort](https://hackeradam.com/cs-review-merge-sort/) for sorting arrays due to the fact that the general form of the algorithm sorts in-place.
 
+<!--more-->
+
 ## How Quicksort Works
 
 As has already been mentioned, quicksort partitions your array of data based on some pivot point. As such, the big question becomes how to choose this pivot point. There are a few common ways that you’ll see:

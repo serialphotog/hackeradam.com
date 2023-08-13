@@ -13,6 +13,8 @@ Typically my weekends are spent [hiking with my camera](https://serialphotog.com
 
 What I came up with is a pretty simple (albeit long) bit of C code to disassemble binary code compiled for the Intel 8080. So, without further ado, let’s jump on in and see how I did it!
 
+<!--more-->
+
 ## The Intel 8080 Microprocessor
 
 Released in 1974, the Intel 8080 microprocessor was the second of the 8-bit microprocessor chips released by Intel. It offered a clock frequency of up to 2 MHZ.

@@ -11,6 +11,8 @@ aliases:
 
 When working with logic in discrete math appliations there are a plethora of rules you can use for working with the [well formed formulas](https://en.wikipedia.org/wiki/Well-formed_formula). Remembering them all can be a daunting task, which is why I like to have a cheat sheet available. As such, here’s a simple one that I like to use when working with these problems.
 
+<!--more-->
+
 ## Equivalence Rules
 
 | **Expression** | **Equivalent To** | **Name of the Rule** |

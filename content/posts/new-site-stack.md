@@ -10,6 +10,8 @@ aliases:
 
 I just finished moving this website over to a brand new tech stack. To be a bit more specific, the site is now using Hugo and is deployed to Google's Cloud. This post will take a look at the old setup, the new setup, and I will talk a bit about some future plans.
 
+<!--more-->
+
 ## A Bit of History
 
 I first started this little technical blog back in 2016 as a [Jekyll](https://jekyllrb.com/) site hosted on [Github Pages](https://pages.github.com/). This worked out pretty well, but I didn't particularly love Jekyll and I didn't like the lack of control I had with Github Pages. As such, I moved the site over to [Ghost](https://ghost.org/) on [Digital Ocean](https://www.digitalocean.com/). 

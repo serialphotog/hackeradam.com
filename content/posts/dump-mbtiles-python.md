@@ -13,6 +13,8 @@ MBTiles is a database format, developed by [Mapbox](https://www.mapbox.com/), fo
 
 Here recently, I’ve been developing code that works with tiled map data, including data contained within an MBTiles database. As part of this, I’ve needed an easy way to dump the map tiles from an MBTiles database to my local disk. It turns out that we can do this quite easily with a little bit of Python, so let’s dig in!
 
+<!--more-->
+
 ## The MBTiles File Format
 
 The format of an MBTiles database is really pretty simple. In fact, it’s nothing but an SQLite3 database that is formatted in a particular way. This database uses the UTF-8 encoding and contains a few tables for storing the data. For our purposes, however, we only care about the *Tiles* table.

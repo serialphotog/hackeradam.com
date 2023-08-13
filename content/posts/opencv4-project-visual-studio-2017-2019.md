@@ -15,6 +15,8 @@ Please note that I am going to assume that your OpenCV install is set up in the 
 
 Let’s get started!
 
+<!--more-->
+
 ## Video Tutorial
 
 {{<youtube p-6rG6Zgu4U>}}

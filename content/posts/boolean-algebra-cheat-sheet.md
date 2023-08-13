@@ -11,6 +11,8 @@ aliases:
 
 I previously posted a [logic rules cheat sheet](https://hackeradam.com/logic-rules-cheat-sheet/) and figured it was about time that I do the same for boolean algebra.
 
+<!--more-->
+
 | **Expression** | **Equivalent To** | **Name of the Rule** |
 |----------------|-------------------|----------------------|
 | $$ X + Y $$    | $$ Y + X $$       | Commutative          |

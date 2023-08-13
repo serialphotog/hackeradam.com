@@ -13,6 +13,8 @@ My previous computer science review post took a look at [the tree data structure
 
 Let’s not waste any more time and just jump right in!
 
+<!--more-->
+
 ## What is a Binary Search Tree?
 
 A **Binary Search Tree (BST)** is a binary tree such that the following holds true:

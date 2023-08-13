@@ -11,6 +11,8 @@ aliases:
 
 I've recently found myself wanting to further my reverse engineering skills. One of the ways I’ll be doing this is by working on crackmes. This one in particular is from Crackmes.de user seVeb and is called **[crackme05](http://crackmes.cf/users/seveb/crackme05/)**. It’s marked as a C/C++ program compiled for Linux and is rated as being easy. Sounds like a perfect place to start!
 
+<!--more-->
+
 ## Initial Look
 
 ![Initial look at the files](/blog/crackme5/seVegbCrackme05Files.png#center)

@@ -13,6 +13,8 @@ I love working with the OpenCV library, but it can be a royal pain in the butt t
 
 The purpose of this tutorial is to walk you through, step-by-step, how to install OpenCV version 4 on your Microsoft Windows 10 system. So, let’s quit talking about it and jump right in!
 
+<!--more-->
+
 ## Video Tutorial
 
 {{<youtube x5EWlNQ6z5w>}}

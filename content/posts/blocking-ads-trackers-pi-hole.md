@@ -16,6 +16,8 @@ There are about a million different pieces of ad/tracker blocking software out t
 
 There are some great options out there, but there are certainly drawbacks to this extension approach. The biggest of these drawbacks is that you have to install the extension in all of your browsers on all of your computers for it to work across them all. Additionally, they tend to be completely useless when it comes to other devices, such as phones. This is where Pi-Hole comes in handy.
 
+<!--more-->
+
 ## What is Pi-Hole?
 
 I’m sure many of you are already at least vaguely familiar with what Pi-Hole is, but I’ll give you a quick run-down for the uninitiated.

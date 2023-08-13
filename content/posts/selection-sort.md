@@ -15,6 +15,8 @@ The idea behind selection sort is that you keep iterating over your array of dat
 
 Like bubble sort, selection sort has a worst-case time complexity of O(n2), but it does have a tendency to outperform bubble sort. Selection sort also has a nice side-effect where it will never do more than O(n) swaps, which is nice if you’re operating in an environment in which memory writes are costly.
 
+<!--more-->
+
 ## Implementation
 
 Much like bubble sort, I think the clearest explanation of this algorithm is to simply look at its implementation, so here it is in Java:
