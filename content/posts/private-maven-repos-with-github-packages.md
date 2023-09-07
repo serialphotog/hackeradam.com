@@ -3,7 +3,7 @@ title: "How To Set Up a Private Maven Repository with GitHub Packages"
 description: "This quick tutorial will teach you how to use GitHub Actions to automatically build a Java library, publish it to a private GitHub Packages Maven repository, and how to use your newly hosted library in another Maven project."
 date: '2023-08-24'
 tags: [Programming, GitHub, Java]
-draft: true
+draft: false
 ---
 
 This quick tutorial will teach you how to use GitHub Actions to automatically build a Java library, publish it to a private GitHub Packages Maven repository, and how to use your newly hosted library in another Maven project.
