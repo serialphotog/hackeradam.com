@@ -22,4 +22,5 @@ If you'd like to get in contact with me you can email me at: adam [at] {thisdoma
 You can find me elsewhere on the internet:
 
 * [Github](https://github.com/serialphotog)
+* [LinkedIn](https://www.linkedin.com/in/adam-thompson-swe/)
 * [My Photography](https://adamthompsonphoto.com)
