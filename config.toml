@@ -14,20 +14,6 @@ ignoreErrors = ["error-disable-taxonomy"]
   blog = "/:slug/"
   tags = "/blog/:slug"
 
-[menus]
-  [[menus.main]]
-    name = 'Blog'
-    pageRef = '/'
-    weight = 1
-  [[menus.main]]
-    name = 'References'
-    pageRef = '/references'
-    weight = 2
-  [[menus.main]]
-    name = 'About'
-    pageRef = '/about'
-    weight = 3
-
 [params]
     description = "Thoughts on computer science, math, and general geekery from Adam Thompson."
 
