@@ -1,26 +1,35 @@
 baseURL = "https://hackeradam.com"
 languageCode = "en-us"
 title = "Adam Hacks"
-theme = "poison"
+author = "Adam Thompson"
+copyright = "Copyright © 2024, Adam Thompson."
+theme = "hugo-bearblog"
 paginate = 10
 
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"
+
+[menus]
+  [[menus.main]]
+    name = 'Blog'
+    pageRef = '/blog'
+    weight = 1
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 2
+  [[menus.main]]
+    name = 'References'
+    pageRef = '/references'
+    weight = 3
+
 [params]
-    brand = "Adam Hacks"
-    brand_image = "/images/avatar.jpg"
-    dark_mode = true
     description = "Thoughts on computer science, math, and general geekery from Adam Thompson."
-
-    github_url = "https://github.com/serialphotog"
-    email_url = "mailto://adam@hackeradam.com"
-    rss_icon = true
-    rss_section = "posts"
-
-    menu = [
-        {Name = "About", External = true, URL = "/about/", HasChildren = false},
-        {Name = "References", External = true, URL = "/references", HasChildren = false},
-        {Name = "Projects", External = true, URL = "/projects/", HasChildren = false},
-        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
-    ]
 
 [markup.goldmark.renderer]
     unsafe = true

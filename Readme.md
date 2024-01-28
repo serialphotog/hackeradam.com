@@ -1,1 +1,0 @@
-**NOTE:** This project requires the extended version of hugo to work!
