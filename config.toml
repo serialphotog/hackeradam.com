@@ -20,13 +20,9 @@ ignoreErrors = ["error-disable-taxonomy"]
     pageRef = '/blog'
     weight = 1
   [[menus.main]]
-    name = 'About'
-    pageRef = '/about'
-    weight = 2
-  [[menus.main]]
     name = 'References'
     pageRef = '/references'
-    weight = 3
+    weight = 2
 
 [params]
     description = "Thoughts on computer science, math, and general geekery from Adam Thompson."
