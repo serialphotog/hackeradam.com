@@ -25,4 +25,3 @@ You can find me elsewhere on the internet:
 * [LinkedIn](https://www.linkedin.com/in/adam-thompson-swe/)
 * [My Photography](https://adamthompsonphoto.com)
 
-testing
