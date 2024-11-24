@@ -9,6 +9,11 @@ My blogroll and weblinks portal. This exists as a means for me to share links to
 
 It should go without saying that just because I link to something here does not mean I agree with or condone everything you may find on these pages. 
 
+## My Blogs
+
+- <a href="https://adamthompsonphoto.com/blog" target="_blank">Adam Thompson Photo</a> - Hiking, backpacking, photography, and more!
+- <a href="https://adamsarches.com" target="_blank">Adam's Arches</a> - All things related to hunting natural arches.
+
 ## Tools
 
 - <a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a> - The cyber Swiss Army Knife by GCHQ. 
