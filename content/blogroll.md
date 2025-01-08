@@ -12,7 +12,6 @@ It should go without saying that just because I link to something here does not 
 ## My Blogs
 
 - <a href="https://adamthompsonphoto.com/blog" target="_blank">Adam Thompson Photo</a> - Hiking, backpacking, photography, and more!
-- <a href="https://adamsarches.com" target="_blank">Adam's Arches</a> - All things related to hunting natural arches.
 
 ## Tools
 
