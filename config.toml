@@ -2,7 +2,7 @@ baseURL = "https://hackeradam.com"
 languageCode = "en-us"
 title = "Adam Hacks"
 author = "Adam Thompson"
-copyright = "Copyright © 2024, Adam Thompson."
+copyright = "Copyright © 2025, Adam Thompson."
 theme = "hugo-bearblog"
 paginate = 10
 
