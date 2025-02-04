@@ -4,6 +4,7 @@ description: "I absolutely love the OpenCV library. Like a lot of large librarie
 date: '2018-12-24'
 tags: [OpenCV, Windows-10]
 draft: false
+toc: true
 aliases:
     - /post/installing-opencv-4-on-windows-10
 ---

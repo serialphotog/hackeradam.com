@@ -4,6 +4,7 @@ description: "As promised in my post reviewing binary trees, here's a review of 
 date: '2021-02-26'
 tags: [Computer-Science, Programming, Discrete-Math]
 draft: false
+toc: true
 aliases:
     - /post/a-review-of-binary-search-trees
 ---

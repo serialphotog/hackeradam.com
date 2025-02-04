@@ -4,6 +4,8 @@ description: "One of the fundamental areas of discrete mathematics is working wi
 date: '2020-02-02'
 tags: [Math, Computer-Science, Discrete-Mathematics]
 draft: false
+toc: true
+math: true
 aliases: 
     - /post/logic-rules-cheat-sheet
 ---

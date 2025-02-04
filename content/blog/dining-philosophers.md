@@ -4,6 +4,7 @@ description: "The dining philosophers problem is a classic problem in the realm 
 date: '2020-08-21'
 tags: [Computer-Science, Programming, C, Operating-Systems, Algorithms]
 draft: false
+toc: true
 aliases:
     - /post/the-dining-philosophers-problem
 ---

@@ -4,6 +4,7 @@ description: "Let's take a look at how I solved seVeb's Crackme05 challenge."
 date: '2020-08-23'
 tags: [Reverse-Engineering, Assembly, C, Ghidra, Crackme, Hacking, Python]
 draft: false
+toc: true
 aliases:
     - /post/solving-sevebs-crackme05
 ---

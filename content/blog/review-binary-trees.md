@@ -4,6 +4,8 @@ description: "My previous computer science review post covered the basics of set
 date: '2021-02-25'
 tags: [Computer-Science, Programming, Discrete-Math]
 draft: false
+toc: true
+math: true
 aliases:
     - /post/a-review-of-binary-trees
 ---

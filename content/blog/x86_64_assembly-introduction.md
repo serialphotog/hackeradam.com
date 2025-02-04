@@ -4,6 +4,7 @@ description: "This article will serve as my gentle introduction to getting start
 date: '2021-07-31'
 tags: [Computer-Science, Assembly-Language, Reverse-Engineering]
 draft: true
+toc: true
 ---
 
 Hello and welcome to my gentle introduction to assembly language. The goal of this guide is to introduce the basics of what assembly is and how to understand it. For the purposes of this guide, I will be focusing on x86_64 assembly. The good thing about assembly language dialects is that they are all quite similar. What this means is that once you learn one, such as x86, learning another one, such as Arm or MIPS, is pretty straight-forward. 

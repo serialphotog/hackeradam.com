@@ -2,7 +2,7 @@ baseURL = "https://hackeradam.com"
 languageCode = "en-us"
 title = "Adam Hacks"
 author = "Adam Thompson"
-theme = "hugo-blog-awesome"
+theme = "hugo-dead-simple"
 paginate = 10
 
 enableRobotsTXT = true
@@ -46,27 +46,27 @@ ignoreErrors = ["error-disable-taxonomy"]
 [menu]
     [[menu.main]]
         pageRef="/"
-        name = "Home"
+        name = "~/"
         url = '/'
         weight = 10
     [[menu.main]]
         pageRef = "/blog"
-        name = "Blog"
+        name = "/Blog"
         url = "/blog"
         weight = 20
     [[menu.main]]
         pageRef="/about"
-        name = "About"
+        name = "/About"
         url = "/about"
         weight = 30
     [[menu.main]]
         pageRef="/blogroll"
-        name = "Blogroll"
+        name = "/Blogroll"
         url = "/blogroll"
         weight = 40
     [[menu.main]]
         pageRef = "/references"
-        name = "References"
+        name = "/References"
         url = "/references"
         weight = 50
 

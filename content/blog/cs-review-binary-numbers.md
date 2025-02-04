@@ -4,6 +4,8 @@ description: "When it's all said and done, everything within a computer is nothi
 date: '2017-09-19'
 tags: [Computer-Science, Math]
 draft: false
+toc: true
+math: true
 aliases: 
     - /post/cs-review-binary-numbers
 ---

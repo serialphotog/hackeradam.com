@@ -4,6 +4,7 @@ description: "I completely redid the tech stack for this site. Here's a behind t
 date: '2021-04-05'
 tags: [Web-Development, Hugo, CI-CD, Google-Cloud]
 draft: false
+toc: true
 aliases:
   - /post/new-site-stack
 ---

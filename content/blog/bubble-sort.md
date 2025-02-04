@@ -4,6 +4,7 @@ description: "Bubble sort is the easiest possible sorting algorithm you could im
 date: '2021-02-27'
 tags: [Computer-Science, Programming, Algorithms]
 draft: false
+toc: true
 aliases:
     - /post/cs-review-bubble-sort
 ---

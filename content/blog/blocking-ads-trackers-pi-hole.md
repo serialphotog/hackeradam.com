@@ -4,6 +4,7 @@ description: "Today We'll be taking a look at how to set up the network-wide ad/
 date: '2020-08-10'
 tags: [Networking, Raspberry-Pi, PiHole]
 draft: false
+toc: true
 cover:
     image: "/blog/pihole-setup/Adlists.png"
     alt: "Blocking ads and trackers with Pi-Hole"

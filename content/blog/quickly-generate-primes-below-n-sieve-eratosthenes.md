@@ -4,6 +4,8 @@ description: "The Sieve of Eratosthenes is an efficient algorithm for quickly fi
 date: '2017-05-17'
 tags: [Math, Python, Programming, Algorithms]
 draft: false
+toc: true
+math: true
 aliases: 
   - /post/quickly-generating-primes-below-n-with-the-sieve-of-eratosthenes
 ---

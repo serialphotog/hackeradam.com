@@ -4,6 +4,8 @@ description: "Set theory is the branch of mathematics that, unsurprisingly, deal
 date: '2021-01-11'
 tags: [Math, Discrete-Mathematics, Computer-Science]
 draft: false
+toc: true
+math: true
 aliases:
     - /post/a-brief-review-of-set-theory
 ---

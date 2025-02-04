@@ -4,6 +4,7 @@ description: "Quicksort is yet another divide and conquer sorting algorithm. Let
 date: '2021-02-28'
 tags: [Computer-Science, Programming, Algorithms]
 draft: false
+toc: true
 aliases:
     - /post/cs-review-quicksort
 ---

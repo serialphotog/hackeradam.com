@@ -8,6 +8,7 @@ cover:
     image: "/blog/misc/dwm.png"
     alt: "Install DWM on Ubuntu 20.10 LTS"
 showToc: false
+toc: true
 aliases:
     - /installing-dwm-on-ubuntu-20-10-lts
     - /post/installing-dwm-on-ubuntu-20-10-lts

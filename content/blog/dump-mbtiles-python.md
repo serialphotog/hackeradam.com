@@ -4,6 +4,7 @@ description: "MBTiles is a database format designed for storing tiled data. It's
 date: '2018-02-12'
 tags: [Python, Programming, Mapping]
 draft: false
+toc: true
 aliases:
     - /dumping-map-tiles-from-an-mbtiles-database-with-python
     - /post/dumping-map-tiles-from-an-mbtiles-database-with-python

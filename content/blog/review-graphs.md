@@ -4,6 +4,8 @@ description: "Graphs are an extremely important and useful data structure throug
 date: '2021-02-26'
 tags: [Computer-Science, Programming, Discrete-Math]
 draft: false
+toc: true
+math: true
 aliases:
     - /post/a-review-of-graphs
 ---

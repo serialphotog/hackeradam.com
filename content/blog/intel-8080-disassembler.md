@@ -4,6 +4,7 @@ description: "While being knocked down with a pretty nasty cold, I decided to st
 date: '2018-12-03'
 tags: [C, Programming, Intel-8080]
 draft: false
+toc: true
 aliases:
     - /lets-write-a-simple-disassembler-for-the-intel-8080-microprocessor
     - /post/lets-write-a-simple-disassembler-for-the-intel-8080-microprocessor

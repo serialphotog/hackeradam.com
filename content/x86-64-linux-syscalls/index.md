@@ -8,7 +8,7 @@ This document serves as a reference to the system calls within the x86_64 Linux 
 
 ### x86_64 Linux Syscall Structure
 
-<table class="table table-bordered">
+<table>
     <thead>
         <tr>
             <th scope="col">Instruction</th>
@@ -39,7 +39,7 @@ This document serves as a reference to the system calls within the x86_64 Linux 
 
 ### x86_64 Linux Syscall Table
 
-<table class="table table-secondary table-bordered table-striped table-hover">
+<table>
     <thead>
         <tr>
             <th>rax</th>

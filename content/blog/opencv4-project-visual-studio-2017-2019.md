@@ -4,6 +4,7 @@ description: "I previously wrote about how to install the OpenCV 4 library on Wi
 date: '2018-12-24'
 tags: [OpenCV, Windows-10, Visual-Studio, Programming]
 draft: false
+toc: true
 aliases:
     - /post/creating-an-opencv-4-project-in-visual-studio-2017-2019
 ---

@@ -5,6 +5,7 @@ date: '2020-04-20'
 tags: [Math, Computer-Science, Discrete-Mathematics]
 draft: false
 toc: false
+math: true
 aliases:
     - /post/boolean-algebra-cheat-sheet
 ---

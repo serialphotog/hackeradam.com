@@ -4,6 +4,7 @@ description: "Merge Sort is among the divide and conquer sorting algorithms. Let
 date: '2021-02-28'
 tags: [Computer-Science, Programming, Algorithms]
 draft: false
+toc: true
 aliases:
     - /post/cs-review-merge-sort
 ---

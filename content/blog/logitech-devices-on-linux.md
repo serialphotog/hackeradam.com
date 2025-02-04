@@ -3,6 +3,7 @@ title: "Improving Logitech Peripheral Support on Linux"
 description: "This quick guide aims to help you improve your experience with using Logitech peripherals on desktop Linux."
 date: '2024-06-14'
 tags: [Linux, Logitech, Solaar, libratbag]
+toc: true
 draft: false
 ---
 
