@@ -5,7 +5,6 @@ date: '2021-02-25'
 tags: [Computer-Science, Programming, Discrete-Math]
 draft: false
 aliases:
-    - /a-review-of-binary-trees
     - /post/a-review-of-binary-trees
 ---
 

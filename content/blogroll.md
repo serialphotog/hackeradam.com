@@ -2,7 +2,7 @@
 title: "Blogroll"
 description: "Adam Thompson's links to interesting places from around the web."
 draft: false
-hideToc: false
+toc: true
 ---
 
 My blogroll and weblinks portal. This exists as a means for me to share links to things I've found across the internet that I find intriguing or useful. 

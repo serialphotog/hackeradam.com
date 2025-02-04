@@ -5,7 +5,6 @@ date: '2018-12-24'
 tags: [OpenCV, Windows-10]
 draft: false
 aliases:
-    - /installing-opencv-4-on-windows-10
     - /post/installing-opencv-4-on-windows-10
 ---
 

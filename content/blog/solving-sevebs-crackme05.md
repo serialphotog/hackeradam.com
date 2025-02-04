@@ -5,7 +5,6 @@ date: '2020-08-23'
 tags: [Reverse-Engineering, Assembly, C, Ghidra, Crackme, Hacking, Python]
 draft: false
 aliases:
-    - /solving-sevebs-crackme05
     - /post/solving-sevebs-crackme05
 ---
 

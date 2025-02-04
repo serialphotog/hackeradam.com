@@ -4,6 +4,7 @@ description: "I was recently working on a project where I wanted to route HTTP r
 date: '2016-01-06'
 tags: [Programming, Python]
 draft: false
+toc: false
 aliases:
     - /how-to-route-urllib2-through-tor-python
     - /post/how-to-route-urllib2-through-tor-python

@@ -5,7 +5,6 @@ date: '2020-02-02'
 tags: [Math, Computer-Science, Discrete-Mathematics]
 draft: false
 aliases: 
-    - /logic-rules-cheat-sheet
     - /post/logic-rules-cheat-sheet
 ---
 

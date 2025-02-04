@@ -4,6 +4,7 @@ description: "Have you ever wanted to interface with the video feed from a webca
 date: '2017-08-07'
 tags: [OpenCV, Python, Programming]
 draft: false
+toc: false
 cover:
     image: "/blog/python-opencv-webcam/result.png"
     alt: "Capturing video from a webcam with OpenCV."

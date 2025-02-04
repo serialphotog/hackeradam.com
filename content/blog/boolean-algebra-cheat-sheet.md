@@ -4,8 +4,8 @@ description: "I've previously put together a cheat sheet for logic rules, so I f
 date: '2020-04-20'
 tags: [Math, Computer-Science, Discrete-Mathematics]
 draft: false
+toc: false
 aliases:
-    - /boolean-algebra-cheat-sheet
     - /post/boolean-algebra-cheat-sheet
 ---
 

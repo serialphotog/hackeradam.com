@@ -5,7 +5,6 @@ date: '2021-02-27'
 tags: [Computer-Science, Programming, Algorithms]
 draft: false
 aliases:
-    - /cs-review-bubble-sort
     - /post/cs-review-bubble-sort
 ---
 

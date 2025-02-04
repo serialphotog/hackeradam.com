@@ -4,6 +4,7 @@ description: "A quick guide to easily enable fingerprint authentication in PopOS
 date: '2023-08-15'
 tags: [Linux, PopOS]
 draft: false
+toc: false
 ---
 
 I recently switched to trying out System 76's PopOS Linux on my Thinkpad laptop. So far I am extremely happy daily driving this distro but, out of the box, it doesn't seem to have built-in support for my laptop's fingerprint reader. Luckily, it's extremely simple to fix this.

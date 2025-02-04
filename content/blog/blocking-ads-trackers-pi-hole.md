@@ -8,7 +8,6 @@ cover:
     image: "/blog/pihole-setup/Adlists.png"
     alt: "Blocking ads and trackers with Pi-Hole"
 aliases:
-    - /blocking-ads-and-trackers-with-pi-hole
     - /post/blocking-ads-and-trackers-with-pi-hole
 ---
 

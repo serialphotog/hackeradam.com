@@ -15,7 +15,7 @@ This quick tutorial will teach you how to use GitHub Actions to automatically bu
 Let's get a few assumptions I am making out of the way before we get started. For the purposes of this tutorial, I am assuming that you have already set up the following:
 
 - A Java project that will contain the library that you want to host via a private GitHub Packages repository
-- A private GitHub repsoitory containing the code for said library
+- A private GitHub repository containing the code for said library
 - Another Java project that will utilize said library
 
 If you've got these steps done then you're ready to jump in!
@@ -97,7 +97,7 @@ Generate your new token. You'll be presented with a screen that shows you the to
 
 ## Step 3: Utilize the Maven Package in Your Other Project
 
-Now that you have your access token set up you will be able to make use of your packge in another Java project. If you try at this point, however, you're going to get a 403 unathorized error when you try to pull the package. In order to resolve this you need to edit Maven's `settings.xml`. 
+Now that you have your access token set up you will be able to make use of your package in another Java project. If you try at this point, however, you're going to get a 403 unauthorized error when you try to pull the package. In order to resolve this you need to edit Maven's `settings.xml`. 
 
 ```xml
  <servers>

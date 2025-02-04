@@ -5,13 +5,12 @@ date: '2017-09-19'
 tags: [Computer-Science, Math]
 draft: false
 aliases: 
-    - /cs-review-binary-numbers
     - /post/cs-review-binary-numbers
 ---
 
 Welcome to what will be the first in an ongoing series aimed at reviewing computer science topics. Today we will be diving into binary number representation. Understanding binary is an important step in gaining a better understanding of how the computer works on a lower level.
 
-Recall that a computer is made up a whole bunch of integrated circuits, which are in turn made up of a bunch of transistors. These transitors can have one of two states: on or off. We represent these states as a 1 or a 0, respectively. This means that a computer can only work with two different values, 1s and 0s. This is where binary comes in.
+Recall that a computer is made up a whole bunch of integrated circuits, which are in turn made up of a bunch of transistors. These transistors can have one of two states: on or off. We represent these states as a 1 or a 0, respectively. This means that a computer can only work with two different values, 1s and 0s. This is where binary comes in.
 
 <!--more-->
 

@@ -5,7 +5,6 @@ date: '2021-01-11'
 tags: [Math, Discrete-Mathematics, Computer-Science]
 draft: false
 aliases:
-    - /a-brief-review-of-set-theory
     - /post/a-brief-review-of-set-theory
 ---
 
@@ -91,7 +90,7 @@ $$S \subseteq T \iff \forall x (x \in S \rightarrow x \in T)$$
 
 Well, there is no element x in the empty set and we know that from a false implication, we can prove anything:
 
-$$FALSE \rightarrow Antyhing, therefor \, FALSE \rightarrow TRUE$$
+$$FALSE \rightarrow Anything, therefor \, FALSE \rightarrow TRUE$$
 
 ### The Universal Set
 

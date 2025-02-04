@@ -2,7 +2,7 @@ baseURL = "https://hackeradam.com"
 languageCode = "en-us"
 title = "Adam Hacks"
 author = "Adam Thompson"
-theme = "hugo-bearblog"
+theme = "hugo-blog-awesome"
 paginate = 10
 
 enableRobotsTXT = true
@@ -14,10 +14,69 @@ ignoreErrors = ["error-disable-taxonomy"]
   tags = "/blog/:slug"
 
 [params]
+    defaultColor = "dark"
+    mainSections = ['blog']
+    toc = true
+    tocOpen = false
+    goToTop = true
     description = "Thoughts on computer science, math, and general geekery from Adam Thompson."
+    rssFeedDescription = "summary"
+    [params.author]
+        avatar = "avatar.jpg"
+        intro = "Hi, I'm Adam."
+        name = "Adam Thompson"
+        description = "I'm a software engineer that's interested in low-level security."
 
-[markup.goldmark.renderer]
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/serialphotog"
+    [[params.socialIcons]]
+        name = "LinkedIn"
+        url = "https://www.linkedin.com/in/adam-thompson-swe/"
+    [[params.socialIcons]]
+        name = "Instagram"
+        url = "https://www.instagram.com/adamhacksthings"
+    [[params.socialIcons]]
+        name = "Link"
+        url = "https://adamthompsonphoto.com"
+    [[params.socialIcons]]
+        name = "RSS"
+        url = "/index.xml"
+
+[menu]
+    [[menu.main]]
+        pageRef="/"
+        name = "Home"
+        url = '/'
+        weight = 10
+    [[menu.main]]
+        pageRef = "/blog"
+        name = "Blog"
+        url = "/blog"
+        weight = 20
+    [[menu.main]]
+        pageRef="/about"
+        name = "About"
+        url = "/about"
+        weight = 30
+    [[menu.main]]
+        pageRef="/blogroll"
+        name = "Blogroll"
+        url = "/blogroll"
+        weight = 40
+    [[menu.main]]
+        pageRef = "/references"
+        name = "References"
+        url = "/references"
+        weight = 50
+
+[markup]
+  [markup.goldmark.renderer]
     unsafe = true
+	[markup.tableOfContents]
+		startLevel = 1 # ToC starts from H2
+		endLevel = 4 # ToC ends at H4
+		ordered = false # generates <ul> instead of <ol>
 
 [taxonomies]
     series = 'series'

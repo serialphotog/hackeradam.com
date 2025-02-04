@@ -5,7 +5,6 @@ date: '2018-12-24'
 tags: [OpenCV, Windows-10, Visual-Studio, Programming]
 draft: false
 aliases:
-    - /creating-an-opencv-4-project-in-visual-studio-2017-2019
     - /post/creating-an-opencv-4-project-in-visual-studio-2017-2019
 ---
 

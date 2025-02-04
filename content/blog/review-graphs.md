@@ -5,7 +5,6 @@ date: '2021-02-26'
 tags: [Computer-Science, Programming, Discrete-Math]
 draft: false
 aliases:
-    - /a-review-of-graphs
     - /post/a-review-of-graphs
 ---
 
