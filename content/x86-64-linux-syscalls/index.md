@@ -2703,7 +2703,7 @@ This document serves as a reference to the system calls within the x86_64 Linux 
             <th scope="row" data-label="rax">189</th>
             <td data-label="System Call">
                 <a href="https://linux.die.net/man/2/lsetxattr" target="_blank">
-                    sys_lsetxaddr
+                    sys_lsetxattr
                 </a>
             </td>
             <td data-label="rdi">const char* pathname</td>
@@ -2717,7 +2717,7 @@ This document serves as a reference to the system calls within the x86_64 Linux 
             <th scope="row" data-label="rax">190</th>
             <td data-label="System Call">
                 <a href="https://linux.die.net/man/2/fsetxattr" target="_blank">
-                    sys_fsetxaddr
+                    sys_fsetxattr
                 </a>
             </td>
             <td data-label="rdi">int fd</td>
@@ -2731,7 +2731,7 @@ This document serves as a reference to the system calls within the x86_64 Linux 
             <th scope="row" data-label="rax">191</th>
             <td data-label="System Call">
                 <a href="https://linux.die.net/man/2/getxattr" target="_blank">
-                    sys_getxaddr
+                    sys_getxattr
                 </a>
             </td>
             <td data-label="rdi">const char* pathname</td>
@@ -2759,7 +2759,7 @@ This document serves as a reference to the system calls within the x86_64 Linux 
             <th scope="row" data-label="rax">193</th>
             <td data-label="System Call">
                 <a href="https://linux.die.net/man/2/fgetxattr" target="_blank">
-                    sys_fgetxaddr
+                    sys_fgetxattr
                 </a>
             </td>
             <td data-label="rdi">int fd</td>
@@ -4762,4 +4762,4 @@ This document serves as a reference to the system calls within the x86_64 Linux 
 
 This guide was built by [Adam Thompson](https://hackeradam.com). You can view [more reference guide here](https://hackeradam.com/references).
 
-I have made every effort to make the information presented here error-free, but I'm only human :). Please report any issues you find to me on [Twitter](https://twitter.com/serialphotog) or email me: adam [at] hackeradam.com
+I have made every effort to make the information presented here error-free, but I'm only human :). Please report any issues you find to me via email: adam [at] hackeradam.com
