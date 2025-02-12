@@ -71,6 +71,8 @@ ignoreErrors = ["error-disable-taxonomy"]
         weight = 50
 
 [markup]
+  [markup.highlight]
+    noclasses = false
   [markup.goldmark.renderer]
     unsafe = true
 	[markup.tableOfContents]
