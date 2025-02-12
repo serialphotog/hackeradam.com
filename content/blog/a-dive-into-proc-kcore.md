@@ -4,7 +4,7 @@ description: "Join me as I take a deep dive into the depths of /proc/kcore in Li
 date: '2025-02-03'
 tags: [Linux, Programming, C]
 toc: true
-draft: true
+draft: false
 ---
 
 The Proc filesystem (`procfs`) on Linux is quite an interesting thing to take a deep dive into. This virtual filesystem is generated on-the-fly by the Linux Kernel and contains all kinds of juicy information about the system. Two very interesting files that I recently found myself exploring are `/proc/kcore` and `/proc/iomem`. 
