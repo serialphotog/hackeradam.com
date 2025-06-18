@@ -103,12 +103,10 @@ In other words, all we have to do is fetch the physical address ranges from `/pr
 
 # My Proof of Concept Tool
 
-Using all of this background information, I put together a simple proof-of-concept tool. Well, actually, I put together two tools but, regardless, you can [find them on my GitHub](https://github.com/serialphotog/Linux-Memory-Analysis-Tools/tree/main). 
+Using all of this background information, I put together a simple proof-of-concept tool that you can [find on my GitHub](https://github.com/serialphotog/Linux-Memory-Analysis-Tools/tree/main). 
 
-The first tool is called [dumpmemory](https://github.com/serialphotog/Linux-Memory-Analysis-Tools/blob/main/dumpmemory.c) and it does exactly what I described in this article: dumps the system's memory to disk.
+The tool is called [dumpmemory](https://github.com/serialphotog/Linux-Memory-Analysis-Tools/blob/main/dumpmemory.c) and it does exactly what I described in this article: dumps the system's memory to disk.
 
-The second tool is called [scanmemory](https://github.com/serialphotog/Linux-Memory-Analysis-Tools/blob/main/scanmemory.c). This tool utilizes the same concepts, but instead of dumping the memory to disk it scans it for a string pattern. My idea behind this was that it could allow you to scan for a string in memory on a device where you don't have room to dump the entire memory to a file. 
-
-**Disclaimer:** I made both of these tools as a simple proof-of-concept and mostly to satisfy my own curiosity one evening. These have not been thoroughly tested. As such, I make not guarantees about it's useful or accuracy. 
+**Disclaimer:** I made this tool as a simple proof-of-concept and mostly to satisfy my own curiosity one evening. This tool has not been thoroughly tested. As such, I make not guarantees about it's usefulness or accuracy. 
 
 With that disclaimer out of the way, I hope you enjoyed joining me on a dive into the world of `/proc/kcore` and `/proc/iomem`!
