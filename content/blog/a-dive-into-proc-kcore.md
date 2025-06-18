@@ -103,9 +103,9 @@ In other words, all we have to do is fetch the physical address ranges from `/pr
 
 # My Proof of Concept Tool
 
-Using all of this background information, I put together a simple proof-of-concept tool that you can [find on my GitHub](https://github.com/serialphotog/Linux-Memory-Analysis-Tools/tree/main). 
+Using all of this background information, I put together a simple proof-of-concept tool that you can [find on my GitHub](https://github.com/serialphotog/Linux-Memory-Dumper). 
 
-The tool is called [dumpmemory](https://github.com/serialphotog/Linux-Memory-Analysis-Tools/blob/main/dumpmemory.c) and it does exactly what I described in this article: dumps the system's memory to disk.
+The tool is called [dumpmemory](https://github.com/serialphotog/Linux-Memory-Dumper/blob/main/dumpmemory.c) and it does exactly what I described in this article: dumps the system's memory to disk.
 
 **Disclaimer:** I made this tool as a simple proof-of-concept and mostly to satisfy my own curiosity one evening. This tool has not been thoroughly tested. As such, I make not guarantees about it's usefulness or accuracy. 
 
