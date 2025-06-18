@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Adam Hacks"
 author = "Adam Thompson"
 theme = "hugo-dead-simple"
-paginate = 10
 
 enableRobotsTXT = true
 
@@ -49,11 +48,6 @@ ignoreErrors = ["error-disable-taxonomy"]
         name = "~/"
         url = '/'
         weight = 10
-    [[menu.main]]
-        pageRef = "/blog"
-        name = "/Blog"
-        url = "/blog"
-        weight = 20
     [[menu.main]]
         pageRef="/about"
         name = "/About"
