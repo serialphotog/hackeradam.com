@@ -12,3 +12,4 @@ You may also be interested in looking at my [Computer Science Review Series]({{<
 
 * [x86_64 Linux Syscalls]({{< ref "/x86-64-linux-syscalls" >}})
 * [x86_64 Calling Conventions]({{< ref "/x86-64-calling-conventions" >}})
+* [aarch64 Calling Conventions]({{< ref "/aarch64-calling-conventions" >}})
