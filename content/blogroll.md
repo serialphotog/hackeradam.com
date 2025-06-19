@@ -36,7 +36,7 @@ It should go without saying that just because I link to something here does not 
 
 ***WARNING:** These sites all contain malware samples.*
 
-- <a href="https://malshare.com/" target="_blank">https://malshare.com/</a>
+- <a href="https://malshare.com/" target="_blank">MalShare</a>
 - <a href="https://vx-underground.org/" target="_blank">Vx Underground</a> - Also contains a huge collection of papers and other resources.
 - <a href="https://virusshare.com/" target="_blank">Virus Share</a>
 - <a href="https://bazaar.abuse.ch/browse/" target="_blank">The Malware Bazaar</a>
