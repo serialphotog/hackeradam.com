@@ -4031,7 +4031,7 @@ This document serves as a reference to the system calls within the x86_64 Linux 
             <td data-label="r9"></td>
         </tr>
         <tr>
-            <th scope="row" data-label="rax">248</th>
+            <th scope="row" data-label="rax">284</th>
             <td data-label="System Call">
                 <a href="https://linux.die.net/man/2/eventfd" target="_blank">
                     sys_eventfd
