@@ -31,9 +31,9 @@ This document serves as a reference to the system calls within the x86_64 Linux 
             <td data-label="arg0">rdi</td>
             <td data-label="arg1">rsi</td>
             <td data-label="arg2">rdx</td>
-            <td data-label="arg3">r</th>
-            <td data-label="arg4">r</th>
-            <td data-label="arg5">r</th>
+            <td data-label="arg3">r10</th>
+            <td data-label="arg4">r8</th>
+            <td data-label="arg5">r9</th>
         </tr>
     </tbody>
 </table>
