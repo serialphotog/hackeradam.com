@@ -24,7 +24,7 @@ ignoreErrors = ["error-disable-taxonomy"]
         avatar = "avatar.jpg"
         intro = "Hi, I'm Adam."
         name = "Adam Thompson"
-        description = "I'm a software engineer that's interested in low-level security."
+        description = "I'm a software/reverse engineer that's interested in low-level security."
 
     [[params.socialIcons]]
         name = "github"
@@ -66,6 +66,11 @@ ignoreErrors = ["error-disable-taxonomy"]
         name = "/References"
         url = "/references"
         weight = 50
+    [[menu.main]]
+        pageRef = "/faq"
+        name = "/FAQ"
+        url = "/faq"
+        weight = 60
 
 [markup]
   [markup.highlight]
