@@ -27,12 +27,4 @@
   </head>
 
   <body>
-        {{ if not .Params.nomenu }}
-        <nav>
-          <ul class="menu">
-            {{ range .Site.Menus.main }}
-                <li><a tabindex="-1" class="menu-link" href="{{ .URL | relURL }}">{{ safeHTML .Name }}</a></li>
-            {{ end }}
-          </ul>
-        </nav>
-        {{ end }}
+    {{ partial "main-menu.html" . }}

@@ -4,7 +4,6 @@
   --text: #e6e2d6;
   --code: #e6e2d6;
   --text-dim: #a7a7a7;
-  /* --link: #8cb4ff; */
   --link: #77a8fd;
   --link-visited: #a390ca;
   --code-background: #272727;
@@ -15,29 +14,12 @@
   --table-tr: #343434;
   --toc-background: #343434;
   --toc-border: #495057;
+  --color-border: #333;
 }
-
-#gitinfo-date {
-  color: var(--text-dim);
-  filter: opacity(40%);
-  font-style: italic;
-  font-size: 0.9em;
-  white-space: nowrap;
-}
-
-@media screen and (min-width: 760px) {
-  #gitinfo-date {
-    margin-left: 30px;
-  }
-}
-
-/* TODO: add iframe margins */
 
 /* HTML & BODY */
 html {
   color: var(--text);
-  /* set in header*/
-  /* background-color: var(--background); */
   scroll-behavior: smooth;
   background-color: var(--background);
 }
@@ -45,13 +27,7 @@ html {
 body {
   margin: auto;
   padding: 0em 1em 2em 1em;
-  font-family:
-    "Inter",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Roboto",
-    Helvetica,
-    sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
   line-height: 1.54;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -180,6 +156,7 @@ th {
 }
 
 .post-list {
+  list-style: disc;
   color: var(--complimentary);
   padding-left: 1em;
 }

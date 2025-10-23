@@ -38,29 +38,40 @@ ignoreErrors = ["error-disable-taxonomy"]
 [menu]
     [[menu.main]]
         pageRef="/"
-        name = "~/"
-        url = '/'
+        name = "Blog"
         weight = 10
     [[menu.main]]
         pageRef="/about"
-        name = "/About"
-        url = "/about"
-        weight = 30
+        name = "About"
+        weight = 20
     [[menu.main]]
         pageRef="/blogroll"
-        name = "/Blogroll"
-        url = "/blogroll"
-        weight = 40
+        name = "Blogroll"
+        weight = 30
     [[menu.main]]
         pageRef = "/references"
-        name = "/References"
-        url = "/references"
+        name = "References"
+        weight = 40
+    [[menu.main]]
+        url = "https://www.adamthompsonphoto.com"
+        name = "Photography"
         weight = 50
     [[menu.main]]
-        pageRef = "/faq"
-        name = "/FAQ"
-        url = "/faq"
+        name = "GitHub"
+        url = "https://github.com/serialphotog"
         weight = 60
+    [[menu.main]]
+        pageRef = "/faq"
+        name = "FAQ"
+        weight = 70
+    [[menu.main]]
+        pageRef = "/changelog"
+        name = "Changelog"
+        weight = 75
+    [[menu.main]]
+        url = "/index.xml"
+        name = "RSS"
+        weight = 80
 
 [markup]
   [markup.highlight]

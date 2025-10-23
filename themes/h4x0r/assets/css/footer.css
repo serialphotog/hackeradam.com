@@ -1,0 +1,33 @@
+.site-footer {
+    margin: 3vw 0 1vw;
+    padding: 20px 0;
+    max-width: 720px;
+    text-align: left;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.site-footer a, .site-footer a:visited {
+    color: var(--link);
+}
+
+.footer-socials {
+    text-align: left;
+    color: var(--text-dim);
+    margin-top: 0.8rem;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    margin-right: 0.31rem;
+}
+
+.footer-socials svg {
+    color: var(--text-dim);
+    height: 20px;
+    width: 20px;
+}
+
+.footer-socials svg:hover {
+    color: var(--text);
+}

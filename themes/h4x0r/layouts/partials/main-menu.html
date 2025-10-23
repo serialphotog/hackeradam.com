@@ -1,0 +1,19 @@
+<header class="site-head">
+    <div class="site-head-contianer">
+        <div id="navigation" class="navigation">
+            <nav class="navigation">
+                <ul class="navigation">
+                    <li>
+                        <a class="site-head-logo" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
+                            <img src="{{ relURL "site-logo.png" }}">
+                        </a>
+                    </li>
+
+                    {{ range sort .Site.Menus.main "Weight" }}
+                        <li><a href="{{ .URL | relURL }}">{{ safeHTML .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

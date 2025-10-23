@@ -71,24 +71,3 @@
 .md-tabs input[type="radio"]:checked + label + .md-tabs-content {
   display: block;
 }
-
-.footer_social-icons, .footer_copyright {
-  text-align: left;
-  color: var(--text-dim);
-  margin-top: 0.3rem;
-}
-
-.footer_social-icons a {
-  text-decoration: none;
-  margin-right: .31rem;
-}
-
-.footer_social-icons svg {
-  color: var(--text-dim);
-  height: 24px;
-  width: 24px;
-}
-
-.footer_social-icons svg:hover {
-  color: var(--text);
-}

@@ -1,4 +1,5 @@
 {{ $CSS := slice
+        (resources.Get "css/reset.css")
         (resources.Get "css/main.css")
         (resources.Get "css/menu.css")
         (resources.Get "css/toc.css")
@@ -8,5 +9,6 @@
         (resources.Get "css/code.css")
         (resources.Get "css/tables.css")
         (resources.Get "css/misc.css")
+        (resources.Get "css/footer.css")
     | resources.Concat "style.css" | minify | fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $CSS.RelPermalink }}" media="all">
