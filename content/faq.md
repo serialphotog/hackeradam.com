@@ -21,6 +21,10 @@ For better or worse, you can find me all over the internet. Other than this site
 
 Nope. You should never trust any single piece of information that you come across. I publish things here with the hope that they'll be useful/interesting for others, but you should always do your own research and verification of any information that you come across online. This is especially true in the age of sponsored content, AI slop, and large-scale disinformation campaigns. 
 
+## Is This Site Written By AI
+
+Absolutely not. This site is written purely by me, Adam Thompson, and, at least as far as I'm aware, I'm a human being. 
+
 ## Does this Site Have Corporate Sponsors or Affiliate Links?
 
 No. This website is not sponsored by anyone, and, at this time, I do not have any affiliate links on this site.
