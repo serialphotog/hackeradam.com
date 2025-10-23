@@ -51,6 +51,24 @@ nav.navigation > ul.navigation > li > a {
   white-space: nowrap;
 }
 
+@media (max-width: 500px) {
+  nav.navigation > ul.navigation > li > a {
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 500px) {
+  nav.navigation > ul.navigation > li > a {
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 700px) {
+  nav.navigation > ul.navigation > li > a {
+    line-height: 25px;
+  }
+}
+
 nav.navigation > ul.navigation > li > a:visited {
   color: var(--link);
 }
