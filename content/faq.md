@@ -37,7 +37,7 @@ The only JavaScript you'll find on this site is [lunar.js](https://lunrjs.com/),
 
 ## Where is this Site Hosted?
 
-Currently, this is a completely static website that is hosted by [Cloudflare Pages](https://pages.cloudflare.com/). There's a lot that I could say about Cloudflare, but I'll save that for a future blog post. Suffice it to say that I intend to move this site off of Cloudflare's infrastructure when I get the free time to do so.
+Currently, this is a completely static website that is hosted by [Cloudflare Pages](https://pages.cloudflare.com/). There's a lot that I could say about Cloudflare, but I'll save that for a future blog post. Suffice it to say that I intend to move this site off of Cloudflare's infrastructure if I ever get bored enough to be bothered to do it.
 
 ## Is This a WordPress Site?
 
