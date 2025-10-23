@@ -30,24 +30,6 @@
         <title>{{ .Title }} | {{ .Site.Title }}</title>
     {{ end }}
 
-    <!-- Prevent flicker on page load. -->
-    <style>
-        :root {
-          --background: #ffffff;
-        }
-        @media (prefers-color-scheme: dark) {
-          :root {
-            --background: #1b1b1b;
-          }
-        }
-        html {
-            background-color: var(--background);
-        }
-        body {
-            background-color: var(--background);
-        }
-    </style>
-
     {{ partial "css.html" . }}
 
     {{ partial "head-scripts.html" . }}
