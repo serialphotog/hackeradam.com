@@ -1,5 +1,12 @@
 {{ partial "header.html" . }}
 
-404 NOT FOUNDS
+<br>
+<h1>404 - Not Found</h1>
+
+<p>You might try searching for what you're looking for:</p>
+{{ if not .Site.Params.noSearch }}
+    {{ partial "search-form.html" . }}
+    <ul id="results"></ul>
+{{ end }}
 
 {{ partial "footer.html" . }}
