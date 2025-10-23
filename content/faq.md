@@ -33,7 +33,7 @@ No. This website is not sponsored by anyone, and, at this time, I do not have an
 
 Simple. Because [it's a motherfucking website](https://motherfuckingwebsite.com/). The goal of this site is for me to be able to transmit information to you in the most efficient way possible. No flashy animations, no unnecessary JavaScript. Just a pure, simple website.
 
-The only JavaScript you'll find on this site is [lunar.js](https://lunrjs.com/), along with a small supporting script to enable the search functionality on the site and a small snippet of JavaScript for [Plausible Analytics](https://plausible.io/).
+The only JavaScript you'll find on this site is [lunar.js](https://lunrjs.com/), along with a small supporting script to enable the search functionality on the site, a small snippet to make the table of contents of posts respond to page scroll, and a small snippet of JavaScript for [Plausible Analytics](https://plausible.io/).
 
 ## Where is this Site Hosted?
 

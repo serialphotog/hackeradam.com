@@ -1,0 +1,9 @@
+name = "h4x0r"
+license = "MIT"
+licenselink = "https://github.com/barklan/hugo-dead-simple/blob/main/LICENSE"
+description = "H4x0r Hugo Theme."
+min_version = "0.83.0"
+
+[author]
+    name = "Adam Thompson"
+    homepage = "https://hackeradam.com"

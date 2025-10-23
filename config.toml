@@ -2,7 +2,7 @@ baseURL = "https://hackeradam.com"
 languageCode = "en-us"
 title = "Adam Hacks"
 author = "Adam Thompson"
-theme = "hugo-dead-simple"
+theme = "h4x0r"
 
 enableRobotsTXT = true
 
