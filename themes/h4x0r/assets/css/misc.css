@@ -73,7 +73,7 @@
 }
 
 .footer_social-icons, .footer_copyright {
-  text-align: center;
+  text-align: left;
   color: var(--text-dim);
   margin-top: 0.3rem;
 }
