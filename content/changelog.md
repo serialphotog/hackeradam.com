@@ -5,6 +5,7 @@ draft: false
 toc: false
 ---
 
+- 10/23/2025: Updated the version of KaTeX the site is using and did some general cleanup.
 - 10/23/2025: Improved the 404 error page with a better message, cleaner formatting, and the addition of a search field.
 - 10/23/2025: Made the footer items left-aligned instead of center-aligned.
 - 10/23/2025: Added this changelog page.
