@@ -5,6 +5,7 @@ draft: false
 toc: false
 ---
 
+- 10/23/2025: Added a new [microblog](/microblog) section.
 - 10/23/2025: Completely new site header and footer.
 - 10/23/2025: Fixed a bug with the spacing in some text on smaller screens.
 - 10/23/2025: Update the [FAQ](/faq) to be more clear about what JavaScript is loaded by this site.

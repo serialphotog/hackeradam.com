@@ -1,0 +1,15 @@
+{{ range .Pages }}
+
+    <div class="microblog-entry">
+        <div id="single-header">
+            <h1>
+                <a class="bold-post-in-list" href="{{ .RelPermalink }}">
+                    {{ .Title | markdownify }}
+                </a>
+            </h1>
+        </div>
+
+        <main>{{ .Content }}</main>
+    </div>
+
+{{ end }}

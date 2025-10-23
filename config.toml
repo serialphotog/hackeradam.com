@@ -41,6 +41,10 @@ ignoreErrors = ["error-disable-taxonomy"]
         name = "Blog"
         weight = 10
     [[menu.main]]
+        pageRef="/microblog"
+        name = "Microblog"
+        weight = 15
+    [[menu.main]]
         pageRef="/about"
         name = "About"
         weight = 20
@@ -72,6 +76,9 @@ ignoreErrors = ["error-disable-taxonomy"]
         url = "/index.xml"
         name = "RSS"
         weight = 80
+
+[outputs]
+    home = ['html', 'rss']
 
 [markup]
   [markup.highlight]
