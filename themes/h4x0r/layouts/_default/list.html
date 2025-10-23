@@ -19,7 +19,9 @@
 {{ else }}
     <h2 class="section-title">{{ .CurrentSection.Title }}</h2>
     {{ if eq .Section "microblog" }}
+        {{ $paginator := .Paginate .Pages 10 }}
         {{ partial "microblog.html" . }}
+        {{ template "_internal/pagination.html" . }}
     {{ else }}
         {{ partial "post_list.html" . }}
     {{ end }}
