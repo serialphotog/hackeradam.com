@@ -5,6 +5,7 @@ draft: false
 toc: false
 ---
 
+- 10/23/2025: Fixed a bug with the spacing in some text on smaller screens.
 - 10/23/2025: Update the [FAQ](/faq) to be more clear about what JavaScript is loaded by this site.
 - 10/23/2025: Updated the version of KaTeX the site is using and did some general cleanup.
 - 10/23/2025: Improved the 404 error page with a better message, cleaner formatting, and the addition of a search field.
