@@ -33,7 +33,11 @@ No. This website is not sponsored by anyone, and, at this time, I do not have an
 
 Simple. Because [it's a motherfucking website](https://motherfuckingwebsite.com/). The goal of this site is for me to be able to transmit information to you in the most efficient way possible. No flashy animations, no unnecessary JavaScript. Just a pure, simple website.
 
-The only JavaScript you'll find on this site is [lunar.js](https://lunrjs.com/), along with a small supporting script to enable the search functionality on the site, a small snippet to make the table of contents of posts respond to page scroll, and a small snippet of JavaScript for [Plausible Analytics](https://plausible.io/). In addition to these small bits of JavaScript, this site also makes use of the fantastic [KaTeX library](https://katex.org/) for rendering math typesetting.
+My goal is for the JavaScript on this site to be as minimal as possible while still accomplishing the overarching goals of the site. Currently, this site makes use of the following scripts:
+
+- [lunar.js](https://lunrjs.com/) (along with a small bit of supporting JavaScript) to add the search functionality to this Hugo site.
+- [KaTeX](https://katex.org/) for rendering the math typesetting on this site.
+- [Plausible Analytics](https://plausible.io/) for providing me some insight into the traffic I get on this site. I'm currently in the process of evaluating if I want to keep Plausible installed on this site, use some alternative, or just forego the analytics altogether.
 
 ## Where is this Site Hosted?
 
