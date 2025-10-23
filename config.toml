@@ -13,18 +13,8 @@ ignoreErrors = ["error-disable-taxonomy"]
   tags = "/blog/:slug"
 
 [params]
-    defaultColor = "dark"
-    mainSections = ['blog']
-    toc = true
-    tocOpen = false
-    goToTop = true
     description = "Thoughts on computer science, math, and general geekery from Adam Thompson."
     rssFeedDescription = "summary"
-    [params.author]
-        avatar = "avatar.jpg"
-        intro = "Hi, I'm Adam."
-        name = "Adam Thompson"
-        description = "I'm a software/reverse engineer that's interested in low-level security."
 
     [[params.socialIcons]]
         name = "github"
