@@ -45,6 +45,10 @@ ignoreErrors = ["error-disable-taxonomy"]
         name = "Microblog"
         weight = 15
     [[menu.main]]
+        pageRef = "/references"
+        name = "References"
+        weight = 18
+    [[menu.main]]
         pageRef="/about"
         name = "About"
         weight = 20
@@ -52,10 +56,6 @@ ignoreErrors = ["error-disable-taxonomy"]
         pageRef="/blogroll"
         name = "Blogroll"
         weight = 30
-    [[menu.main]]
-        pageRef = "/references"
-        name = "References"
-        weight = 40
     [[menu.main]]
         url = "https://www.adamthompsonphoto.com"
         name = "Photography"
