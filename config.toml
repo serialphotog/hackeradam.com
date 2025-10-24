@@ -77,9 +77,6 @@ ignoreErrors = ["error-disable-taxonomy"]
         name = "RSS"
         weight = 80
 
-[outputs]
-    home = ['html', 'rss']
-
 [markup]
   [markup.highlight]
     noclasses = false

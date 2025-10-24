@@ -11,9 +11,11 @@
 
     <meta name="description" content="{{ .Title }}">
 
-    {{ with .OutputFormats.Get "rss" -}}
-        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{- with .OutputFormats.Get "RSS" }}
+    <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
+    <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}">
+    {{- end }}
 
     {{ if .IsHome }}
         <title>{{ .Site.Title }}</title>
