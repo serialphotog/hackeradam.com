@@ -2,7 +2,7 @@
 title: "I've Been Trying Cosmic Desktop For a Month"
 description: "Some thoughts I have on System 76's Cosmic Desktop after trying it for about a month."
 date: 2025-10-25T15:52:57-06:00
-tags: ['Linux', 'Cosmic Desktop', 'popos']
+tags: ['Linux', 'Cosmic-Desktop', 'popos']
 toc: true
 draft: false
 ---
