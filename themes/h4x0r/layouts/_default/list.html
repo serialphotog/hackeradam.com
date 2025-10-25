@@ -4,21 +4,13 @@
 
 {{ if .IsHome }}
     {{ range .Sections }}
-        {{ if ne .Section "microblog" }}
-            <h2 class="section-title">{{ .CurrentSection.Title }}</h2>
-            {{ .CurrentSection.Content }}
-            {{ partial "post_list.html" . }}
-        {{ end }}
+        <h2 class="section-title">{{ .CurrentSection.Title }}</h2>
+        {{ .CurrentSection.Content }}
+        {{ partial "post_list.html" . }}
     {{ end }}
 {{ else }}
     <h2 class="section-title">{{ .CurrentSection.Title }}</h2>
-    {{ if eq .Section "microblog" }}
-        {{ $paginator := .Paginate .Pages 10 }}
-        {{ partial "microblog.html" . }}
-        {{ template "_internal/pagination.html" . }}
-    {{ else }}
-        {{ partial "post_list.html" . }}
-    {{ end }}
+    {{ partial "post_list.html" . }}
 {{ end }}
 
 {{ end }}

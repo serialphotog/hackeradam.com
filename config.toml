@@ -41,10 +41,6 @@ ignoreErrors = ["error-disable-taxonomy"]
         name = "Blog"
         weight = 10
     [[menu.main]]
-        pageRef="/microblog"
-        name = "Microblog"
-        weight = 15
-    [[menu.main]]
         pageRef = "/references"
         name = "References"
         weight = 18
