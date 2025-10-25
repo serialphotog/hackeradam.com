@@ -5,7 +5,8 @@ draft: false
 toc: false
 ---
 
-- 10/24/2025: Fixed the format of the [RSS feed](/index.xml)
+- 10/25/2025: Moved search to its [own page](/search). Also made it so the search scripts are only loaded on the search page instead of globally across the entire site.
+- 10/24/2025: Fixed the format of the [RSS feed](/index.xml).
 - 10/23/2025: Added a new [microblog](/microblog) section.
 - 10/23/2025: Completely new site header and footer.
 - 10/23/2025: Fixed a bug with the spacing in some text on smaller screens.

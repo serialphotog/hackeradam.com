@@ -1,8 +1,16 @@
+{{ partial "header.html" . }}
+
+{{ .Content }}
+
 <form id="search"
-    action='{{ with .GetPage "/" }}{{.Permalink}}{{end}}' method="get">
+    action='/search' method="get">
     <label hidden for="search-input">Search site</label>
     <input tabindex="-1" type="text" id="search-input" name="query"
     placeholder="search ...">
     <!-- <input tabindex="-1" type="submit" value="search"> -->
 </form>
+<ul id="results"></ul>
 
+{{ partial "footer.html" . }}
+
+{{ partial "search-index.html" . }}

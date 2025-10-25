@@ -35,7 +35,7 @@ Simple. Because [it's a motherfucking website](https://motherfuckingwebsite.com/
 
 My goal is for the JavaScript on this site to be as minimal as possible while still accomplishing the overarching goals of the site. Currently, this site makes use of the following scripts:
 
-- [lunar.js](https://lunrjs.com/) (along with a small bit of supporting JavaScript) to add the search functionality to this Hugo site.
+- [lunar.js](https://lunrjs.com/) (along with a small bit of supporting JavaScript) to add the search functionality to this Hugo site. These search scripts are only loaded on the [search page](/search).
 - [KaTeX](https://katex.org/) for rendering the math typesetting on this site.
 - [Plausible Analytics](https://plausible.io/) for providing me some insight into the traffic I get on this site. I'm currently in the process of evaluating if I want to keep Plausible installed on this site, use some alternative, or just forego the analytics altogether.
 

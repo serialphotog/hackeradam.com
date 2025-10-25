@@ -3,12 +3,6 @@
 <div class="home-content">{{ .Content }}</div>
 
 {{ if .IsHome }}
-    <!--TODO: replace with faster search-->
-    {{ if not .Site.Params.noSearch }}
-        {{ partial "search-form.html" . }}
-        <ul id="results"></ul>
-    {{ end }}
-
     {{ range .Sections }}
         {{ if ne .Section "microblog" }}
             <h2 class="section-title">{{ .CurrentSection.Title }}</h2>
