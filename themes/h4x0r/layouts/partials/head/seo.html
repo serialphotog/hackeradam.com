@@ -1,0 +1,19 @@
+{{ if .IsHome }}
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.Description }}">
+
+    <meta name="og:title" content="{{ .Site.Title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{{ .Site.Params.Description }}">
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
+{{ else }}
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Params.Description }}">
+
+    <meta name="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{{ .Params.Description }}">
+    <meta property="og:url" content="{{ .Page.Permalink }}">
+{{ end }}
+
+<link rel="canonical" href="{{ .Permalink }}">

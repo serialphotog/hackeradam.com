@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {{ partial "head/css.html" . }}
+        {{ partial "head/head-scripts.html" . }}
+
+        {{ partial "head/seo.html" . }}
+
+        {{- with .OutputFormats.Get "RSS" }}
+            <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
+            <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}">
+        {{- end }}
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ relURL "glider.png" }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ relURL "glider.png" }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ relURL "glider.png" }}">
+        <link rel="manifest" href="{{ relURL "site.webmanifest" }}">
+    </head>
+    <body>
+
+        {{ partial "main-menu.html" . }}
+
+        {{ block "main" . }}{{ end }}
+
+        {{ partial "footer.html" . }}
+    </body>
+</html>

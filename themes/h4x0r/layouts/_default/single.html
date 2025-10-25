@@ -1,5 +1,4 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 
 {{ if not .Params.notitle }}
 <div id="single-header">
@@ -40,4 +39,5 @@
 {{ if .Params.math }}
     {{ partial "math.html" . }}
 {{ end }}
-{{ partial "footer.html" . }}
+
+{{ end }}
