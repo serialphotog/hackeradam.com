@@ -5,9 +5,9 @@ author = "Adam Thompson"
 theme = "h4x0r"
 
 enableRobotsTXT = true
-
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
+
 [permalinks]
   blog = "/:slug/"
   tags = "/blog/:slug"
@@ -90,3 +90,6 @@ ignoreErrors = ["error-disable-taxonomy"]
 [taxonomies]
     series = 'series'
     tags = 'tags'
+
+[pagination]
+    pagerSize = 25
