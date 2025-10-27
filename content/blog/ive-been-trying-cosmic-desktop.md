@@ -27,7 +27,7 @@ I've also been very impressed with the performance of the desktop. It's certainl
 
 ## The Cosmic Apps
 
-Most desktop environments (and even window managers) on Linux go with one of two toolkits: Gnome or QT. System 76 opted to do things differently and use the [Ice Toolkit](https://github.com/iced-rs/iced) for Rust. To go along with this different toolkit, they've opted to write a lot of the default apps for the desktop environment from scratch. 
+Most desktop environments (and even window managers) on Linux go with one of two toolkits: Gnome or QT. System 76 opted to do things differently and use the [Iced Toolkit](https://github.com/iced-rs/iced) for Rust. To go along with this different toolkit, they've opted to write a lot of the default apps for the desktop environment from scratch. 
 
 Some of these new apps include a terminal, text editor, app store, calculator, file manager, a media player, and probably a few that I'm missing. Overall, these apps are nice, though barebones still.
 
