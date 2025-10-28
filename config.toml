@@ -13,7 +13,7 @@ ignoreErrors = ["error-disable-taxonomy"]
   tags = "/blog/:slug"
 
 [params]
-    description = "Thoughts on computer science, math, and general geekery from Adam Thompson."
+    description = "The blog of Adam Thompson, a software/reverse engineer primarily interested in low-level systems and security."
     rssFeedDescription = "summary"
 
     [[params.socialIcons]]
