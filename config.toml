@@ -21,7 +21,7 @@ ignoreErrors = ["error-disable-taxonomy"]
         url = "https://github.com/serialphotog"
     [[params.socialIcons]]
         name = "mastodon"
-        url = "https://mastodon.social/@serialphotog"
+        url = "https://infosec.exchange/@serialphotog"
     [[params.socialIcons]]
         name = "LinkedIn"
         url = "https://www.linkedin.com/in/adam-thompson-swe/"
