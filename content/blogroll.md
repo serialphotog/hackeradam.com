@@ -17,6 +17,7 @@ It should go without saying that just because I link to something here does not 
 
 - <a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a> - The cyber Swiss Army Knife by GCHQ. 
 - <a href="https://godbolt.org/" target="_blank">Compiler Explorer</a> - An amazing tool that lets you explore compiler output.
+- <a href="https://hpd.gasmi.net/" target="_blank">Gasmi Hex Packet Decoder</a> - A fantastic online tool to help decode hex-encoded network packets.
 
 ## Exploitation 
 
@@ -30,6 +31,7 @@ It should go without saying that just because I link to something here does not 
 
 - <a href="https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html" target="_blank">Intel Software Developer Manuals</a> - Complete documentation of Intel CPUs. 
 - <a href="https://sonictk.github.io/asm_tutorial/" target="_blank">Understanding Windows x64 Assembly</a> - A handy introduction to x64 Assembly on Windows.
+- <a href="https://www.felixcloutier.com/x86/" target="_blank">x86 and amd64 Instruction Reference</a> - A fantastic reference to x86  and x64 instructions by Felix Cloutier.
 - <a href="http://www.cburch.com/books/arm/" target="_blank">Introducing ARM Assembly Language</a> - A handy introduction to ARM Assembly language. 
 
 ## Malware Samples 
