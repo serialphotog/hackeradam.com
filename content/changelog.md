@@ -5,6 +5,7 @@ draft: false
 toc: false
 ---
 
+- 11/10/2025 - Fixed missing `alt` attribute from the site logo.
 - 10/28/2025: Updated the [about](/about) page and improved the homepage's meta description a bit.
 - 10/25/2025: Refactored the site template to be better organized and improved the SEO of the theme a bit.
 - 10/25/2025: Moved search to its [own page](/search). Also made it so the search scripts are only loaded on the search page instead of globally across the entire site.
