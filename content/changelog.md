@@ -5,6 +5,7 @@ draft: false
 toc: false
 ---
 
+- 11/10/2025 - Fixed ordered lists not properly displaying numbers.
 - 11/10/2025 - Fixed missing `alt` attribute from the site logo.
 - 10/28/2025: Updated the [about](/about) page and improved the homepage's meta description a bit.
 - 10/25/2025: Refactored the site template to be better organized and improved the SEO of the theme a bit.

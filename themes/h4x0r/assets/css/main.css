@@ -188,3 +188,7 @@ th {
 .microblog-entry {
   border-bottom: 1px solid var(--color-border);
 }
+
+ol {
+  list-style-type: decimal;
+}
