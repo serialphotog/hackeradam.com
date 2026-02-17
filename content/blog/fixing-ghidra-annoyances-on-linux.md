@@ -35,12 +35,26 @@ VMARGS_LINUX=-Dsun.java2d.uiScale=1
 Simply update that line to the following:
 
 ```
-VMARGS_LINUX=-Dsun.java2d.uiScale=1
+VMARGS_LINUX=-Dsun.java2d.uiScale=1.5
 ```
 
 Now, when you relaunch Ghidra, you should see that the display scaling is working correctly!
 
-## Step 2: Create a Launcher for Gnome
+**Note:** You can also try adjusting the default font size that Ghidra uses when it starts up by editing this line:
+
+```
+VMARGS=-Dfont.size.override=
+```
+
+For example, you could try setting it to something like:
+
+```
+VMARGS=-Dfont.size.override=18
+```
+
+## Step 2: Create a Launcher for Gnome or KDE
+
+**NOTE:** This process works the same for both Gnome and KDE.
 
 I actually wrote a quick guide about [how to add a custom launcher to Gnome](https://hackeradam.com/adding-a-custom-launcher-to-gnome-shell/) several years ago. The process is basically the same as what I laid out in that post, but here's the `ghidra.desktop` file that I added to `~/.local/share/applications/`:
 
@@ -56,7 +70,9 @@ Categories=Development;
 
 Obviously, you'll need to update the paths accordingly.
 
-### Step 2.5: Get the Launcher to Play Nice with Gnome
+### Step 2.5: Get the Launcher to Play Nice with Gnome or KDE
+
+**NOTE:** This process works the same for both Gnome and KDE.
 
 At this point, I've mostly achieved my goals. I've fixed the display scaling issues with Ghidra, and I've added a launcher to Gnome that functions. There is still one last big annoyance I'd like to address, however.
 
