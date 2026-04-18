@@ -23,9 +23,6 @@ ignoreErrors = ["error-disable-taxonomy"]
         name = "mastodon"
         url = "https://infosec.exchange/@serialphotog"
     [[params.socialIcons]]
-        name = "LinkedIn"
-        url = "https://www.linkedin.com/in/adam-thompson-swe/"
-    [[params.socialIcons]]
         name = "Instagram"
         url = "https://www.instagram.com/adamhacksthings"
     [[params.socialIcons]]
