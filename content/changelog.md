@@ -5,20 +5,51 @@ draft: false
 toc: false
 ---
 
-- 11/10/2025 - Fixed ordered lists not properly displaying numbers.
-- 11/10/2025 - Fixed missing `alt` attribute from the site logo.
-- 10/28/2025: Updated the [about](/about) page and improved the homepage's meta description a bit.
-- 10/25/2025: Refactored the site template to be better organized and improved the SEO of the theme a bit.
-- 10/25/2025: Moved search to its [own page](/search). Also made it so the search scripts are only loaded on the search page instead of globally across the entire site.
-- 10/24/2025: Fixed the format of the [RSS feed](/index.xml).
-- 10/23/2025: Completely new site header and footer.
-- 10/23/2025: Fixed a bug with the spacing in some text on smaller screens.
-- 10/23/2025: Update the [FAQ](/faq) to be more clear about what JavaScript is loaded by this site.
-- 10/23/2025: Updated the version of KaTeX the site is using and did some general cleanup.
-- 10/23/2025: Improved the 404 error page with a better message, cleaner formatting, and the addition of a search field.
-- 10/23/2025: Made the footer items left-aligned instead of center-aligned.
-- 10/23/2025: Added this changelog page.
-- 10/23/2025: Removed a bunch of unnecessary JavaScript, further simplifying this site.
-- 10/23/2025: Made the theme dark-mode only and improved the color scheme slightly.
-- 10/23/2025: Forked the [Hugo Dead Simple](https://github.com/barklan/hugo-dead-simple) theme into my own custom branch.
-- 10/22/2025: Added the [FAQ](/faq) page.
+## July 10, 2026
+
+- Improved the design of this changelog page.
+- Redesigned posts with a wider width for technical content.
+- Added responsive, centered post images with intrinsic dimensions, multiple sizes, lazy loading, and asynchronous decoding.
+- Improved the search experience.
+- Improved accessibility with visible focus indicators, a skip link, keyboard-friendly search, and reduced-motion support.
+- Added previous and next post navigation buttons.
+- Fixed unwanted horizontal scrolling on mobile devices.
+- Cleaned up the theme's code.
+- Updated the theme for current Hugo releases.
+
+## November 10, 2025
+
+- Fixed ordered lists not displaying numbers correctly.
+- Added missing alternative text to the site logo.
+
+## October 28, 2025
+
+- Updated the [about page](/about).
+- Improved the homepage meta description.
+
+## October 25, 2025
+
+- Reorganized the site templates and improved theme SEO.
+- Moved search to its [own page](/search).
+- Limited search scripts to the search page instead of loading them globally.
+
+## October 24, 2025
+
+- Fixed the format of the [RSS feed](/index.xml).
+
+## October 23, 2025
+
+- Replaced the site header and footer.
+- Fixed text spacing on smaller screens.
+- Clarified the site's JavaScript usage on the [FAQ](/faq).
+- Updated KaTeX and performed general cleanup.
+- Improved the 404 page with clearer messaging, cleaner formatting, and search.
+- Left-aligned footer items.
+- Added this changelog.
+- Removed unnecessary JavaScript.
+- Made the theme dark-mode only and refined its color scheme.
+- Forked [Hugo Dead Simple](https://github.com/barklan/hugo-dead-simple) into a custom theme.
+
+## October 22, 2025
+
+- Added the [FAQ](/faq) page.

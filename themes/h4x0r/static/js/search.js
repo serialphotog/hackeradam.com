@@ -1,27 +1,38 @@
-function displayResults (results, store) {
+function displayResults (results, store, query) {
   const searchResults = document.getElementById('results')
+  const searchStatus = document.getElementById('search-status')
+  searchResults.replaceChildren()
+
   if (results.length) {
-    let resultList = ''
-    // Iterate and build result list elements
-    for (const n in results) {
-      const item = store[results[n].ref]
-      resultList += '<li><p><a href="' + item.url + '">' + item.title + '</a></p>'
-      resultList += '<p>' + item.content.substring(0, 150) + '...</p></li>'
+    for (const result of results) {
+      const item = store[result.ref]
+      const listItem = document.createElement('li')
+      const titleParagraph = document.createElement('p')
+      const link = document.createElement('a')
+      const excerpt = document.createElement('p')
+
+      link.href = item.url
+      link.textContent = item.title
+      excerpt.textContent = item.content.substring(0, 150) + (item.content.length > 150 ? '…' : '')
+      titleParagraph.append(link)
+      listItem.append(titleParagraph, excerpt)
+      searchResults.append(listItem)
     }
-    searchResults.innerHTML = resultList
+
+    searchStatus.textContent = `${results.length} ${results.length === 1 ? 'result' : 'results'} for “${query}”.`
   } else {
-    searchResults.innerHTML = 'No results found.'
+    searchStatus.textContent = `No results found for “${query}”.`
   }
 }
 
 // Get the query parameter(s)
 const params = new URLSearchParams(window.location.search)
-const query = params.get('query')
+const query = (params.get('query') || '').trim().replace(/\s+/g, ' ')
 
 // Perform a search if there is a query
 if (query) {
   // Retain the search input in the form when displaying results
-  document.getElementById('search-input').setAttribute('value', query)
+  document.getElementById('search-input').value = query
 
   const idx = lunr(function () {
     this.ref('id')
@@ -37,15 +48,18 @@ if (query) {
       this.add({
         id: key,
         title: window.store[key].title,
-        tags: window.store[key].category,
+        tags: window.store[key].tags,
         content: window.store[key].content
       })
     }
   })
 
   // Perform the search
-  const results = idx.search(query)
-  // Update the list with results
-  displayResults(results, window.store)
+  try {
+    const results = idx.search(query)
+    displayResults(results, window.store, query)
+  } catch (error) {
+    const searchStatus = document.getElementById('search-status')
+    searchStatus.textContent = 'That search contains unsupported syntax. Try using plain words.'
+  }
 }
-

@@ -1,3 +1,28 @@
-<p class="imgp">
-  <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
-</p>
+{{- $destination := .Destination -}}
+{{- $image := .Page.Resources.GetMatch $destination -}}
+{{- if and $image (eq $image.ResourceType "image") (ne $image.MediaType.SubType "svg") -}}
+  {{- $srcset := slice -}}
+  {{- range slice 480 768 1200 -}}
+    {{- if gt $image.Width . -}}
+      {{- $resized := $image.Resize (printf "%dx" .) -}}
+      {{- $srcset = $srcset | append (printf "%s %dw" $resized.RelPermalink $resized.Width) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $srcset = $srcset | append (printf "%s %dw" $image.RelPermalink $image.Width) -}}
+<span class="imgp">
+  <img
+    loading="lazy"
+    decoding="async"
+    src="{{ $image.RelPermalink }}"
+    srcset="{{ delimit $srcset ", " }}"
+    sizes="(max-width: 920px) calc(100vw - 2rem), 90ch"
+    width="{{ $image.Width }}"
+    height="{{ $image.Height }}"
+    alt="{{ .Text }}"
+    {{ with .Title }}title="{{ . }}"{{ end }}>
+</span>
+{{- else -}}
+<span class="imgp">
+  <img loading="lazy" decoding="async" src="{{ $destination | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }}>
+</span>
+{{- end -}}

@@ -1,16 +1,19 @@
 <header class="site-head">
-    <div class="site-head-contianer">
+    <div class="site-head-container">
         <div id="navigation" class="navigation">
             <nav class="navigation">
                 <ul class="navigation">
                     <li>
-                        <a class="site-head-logo" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
-                            <img src="{{ relURL "site-logo.png" }}" alt="Adam Hacks Site Logo">
+                        {{- $logo := .Site.Params.logo | default "site-logo.png" -}}
+                        <a class="site-head-logo" href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
+                            <img src="{{ relURL $logo }}" alt="{{ .Site.Params.logoAlt | default (printf "%s logo" .Site.Title) }}">
                         </a>
                     </li>
 
-                    {{ range sort .Site.Menus.main "Weight" }}
-                        <li><a href="{{ .URL | relURL }}">{{ safeHTML .Name }}</a></li>
+                    {{ with .Site.Menus.main }}
+                        {{ range sort . "Weight" }}
+                            <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                        {{ end }}
                     {{ end }}
                 </ul>
             </nav>

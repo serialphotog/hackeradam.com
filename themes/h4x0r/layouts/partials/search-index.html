@@ -1,15 +1,14 @@
-<script>
-window.store = {
-    {{ range .Site.Pages }}
-    "{{ .Permalink }}": {
-        "title": "{{ .Title  }}",
-        "tags": [{{ range .Params.Tags }}"{{ . }}",{{ end }}],
-        "content": {{ .Content | plainify }}, // Strip out HTML tags
-        "url": "{{ .Permalink }}"
-    },
-    {{ end }}
-}
-</script>
+{{- $store := dict -}}
+{{- range .Site.RegularPages -}}
+    {{- $entry := dict
+        "title" .Title
+        "tags" (.Params.tags | default (slice))
+        "content" .Plain
+        "url" .RelPermalink
+    -}}
+    {{- $store = merge $store (dict .RelPermalink $entry) -}}
+{{- end -}}
+<script>window.store = {{ $store | jsonify | safeJS }};</script>
 
 {{ if not .Site.Params.noSearch }}
     <script defer src="{{ relURL "/js/lunr.js" }}"></script>

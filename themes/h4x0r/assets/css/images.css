@@ -15,8 +15,14 @@ img {
 }
 
 .imgp {
+  display: block;
   margin: auto;
   text-align: center;
+}
+
+.imgp > img {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 figure {

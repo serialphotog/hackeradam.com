@@ -1,6 +1,6 @@
 <footer class="site-footer">
     <div class="footer-copyright">
-        Copyright &copy; {{ now.Format "2006" }}, <a href="{{ .Site.BaseURL }}">Adam Thompson</a>.
+        Copyright &copy; {{ now.Format "2006" }}, <a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Params.copyrightOwner | default .Site.Title }}</a>.
     </div>
     <div class="footer-socials">
         {{- partial "socialIcons.html" site.Params.socialIcons -}}

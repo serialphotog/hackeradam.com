@@ -2,13 +2,13 @@
 
 {{ .Content }}
 
-<form id="search"
-    action='/search' method="get">
-    <label hidden for="search-input">Search site</label>
-    <input tabindex="-1" type="text" id="search-input" name="query"
-    placeholder="search ...">
-    <!-- <input tabindex="-1" type="submit" value="search"> -->
+<form id="search" action="{{ relURL "search" }}" method="get" role="search">
+    <label class="visually-hidden" for="search-input">Search site</label>
+    <input type="search" id="search-input" name="query"
+        placeholder="Search…" aria-controls="results" required>
+    <button type="submit">Search</button>
 </form>
+<p id="search-status" role="status" aria-live="polite" aria-atomic="true"></p>
 <ul id="results"></ul>
 
 {{ partial "search-index.html" . }}

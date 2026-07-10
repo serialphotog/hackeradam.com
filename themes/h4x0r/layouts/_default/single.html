@@ -16,7 +16,7 @@
   </div>
 </div>
 {{ else }}
-<div style="padding-bottom: 1px;"></div>
+<div class="title-spacer"></div>
 {{ end }}
 
 {{ if .Params.toc }}
@@ -26,14 +26,23 @@
 {{ end }}
 
 
-<main>{{ .Content }}</main>
+<article>{{ .Content }}</article>
 
-{{ if .Params.Next }}
-    <br>
-    <hr>
-    {{ with .PrevInSection }}
-      Next: <a href="{{ .Permalink }}">{{ .Title }}</a>
-    {{ end }}
+{{ $previous := .PrevInSection }}
+{{ $next := .NextInSection }}
+{{ if or $previous $next }}
+<nav class="post-navigation" aria-label="Post navigation">
+  {{ with $previous }}
+  <a class="post-navigation-previous" href="{{ .RelPermalink }}" rel="prev">
+    <span aria-hidden="true">←</span> Previous: {{ .Title }}
+  </a>
+  {{ end }}
+  {{ with $next }}
+  <a class="post-navigation-next" href="{{ .RelPermalink }}" rel="next">
+    Next: {{ .Title }} <span aria-hidden="true">→</span>
+  </a>
+  {{ end }}
+</nav>
 {{ end }}
 
 {{ if .Params.math }}
