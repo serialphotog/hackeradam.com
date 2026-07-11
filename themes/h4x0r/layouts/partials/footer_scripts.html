@@ -1,53 +1,47 @@
-<!-- Dynamic toc. -->
-<script defer>
+{{- if and .IsPage .Params.toc }}
+<!-- Dynamic TOC highlighting. -->
+<script>
+  (() => {
+  const article = document.getElementById("post-content");
+  const toc = document.getElementById("TableOfContents");
+
+  if (!article || !toc) return;
+
   function throttle(fn, wait) {
-    var time = Date.now();
+    let time = 0;
     return function () {
-      var now = Date.now()
-      if (time + wait - now < 0) {
+      const now = Date.now();
+      if (now - time >= wait) {
         fn();
         time = now;
       }
     };
   }
 
-  function scrollHandler() {
-    const anchors = Array.from(document.querySelectorAll("body h2, body h3"));
+  const headings = Array.from(article.querySelectorAll("h2[id], h3[id]"));
+  const links = new Map(
+    Array.from(toc.querySelectorAll('a[href^="#"]')).map((link) => [
+      decodeURIComponent(link.hash.slice(1)),
+      link,
+    ]),
+  );
 
-    function scrollCallback() {
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  function updateActiveLink() {
+    const scrollTop = window.scrollY;
+    let activeLink = null;
 
-      // Highlight the last scrolled-to: set everything inactive first
-      for (var i = 0; i < anchors.length; i++) {
-        var anchorId = anchors[i].getAttribute("id");
-        var link = document.querySelector(
-          'nav ul li a[href="#' + anchorId + '"]',
-        );
-        if (link) {
-          link.classList.remove("active-toc");
-        }
-      }
-
-      // Then iterate backwards, on the first match highlight it and break
-      for (var i = anchors.length - 1; i >= 0; i--) {
-        var offsetTop = anchors[i].offsetTop;
-        if (scrollTop > offsetTop - 75) {
-          var anchorId = anchors[i].getAttribute("id");
-          var link = document.querySelector(
-            'nav ul li a[href="#' + anchorId + '"]',
-          );
-          if (link) {
-            link.classList.add("active-toc");
-            break;
-          }
-        }
-      }
+    for (const heading of headings) {
+      if (scrollTop <= heading.offsetTop - 75) break;
+      activeLink = links.get(heading.id) || activeLink;
     }
 
-    window.addEventListener(
-      "scroll",
-      throttle(scrollCallback, 200),
-    );
+    for (const link of links.values()) {
+      link.classList.toggle("active-toc", link === activeLink);
+    }
   }
-  setTimeout(scrollHandler, 100);
+
+  updateActiveLink();
+  window.addEventListener("scroll", throttle(updateActiveLink, 200), { passive: true });
+  })();
 </script>
+{{- end }}
