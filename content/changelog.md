@@ -5,6 +5,10 @@ draft: false
 toc: false
 ---
 
+## July 11, 2026
+
+- Fixed links to my photography pages on the [about page](/about).
+
 ## July 10, 2026
 
 - Improved the design of this changelog page.
