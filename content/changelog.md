@@ -5,6 +5,10 @@ draft: false
 toc: false
 ---
 
+## July 28, 2026
+
+- Removed Plausible Analytics from the [faq](/faq) page as this site no longer loads it.
+
 ## July 11, 2026
 
 - Fixed links to my photography pages on the [about page](/about).
