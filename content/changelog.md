@@ -5,6 +5,10 @@ draft: false
 toc: false
 ---
 
+## August 05, 2026
+
+- Enabled minified output.
+
 ## July 28, 2026
 
 - Removed Plausible Analytics from the [faq](/faq) page as this site no longer loads it.
