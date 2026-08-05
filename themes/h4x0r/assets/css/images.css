@@ -25,6 +25,15 @@ img {
   margin-left: auto;
 }
 
+.imgp picture {
+  display: block;
+}
+
+.imgp picture > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 figure {
   margin: auto;
   text-align: center;

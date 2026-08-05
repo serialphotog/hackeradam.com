@@ -234,6 +234,17 @@ ol {
   grid-template-columns: 7em minmax(0, 1fr);
 }
 
+@media screen and (max-width: 500px) {
+  .dated-post-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.1rem;
+  }
+
+  .post-list > li + li {
+    margin-top: 0.65rem;
+  }
+}
+
 .post-navigation {
   display: flex;
   justify-content: space-between;

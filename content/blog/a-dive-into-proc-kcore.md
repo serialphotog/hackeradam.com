@@ -1,6 +1,9 @@
 ---
 title: Taking a Dive into Linux's /proc/kcore
 description: "Join me as I take a deep dive into the depths of /proc/kcore in Linux."
+slug: taking-a-dive-into-linux-proc-kcore
+aliases:
+  - /taking-a-dive-into-linuxs-/proc/kcore/
 date: '2025-02-03'
 tags: [Linux, Programming, C]
 toc: true

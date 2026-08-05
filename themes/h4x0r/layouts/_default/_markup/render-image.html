@@ -1,21 +1,67 @@
 {{- $destination := .Destination -}}
-{{- $image := .Page.Resources.GetMatch $destination -}}
-{{- if and $image (eq $image.ResourceType "image") (ne $image.MediaType.SubType "svg") -}}
+{{- $parsedDestination := urls.Parse $destination -}}
+{{- $destinationPath := strings.TrimPrefix "/" $parsedDestination.Path -}}
+{{- $image := .Page.Resources.GetMatch $destinationPath -}}
+
+{{- /* Make images in static/ available to Hugo's image processor while
+      preserving their existing public URLs for direct links. */ -}}
+{{- if and (not $image) (not (strings.HasPrefix $destination "http")) -}}
+  {{- $staticPath := path.Join "static" $destinationPath -}}
+  {{- if fileExists $staticPath -}}
+    {{- $resourcePath := path.Join "_processed" $destinationPath -}}
+    {{- $image = resources.FromString $resourcePath (readFile $staticPath) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $optimizableTypes := slice "jpeg" "png" "webp" -}}
+{{- if and $image (eq $image.ResourceType "image") (in $optimizableTypes $image.MediaType.SubType) -}}
   {{- $srcset := slice -}}
-  {{- range slice 480 768 1200 -}}
+  {{- $webpSrcset := slice -}}
+  {{- $fallback := $image -}}
+  {{- range slice 480 768 1200 1600 -}}
     {{- if gt $image.Width . -}}
       {{- $resized := $image.Resize (printf "%dx" .) -}}
       {{- $srcset = $srcset | append (printf "%s %dw" $resized.RelPermalink $resized.Width) -}}
+      {{- if ne $image.MediaType.SubType "webp" -}}
+        {{- $webp := $image.Resize (printf "%dx webp q82" .) -}}
+        {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $webp.RelPermalink $webp.Width) -}}
+      {{- end -}}
+      {{- if eq . 768 -}}
+        {{- $fallback = $resized -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
   {{- $srcset = $srcset | append (printf "%s %dw" $image.RelPermalink $image.Width) -}}
+  {{- if ne $image.MediaType.SubType "webp" -}}
+    {{- $webpFull := $image.Resize (printf "%dx webp q82" $image.Width) -}}
+    {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $webpFull.RelPermalink $webpFull.Width) -}}
+  {{- end -}}
+<span class="imgp">
+  <picture>
+    {{- with $webpSrcset }}
+    <source
+      type="image/webp"
+      srcset="{{ delimit . ", " }}"
+      sizes="(max-width: 920px) calc(100vw - 2rem), 90ch">
+    {{- end }}
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ $fallback.RelPermalink }}"
+      srcset="{{ delimit $srcset ", " }}"
+      sizes="(max-width: 920px) calc(100vw - 2rem), 90ch"
+      width="{{ $image.Width }}"
+      height="{{ $image.Height }}"
+      alt="{{ .Text }}"
+      {{ with .Title }}title="{{ . }}"{{ end }}>
+  </picture>
+</span>
+{{- else if and $image (eq $image.ResourceType "image") -}}
 <span class="imgp">
   <img
     loading="lazy"
     decoding="async"
-    src="{{ $image.RelPermalink }}"
-    srcset="{{ delimit $srcset ", " }}"
-    sizes="(max-width: 920px) calc(100vw - 2rem), 90ch"
+    src="{{ $destination | safeURL }}"
     width="{{ $image.Width }}"
     height="{{ $image.Height }}"
     alt="{{ .Text }}"

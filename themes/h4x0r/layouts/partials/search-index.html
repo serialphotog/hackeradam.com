@@ -3,7 +3,7 @@
     {{- $entry := dict
         "title" .Title
         "tags" (.Params.tags | default (slice))
-        "content" .Plain
+        "content" (.Plain | htmlUnescape)
         "url" .RelPermalink
     -}}
     {{- $store = merge $store (dict .RelPermalink $entry) -}}

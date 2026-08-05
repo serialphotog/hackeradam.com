@@ -7,6 +7,10 @@ toc: false
 
 ## August 05, 2026
 
+- Improved the handling of excerpts on the [search](/search) page.
+- Improved the handling of post image assets.
+- Fixed the slug for the [/proc/kcore](/taking-a-dive-into-linux-proc-kcore) article.
+- Improved the post listing on mobile.
 - Enabled minified output.
 
 ## July 28, 2026
