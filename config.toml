@@ -87,3 +87,6 @@ ignoreErrors = ["error-disable-taxonomy"]
 [taxonomies]
     series = 'series'
     tags = 'tags'
+
+[minify]
+    minifyOutput = true
