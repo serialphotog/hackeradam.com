@@ -8,28 +8,28 @@ Computer science is a vast topic that covers a number of different areas of stud
 
 ## Data Structures
 
-* [Binary Trees]({{< ref "blog/review-binary-trees">}})
-* [Binary Search Trees]({{< ref "blog/review-binary-search-trees">}})
-* [Graphs]({{< ref "blog/review-graphs">}})
+* [Binary Trees]({{< ref "/blog/2021/a-review-of-binary-trees">}})
+* [Binary Search Trees]({{< ref "/blog/2021/a-review-of-binary-search-trees">}})
+* [Graphs]({{< ref "/blog/2021/a-review-of-graphs">}})
 
 ## Sorting Algorithms
 
-* [Bubble Sort]({{< ref "blog/bubble-sort">}})
-* [Selection Sort]({{< ref "blog/selection-sort">}})
-* [Merge Sort]({{< ref "blog/merge-sort">}})
-* [Quicksort]({{< ref "blog/quick-sort">}})
+* [Bubble Sort]({{< ref "/blog/2021/cs-review-bubble-sort">}})
+* [Selection Sort]({{< ref "/blog/2021/cs-review-selection-sort">}})
+* [Merge Sort]({{< ref "/blog/2021/cs-review-merge-sort">}})
+* [Quicksort]({{< ref "/blog/2021/cs-review-quicksort">}})
 
 ## Discrete Mathematics
 
-* [Logic Rules Cheatsheet]({{< ref "/blog/logic-rules-cheat-sheet">}})
-* [Boolean Algebra Cheatsheet]({{< ref "/blog/boolean-algebra-cheat-sheet">}})
-* [A Brief Review of Set Theory]({{< ref "/blog/brief-review-set-theory">}})
-* [Graphs]({{< ref "/blog/review-graphs">}})
+* [Logic Rules Cheatsheet]({{< ref "/blog/2020/logic-rules-cheat-sheet">}})
+* [Boolean Algebra Cheatsheet]({{< ref "/blog/2020/boolean-algebra-cheat-sheet">}})
+* [A Brief Review of Set Theory]({{< ref "/blog/2021/a-brief-review-of-set-theory">}})
+* [Graphs]({{< ref "/blog/2021/a-review-of-graphs">}})
 
 ## Operating Systmes
 
-* [The Dining Philosophers Problem]({{< ref "/blog/dining-philosophers">}})
+* [The Dining Philosophers Problem]({{< ref "/blog/2020/the-dining-philosophers-problem">}})
 
 ## Other Topics
 
-* [Review of binary numbers]({{< ref "/blog/cs-review-binary-numbers">}})
+* [Review of binary numbers]({{< ref "/blog/2017/cs-review-binary-numbers">}})
