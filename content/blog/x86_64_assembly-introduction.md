@@ -4,6 +4,8 @@ description: "This article will serve as my gentle introduction to getting start
 date: '2021-07-31'
 tags: [Computer-Science, Assembly-Language, Reverse-Engineering]
 draft: true
+aliases:
+  - /a-gentle-introduction-to-x86_64-assembly-language/
 toc: true
 ---
 
@@ -249,4 +251,4 @@ Before we end our discussion on registers, here's a similar table to the one we 
 
 If you recall, I mentioned that a source/destination could be one of three things. Since we already covered registers, that just leaves memory addresses and literals. Of these, literals it the simplest to cover. They are (literally) just a literal value, often times written in hex. So, some examples of literal values could be 0x0, 0x5d, 0xa, etc. 
 
-Memory addresses are also pretty easy to understand, but there is some minor complexity to them. 
+Memory addresses are also pretty easy to understand, but there is some minor complexity to them.

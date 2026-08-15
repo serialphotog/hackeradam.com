@@ -5,6 +5,8 @@ date: '2025-08-09'
 tags: [Linux, Arch, logiops]
 toc: true
 draft: false
+aliases:
+  - /improve-logitech-mx-master-3-mouse-support-on-arch-linux/
 ---
 
 Previously I had [written about how I improved my Logitech peripheral support on PopOS using `solaar` and `libratbag`]({{<ref "/blog/logitech-devices-on-linux" >}}). This method worked just fine when I was running Pop, but I've recently switched to an Arch Linux setup on my main desktop. Unfortunately, this previous method wasn't working for getting my Logitech MX Master 3 mouse fully working.

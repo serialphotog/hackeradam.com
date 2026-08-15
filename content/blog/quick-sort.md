@@ -6,12 +6,13 @@ tags: [Computer-Science, Programming, Algorithms]
 draft: false
 toc: true
 aliases:
-    - /post/cs-review-quicksort
+  - /cs-review-quicksort/
+  - /post/cs-review-quicksort
 ---
 
 Quicksort is another one of the divide and conquer sorting algorithms. It works by partitioning the array around some chosen pivot point, which there are a few different ways to choose.
 
-Quicksort is generally preferred over [merge sort](https://hackeradam.com/cs-review-merge-sort/) for sorting arrays due to the fact that the general form of the algorithm sorts in-place.
+Quicksort is generally preferred over [merge sort](/blog/cs-review-merge-sort/) for sorting arrays due to the fact that the general form of the algorithm sorts in-place.
 
 <!--more-->
 
@@ -98,4 +99,4 @@ public class Main {
 
 The worst-case for quicksort occurs when our partition method always chooses either the smallest or largest item as the pivot point. The worst-case in this case turns out to be O(n2). The average case, however, turns out to be O(n log n).
 
-It’s also worth mentioning that while quicksort has a worse worst-case time complexity compared to other algorithms, such as [merge sort](https://hackeradam.com/cs-review-merge-sort/), it’s often faster in practice due to the optimizations that can occur to the inner loop of the algorithm. Additionally, it doesn’t require the O(n) extra space for sorting that merge sort requires.
+It’s also worth mentioning that while quicksort has a worse worst-case time complexity compared to other algorithms, such as [merge sort](/blog/cs-review-merge-sort/), it’s often faster in practice due to the optimizations that can occur to the inner loop of the algorithm. Additionally, it doesn’t require the O(n) extra space for sorting that merge sort requires.

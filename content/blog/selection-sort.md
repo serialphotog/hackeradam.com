@@ -5,10 +5,11 @@ date: '2021-02-27'
 tags: [Computer-Science, Programming, Algorithms]
 draft: false
 aliases:
-    - /post/cs-review-selection-sort
+  - /cs-review-selection-sort/
+  - /post/cs-review-selection-sort
 ---
 
-The previous sorting algorithm we took a look at was [bubble sort](https://hackeradam.com/cs-review-bubble-sort/). This time around we will be taking a look at selection sort, which is slightly more complex than bubble sort, but only by a tiny bit.
+The previous sorting algorithm we took a look at was [bubble sort](/blog/cs-review-bubble-sort/). This time around we will be taking a look at selection sort, which is slightly more complex than bubble sort, but only by a tiny bit.
 
 The idea behind selection sort is that you keep iterating over your array of data, finding the minimum element each time and placing it at the start of the list. In this way, you can think of selection sort as managing two subarrays: the portion of the array that is sorted and the portion that still needs to be sorted.
 

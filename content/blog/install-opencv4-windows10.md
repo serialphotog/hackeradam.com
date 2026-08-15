@@ -6,7 +6,8 @@ tags: [OpenCV, Windows-10]
 draft: false
 toc: true
 aliases:
-    - /post/installing-opencv-4-on-windows-10
+  - /installing-opencv-4-on-windows-10/
+  - /post/installing-opencv-4-on-windows-10
 ---
 
 I love working with the OpenCV library, but it can be a royal pain in the butt to get it installed and running on your machine. This is especially true for Microsoft Windows. Despite a Google search turning up plenty of results for articles promising to show you how to do it, they all seem to have issues or be incomplete. This results in a rather frustrating experience when you just want to get things up and running.
@@ -126,4 +127,4 @@ Boy, that sure is a long process! The good news is that we’re finally done!
 
 We now have a completely built version of the OpenCV library stored in a convenient place on disk that’s ready to be used in some projects. So, what are you waiting for? Go start playing with that computer vision goodness!
 
-To get started using the newly built OpenCV library, go check out my tutorial on [how to setup an OpenCV project in Visual Studio 2017 & 2019](https://hackeradam.com/creating-an-opencv-4-project-in-visual-studio-2017-2019/).
+To get started using the newly built OpenCV library, go check out my tutorial on [how to setup an OpenCV project in Visual Studio 2017 & 2019](/blog/creating-an-opencv-4-project-in-visual-studio-2017-2019/).

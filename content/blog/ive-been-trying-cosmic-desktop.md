@@ -5,6 +5,8 @@ date: 2025-10-25T15:52:57-06:00
 tags: ['Linux', 'Cosmic-Desktop', 'popos']
 toc: true
 draft: false
+aliases:
+  - /ive-been-trying-cosmic-desktop-for-a-month/
 ---
 
 It has been nearly a month now since System 76 released a beta build of [Pop OS! 24.04](https://system76.com/pop/pop-beta/) with their new [Cosmic Desktop](https://system76.com/cosmic). Up until this point, I had largely avoided playing with the Cosmic Desktop as I'm generally not interested in putting alpha-quality software on my main devices. This seemed like a great time to slap the new Pop OS! onto my System 76 Pangolin laptop and give it a spin, however.
@@ -47,4 +49,4 @@ As you can probably tell from the rest of this post, I'm quite impressed with th
 
 Despite there still being a few rough edges that need to be worked out, the Cosmic experience is overall stable and quite enjoyable to use. I honestly expected that I would put Cosmic on this Laptop, try it for a week or so, and then go back to an Arch Linux install with some other window manager setup on it. At this point, however, I'm a month into having Cosmic and Pop on this machine, and I've been enjoying it.
 
-The few bumps I've encountered along the way have not been enough to make me jump ship, and I've actually been enjoying seeing Cosmic get more stable as System 76 continues to push out new updates. While I'm not certain that I'll keep this setup on here for good, I do think I'll keep it around for a little bit longer to keep a closer eye on how Cosmic continues to develop. 
+The few bumps I've encountered along the way have not been enough to make me jump ship, and I've actually been enjoying seeing Cosmic get more stable as System 76 continues to push out new updates. While I'm not certain that I'll keep this setup on here for good, I do think I'll keep it around for a little bit longer to keep a closer eye on how Cosmic continues to develop.

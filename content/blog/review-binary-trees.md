@@ -7,10 +7,11 @@ draft: false
 toc: true
 math: true
 aliases:
-    - /post/a-review-of-binary-trees
+  - /a-review-of-binary-trees/
+  - /post/a-review-of-binary-trees
 ---
 
-In my previous review series, I wrote a [brief review of set theory](https://hackeradam.com/a-brief-review-of-set-theory/). This time around we’ll take a look at the binary tree data structure. The tree structure is very common, incredibly useful data structure in the field of computer science and it’s essential that any engineer understand how they work.
+In my previous review series, I wrote a [brief review of set theory](/blog/a-brief-review-of-set-theory/). This time around we’ll take a look at the binary tree data structure. The tree structure is very common, incredibly useful data structure in the field of computer science and it’s essential that any engineer understand how they work.
 
 <!--more-->
 
@@ -434,4 +435,4 @@ Now that we understand the mechanics of this deletion method, let’s take a loo
 
 ## That’s All… For Now
 
-That’s all I have to say about trees in this post. Stay tuned for future posts where we will explore [Binary Search Trees](https://hackeradam.com/a-review-of-binary-search-trees/), AVL Trees, and Red Black Trees!
+That’s all I have to say about trees in this post. Stay tuned for future posts where we will explore [Binary Search Trees](/blog/a-review-of-binary-search-trees/), AVL Trees, and Red Black Trees!

@@ -4,6 +4,8 @@ description: "I've recently spent some time with a new Macbook Pro. Here are my 
 date: '2026-07-28'
 tags: [Mac, MacOS]
 draft: false
+aliases:
+  - /my-thoughts-on-mac/
 toc: true
 ---
 

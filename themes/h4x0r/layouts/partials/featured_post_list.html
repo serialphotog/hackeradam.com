@@ -1,0 +1,17 @@
+<ol class="featured-post-list">
+  {{ range . }}
+    <li class="featured-post">
+      <article>
+        <div class="featured-post-heading">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h3>
+          <time class="date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        </div>
+        {{ with .Description }}
+          <p>{{ . | markdownify }}</p>
+        {{ else }}
+          <p>{{ .Summary | plainify | truncate 180 }}</p>
+        {{ end }}
+      </article>
+    </li>
+  {{ end }}
+</ol>

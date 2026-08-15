@@ -7,7 +7,8 @@ draft: false
 toc: true
 math: true
 aliases:
-    - /post/a-brief-review-of-set-theory
+  - /a-brief-review-of-set-theory/
+  - /post/a-brief-review-of-set-theory
 ---
 
 Set theory is the branch of mathematics that, unsurprisingly, deals with sets. It’s an area of great importance in a number of fields, including computer science.

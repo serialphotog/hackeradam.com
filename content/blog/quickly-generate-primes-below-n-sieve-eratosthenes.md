@@ -6,7 +6,8 @@ tags: [Math, Python, Programming, Algorithms]
 draft: false
 toc: true
 math: true
-aliases: 
+aliases:
+  - /quickly-generating-primes-below-n-with-the-sieve-of-eratosthenes/
   - /post/quickly-generating-primes-below-n-with-the-sieve-of-eratosthenes
 ---
 

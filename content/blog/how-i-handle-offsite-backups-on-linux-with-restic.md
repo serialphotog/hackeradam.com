@@ -4,6 +4,8 @@ description: "A quick walkthrough of how I handle automatic, off-site cloud back
 date: '2025-11-06'
 tags: [Linux, Backups, Backblaze, Restic]
 draft: false
+aliases:
+  - /how-i-automate-backblaze-b2-backups-with-restic-on-linux/
 toc: true
 ---
 

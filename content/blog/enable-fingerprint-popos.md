@@ -4,6 +4,8 @@ description: "A quick guide to easily enable fingerprint authentication in PopOS
 date: '2023-08-15'
 tags: [Linux, PopOS]
 draft: false
+aliases:
+  - /enable-fingerprint-authentication-on-popos/
 toc: false
 ---
 

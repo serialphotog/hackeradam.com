@@ -5,6 +5,8 @@ date: '2023-08-24'
 tags: [Programming, GitHub, Java]
 toc: true
 draft: false
+aliases:
+  - /how-to-set-up-a-private-maven-repository-with-github-packages/
 ---
 
 This quick tutorial will teach you how to use GitHub Actions to automatically build a Java library, publish it to a private GitHub Packages Maven repository, and how to use your newly hosted library in another Maven project.
@@ -131,4 +133,4 @@ Now that you have your access token set up you will be able to make use of your 
   </servers>
 ```
 
-Change the above snippet to include your username and the personal access token that you just created. Save the file and you should now be able to successfully pull the package from your private GitHub Packages repository. 
+Change the above snippet to include your username and the personal access token that you just created. Save the file and you should now be able to successfully pull the package from your private GitHub Packages repository.

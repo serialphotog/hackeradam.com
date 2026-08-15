@@ -7,10 +7,11 @@ draft: false
 toc: true
 math: true
 aliases:
-    - /post/a-review-of-graphs
+  - /a-review-of-graphs/
+  - /post/a-review-of-graphs
 ---
 
-You may have noticed that I’ve been putting a lot more work into writing posts for my [Computer Science Review series](https://hackeradam.com/computer-science-review/) lately. The last installment of this series took a look at [binary search trees](https://hackeradam.com/a-review-of-binary-search-trees/). This time around we will be taking some time to review one of my favorite data structures: Graphs.
+You may have noticed that I’ve been putting a lot more work into writing posts for my [Computer Science Review series](https://hackeradam.com/computer-science-review/) lately. The last installment of this series took a look at [binary search trees](/blog/a-review-of-binary-search-trees/). This time around we will be taking some time to review one of my favorite data structures: Graphs.
 
 <!--more-->
 

@@ -7,10 +7,11 @@ draft: false
 toc: false
 math: true
 aliases:
-    - /post/boolean-algebra-cheat-sheet
+  - /boolean-algebra-cheat-sheet/
+  - /post/boolean-algebra-cheat-sheet
 ---
 
-I previously posted a [logic rules cheat sheet](https://hackeradam.com/logic-rules-cheat-sheet/) and figured it was about time that I do the same for boolean algebra.
+I previously posted a [logic rules cheat sheet](/blog/logic-rules-cheat-sheet/) and figured it was about time that I do the same for boolean algebra.
 
 <!--more-->
 

@@ -6,7 +6,8 @@ tags: [Computer-Science, Programming, C, Operating-Systems, Algorithms]
 draft: false
 toc: true
 aliases:
-    - /post/the-dining-philosophers-problem
+  - /the-dining-philosophers-problem/
+  - /post/the-dining-philosophers-problem
 ---
 
 The dining philosophers problem is a classic problem in the realm of computer science. If you’ve had any formal CS education you’ve more than likely seen the problem when learning about concurrent programming.

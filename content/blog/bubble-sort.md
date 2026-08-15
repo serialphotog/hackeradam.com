@@ -6,7 +6,8 @@ tags: [Computer-Science, Programming, Algorithms]
 draft: false
 toc: true
 aliases:
-    - /post/cs-review-bubble-sort
+  - /cs-review-bubble-sort/
+  - /post/cs-review-bubble-sort
 ---
 
 Bubble sort is the easiest possible sorting algorithm you could imagine. It works by simply iterating over an array of data and comparing adjacent items. If those items are in the wrong order, then they are swapped. In doing this, the largest items “bubble up” to the correct position in the array (assuming ascending order, anyway).

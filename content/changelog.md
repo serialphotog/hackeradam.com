@@ -5,11 +5,17 @@ draft: false
 toc: false
 ---
 
+## August 15, 2026
+
+- Added a brand new [homepage](/).
+- Restyled the [blog](/blog).
+- Added pagination to the [blog](/blog).
+
 ## August 05, 2026
 
 - Improved the handling of excerpts on the [search](/search) page.
 - Improved the handling of post image assets.
-- Fixed the slug for the [/proc/kcore](/taking-a-dive-into-linux-proc-kcore) article.
+- Fixed the slug for the [/proc/kcore](/blog/taking-a-dive-into-linux-proc-kcore/) article.
 - Improved the post listing on mobile.
 - Enabled minified output.
 

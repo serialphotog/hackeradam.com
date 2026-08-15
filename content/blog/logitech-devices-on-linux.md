@@ -5,6 +5,8 @@ date: '2024-06-14'
 tags: [Linux, Logitech, Solaar, libratbag]
 toc: true
 draft: false
+aliases:
+  - /improving-logitech-peripheral-support-on-linux/
 ---
 
 Throughout highschool and college I daily drove Linux as my main OS and loved it. As time went on, however, I began to get deeper and deeper into <a href="https://adamthompsonphoto.com" target="_blank">Photography</a>, which inevitably lead me to becoming entrenched in the Adobe suite of tools. Despite my love for the Linux operating system, this lead me to begin daily driving Microsoft Windows. 
@@ -129,4 +131,4 @@ After running those 4 commands I'm delighted to say that the lighting on my keyb
 
 # Conclusion 
 
-With this minor annoyances solved, I've got my new Linux install largely working flawlessly for me. Now I just need to perfect a professional-level photography workflow in this new environment! 
+With this minor annoyances solved, I've got my new Linux install largely working flawlessly for me. Now I just need to perfect a professional-level photography workflow in this new environment!

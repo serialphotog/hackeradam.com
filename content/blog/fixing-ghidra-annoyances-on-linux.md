@@ -5,9 +5,11 @@ date: '2025-11-10'
 tags: [Linux, Ghidra]
 toc: true
 draft: false
+aliases:
+  - /fixing-ghidra-annoyances-on-linux-with-high-dpi-screens/
 ---
 
-At this point, I've written <a href="http://localhost:1313/how-i-automate-backblaze-b2-backups-with-restic-on-linux/" target="_blank">quite</a> a <a href="https://blog.adamthompsonphoto.com/why-im-ditching-windows-and-adobe/" target="_blank">bit</a> about how I've switched completely over to Linux as my primary OS. As with any change in workflow, this has required solving a number of annoyances on my new computing platform. Among the annoyances I've had to solve is getting <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank">Ghidra</a> working smoothly for me.
+At this point, I've written <a href="/blog/how-i-automate-backblaze-b2-backups-with-restic-on-linux/" target="_blank">quite</a> a <a href="https://blog.adamthompsonphoto.com/why-im-ditching-windows-and-adobe/" target="_blank">bit</a> about how I've switched completely over to Linux as my primary OS. As with any change in workflow, this has required solving a number of annoyances on my new computing platform. Among the annoyances I've had to solve is getting <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank">Ghidra</a> working smoothly for me.
 
 # The Problem
 
@@ -56,7 +58,7 @@ VMARGS=-Dfont.size.override=18
 
 **NOTE:** This process works the same for both Gnome and KDE.
 
-I actually wrote a quick guide about [how to add a custom launcher to Gnome](https://hackeradam.com/adding-a-custom-launcher-to-gnome-shell/) several years ago. The process is basically the same as what I laid out in that post, but here's the `ghidra.desktop` file that I added to `~/.local/share/applications/`:
+I actually wrote a quick guide about [how to add a custom launcher to Gnome](/blog/adding-a-custom-launcher-to-gnome-shell/) several years ago. The process is basically the same as what I laid out in that post, but here's the `ghidra.desktop` file that I added to `~/.local/share/applications/`:
 
 ```
 [Desktop Entry]

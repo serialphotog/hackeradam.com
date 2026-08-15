@@ -6,8 +6,9 @@ tags: [Python, Programming, Mapping]
 draft: false
 toc: true
 aliases:
-    - /dumping-map-tiles-from-an-mbtiles-database-with-python
-    - /post/dumping-map-tiles-from-an-mbtiles-database-with-python
+  - /dumping-map-tiles-from-mbtiles-with-python/
+  - /dumping-map-tiles-from-an-mbtiles-database-with-python
+  - /post/dumping-map-tiles-from-an-mbtiles-database-with-python
 ---
 
 MBTiles is a database format, developed by [Mapbox](https://www.mapbox.com/), for storing tiled data. It’s a relatively simple database format that allows for a convenient, portable way to store map tile data.

@@ -6,6 +6,7 @@ tags: [Web-Development, Hugo, CI-CD, Google-Cloud]
 draft: false
 toc: true
 aliases:
+  - /this-sites-new-tech-stack/
   - /post/new-site-stack
 ---
 
@@ -66,4 +67,4 @@ I can't overstate how much I love this setup!
 
 As I've already mentioned, there are a number of things I'd like to do to improve this site going forward. The biggest of these is that I'd like to make the my [Computer Science Review]({{< ref "/computer-science-review" >}}) series more interactive. An example of what I mean would be having interactive animations for some of the concepts, such as visualizing sorting algorithms. 
 
-This site is also serving as a bit of a testing ground before I move [my photography portfolio](https://serialphotog.com) over to Hugo. My portfolio is a much large, much more complex site that will require a lot of custom work to get everything to work the way I want. This technical blog makes for the perfect testing ground for some of this as it is so much smaller and simpler. 
+This site is also serving as a bit of a testing ground before I move [my photography portfolio](https://serialphotog.com) over to Hugo. My portfolio is a much large, much more complex site that will require a lot of custom work to get everything to work the way I want. This technical blog makes for the perfect testing ground for some of this as it is so much smaller and simpler.
