@@ -1,49 +1,50 @@
 {{ define "main" }}
 
+<article class="single-post">
+
 {{ if not .Params.notitle }}
-<div id="single-header">
-  <h1>
-    {{ .Title | markdownify }}
-  </h1>
-  <div id="single-meta">
-    {{ if .Params.subtitle }}
-        <p id="subtitle">{{ .Params.subtitle }}</p>
-    {{ end }}
-    {{ if .Params.date }}
-        <span class="datesub">{{ .Date.Format "Jan 2, 2006" }}{{ if .GitInfo }} &nbsp;&nbsp; m. {{
-            .Lastmod.Format "Jan 2, 2006" }}{{ end }}</span>
-    {{ end }} {{ partial "tags.html" .}}
-  </div>
-</div>
+<header class="post-header">
+  <h1>{{ .Title | markdownify }}</h1>
+  {{ if .Params.date }}
+    <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+      {{ .Date.Format "Jan 2, 2006" }}{{ if .GitInfo }}<span class="post-date-mod"> &middot; updated {{ .Lastmod.Format "Jan 2, 2006" }}</span>{{ end }}
+    </time>
+  {{ end }}
+</header>
+{{ if .Params.subtitle }}
+  <p class="post-summary">{{ .Params.subtitle }}</p>
+{{ end }}
+{{ partial "tags.html" . }}
 {{ else }}
 <div class="title-spacer"></div>
 {{ end }}
 
-{{ if .Params.toc }}
-<aside class="hidden lg:block toc " id="tableOfContentContainer">
-  {{ .TableOfContents }}
-</aside>
-{{ end }}
-
-
-<article id="post-content">{{ .Content }}</article>
+<section id="post-content">{{ .Content }}</section>
 
 {{ $previous := .PrevInSection }}
 {{ $next := .NextInSection }}
-{{ if or $previous $next }}
+{{ if and (eq .Section "blog") (or $previous $next) }}
 <nav class="post-navigation" aria-label="Post navigation">
   {{ with $previous }}
-  <a class="post-navigation-previous" href="{{ .RelPermalink }}" rel="prev">
-    <span aria-hidden="true">←</span> Previous: {{ .Title }}
+  <a class="post-nav-link post-nav-prev" href="{{ .RelPermalink }}" rel="prev">
+    <span class="post-nav-direction"><span aria-hidden="true">←</span> Previous</span>
+    <span class="post-nav-title">{{ .Title }}</span>
   </a>
+  {{ else }}
+  <span></span>
   {{ end }}
   {{ with $next }}
-  <a class="post-navigation-next" href="{{ .RelPermalink }}" rel="next">
-    Next: {{ .Title }} <span aria-hidden="true">→</span>
+  <a class="post-nav-link post-nav-next" href="{{ .RelPermalink }}" rel="next">
+    <span class="post-nav-direction">Next <span aria-hidden="true">→</span></span>
+    <span class="post-nav-title">{{ .Title }}</span>
   </a>
+  {{ else }}
+  <span></span>
   {{ end }}
 </nav>
 {{ end }}
+
+</article>
 
 {{ if .Params.math }}
     {{ partial "math.html" . }}

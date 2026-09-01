@@ -75,14 +75,9 @@ ignoreErrors = ["error-disable-taxonomy"]
         weight = 80
 
 [markup]
-  [markup.highlight]
-    noclasses = false
+  # Syntax highlighting is configured in config/_default/markup.toml
   [markup.goldmark.renderer]
     unsafe = true
-	[markup.tableOfContents]
-		startLevel = 1 # ToC starts from H2
-		endLevel = 4 # ToC ends at H4
-		ordered = false # generates <ul> instead of <ol>
 
 [taxonomies]
     series = 'series'

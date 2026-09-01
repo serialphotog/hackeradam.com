@@ -4,5 +4,5 @@ hl_Lines = ""			# highlight lines
 lineNoStart = 1			# starting line number
 lineNos = true			# line number
 lineNumbersInTable = false	# render line number in table
-noClasses = true		# avoid using css class
+noClasses = false		# use css classes (see assets/css/syntax.css)
 tabWidth = 8			# tab width

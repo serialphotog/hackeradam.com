@@ -5,6 +5,14 @@ draft: false
 toc: false
 ---
 
+## September 01, 2026
+
+- Improved the overall design of the site.
+- Updated the design to have both a light and dark theme.
+- Cleaned up the homepage post display a bit.
+- Removed the table of contents from posts.
+- Made the blog listing for tags match the rest of the site.
+
 ## August 15, 2026
 
 - Added a brand new [homepage](/).

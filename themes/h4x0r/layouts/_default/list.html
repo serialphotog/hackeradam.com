@@ -7,14 +7,14 @@
         {{- $posts := .CurrentSection.RegularPages -}}
         <h2 class="section-title">Latest posts</h2>
         {{ .CurrentSection.Content }}
-        {{ partial "featured_post_list.html" (first 8 $posts) }}
+        {{ partial "featured_post_list.html" (first 5 $posts) }}
         <p class="post-archive-link">
             <a href="{{ .CurrentSection.RelPermalink }}">Browse all {{ len $posts }} posts <span aria-hidden="true">→</span></a>
         </p>
     {{ end }}
 {{ else }}
     {{- $paginator := .Paginate .CurrentSection.RegularPages 8 -}}
-    <h2 class="section-title">All posts</h2>
+    <h1 class="page-title">{{ .Title }}</h1>
     {{ partial "featured_post_list.html" $paginator.Pages }}
     {{ if gt $paginator.TotalPages 1 }}
         <nav class="post-pagination" aria-label="All posts pages">

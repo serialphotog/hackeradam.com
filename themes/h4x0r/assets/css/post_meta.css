@@ -1,9 +1,51 @@
 /* POST META */
-#single-header {
-  /* border-bottom: 2px solid var(--complimentary); */
-  padding: 0px 8px 4px 0;
-  margin-bottom: 20px;
+.single-post {
+  padding: 0;
+}
+
+.single-post .post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
   margin-top: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.single-post .post-header h1 {
+  font-family: var(--sans);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  flex: 1;
+}
+
+.single-post .post-header .post-date {
+  flex: 0 0 auto;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.post-date-mod {
+  color: var(--text-dim);
+}
+
+.post-summary {
+  font-size: 1.1rem;
+  color: var(--text-dim);
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.single-post #post-content {
+  display: block;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-body);
 }
 
 .title-spacer {
@@ -16,39 +58,37 @@
   font-size: 90%;
 }
 
-#single-meta {
-  margin-top: 0;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  font-size: 0.9em;
-}
-
-#single-meta a:visited {
-  color: var(--link);
-}
-
-#subtitle {
-  font-family: "Linux Libertine", "Georgia", "Times", serif;
-  margin-top: -8px;
-  margin-bottom: 0.3em;
-  font-size: 1.4em;
-  color: var(--text-dim);
-}
-
-.datesub {
-  font-weight: normal;
-  color: var(--text-dim);
-}
-
 #tags {
+  display: block;
+  margin-bottom: 1.5rem;
   font-weight: normal;
   color: var(--text-dim);
+  font-size: 0.9rem;
 }
 
 #tags a {
-  filter: brightness(80%);
+  color: var(--text-dim);
 }
 
 #tags a:visited {
-  filter: brightness(80%);
+  color: var(--text-dim);
+}
+
+#tags a:hover {
+  color: var(--link);
+}
+
+@media screen and (max-width: 600px) {
+  .single-post .post-header {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .single-post .post-header h1 {
+    font-size: 2rem;
+  }
+
+  .single-post .post-header .post-date {
+    margin-left: 0;
+  }
 }

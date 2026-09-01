@@ -1,10 +1,26 @@
 <footer class="site-footer">
     <div class="footer-copyright">
-        Copyright &copy; {{ now.Format "2006" }}, <a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Params.copyrightOwner | default .Site.Title }}</a>.
+        Copyright &copy; {{ now.Format "2006" }}, <a href="{{ .Site.Home.RelPermalink }}">Adam Thompson</a>.
     </div>
     <div class="footer-socials">
         {{- partial "socialIcons.html" site.Params.socialIcons -}}
     </div>
+    <p class="theme-toggle-text">
+        <span class="theme-toggle-light">Too bright? <a href="#" onclick="toggleTheme();return false;">Enable dark mode</a>.</span>
+        <span class="theme-toggle-dark">Prefer it lighter? <a href="#" onclick="toggleTheme();return false;">Enable light mode</a>.</span>
+    </p>
 </footer>
 
-{{ partial "footer_scripts.html" . }}
+<script>
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        try { localStorage.setItem('theme', theme); } catch (e) {}
+    }
+    function toggleTheme() {
+        var current = document.documentElement.getAttribute('data-theme');
+        if (!current) {
+            current = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+</script>

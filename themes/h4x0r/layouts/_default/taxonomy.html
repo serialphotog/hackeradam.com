@@ -1,12 +1,26 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
-<ul class="post-list">
-    {{ range .Pages }}
+<h1 class="page-title">{{ .Title }}</h1>
 
-    {{ partial "post_row.html" . }}
+{{- $pages := .Pages.ByDate.Reverse -}}
+{{- $paginator := .Paginate $pages 8 -}}
 
-    {{ end }}
-  </ul>
+{{ partial "featured_post_list.html" $paginator.Pages }}
+
+{{ if gt $paginator.TotalPages 1 }}
+    <nav class="post-pagination" aria-label="{{ .Title }} pages">
+        {{ with $paginator.Prev }}
+            <a class="post-pagination-newer" href="{{ .URL }}" rel="prev"><span aria-hidden="true">←</span> Newer</a>
+        {{ else }}
+            <span></span>
+        {{ end }}
+        <span class="post-pagination-status" aria-current="page">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+        {{ with $paginator.Next }}
+            <a class="post-pagination-older" href="{{ .URL }}" rel="next">Older <span aria-hidden="true">→</span></a>
+        {{ else }}
+            <span></span>
+        {{ end }}
+    </nav>
+{{ end }}
 
 {{ end }}
