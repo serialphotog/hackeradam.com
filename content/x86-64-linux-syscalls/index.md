@@ -1,6 +1,7 @@
 ---
 title: "x86_64 LInux Syscall Reference"
 description: "A quick reference to Linux syscalls."
+wide: true
 ---
 
 ## Linux x86_64 System Call Reference Table

@@ -15,6 +15,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 [params]
     description = "The blog of Adam Thompson, a software/reverse engineer primarily interested in low-level systems and security."
     rssFeedDescription = "summary"
+    logo = "glider.png"
 
     [[params.socialIcons]]
         name = "github"

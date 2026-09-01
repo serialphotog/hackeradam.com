@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<article class="single-post">
+<article class="single-post{{ if .Params.wide }} wide{{ end }}">
 
 {{ if not .Params.notitle }}
 <header class="post-header">

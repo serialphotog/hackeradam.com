@@ -2,33 +2,69 @@
 table {
   border-collapse: collapse;
   display: block;
-  overflow: auto;
   overflow-x: auto;
+  margin: 1.2em 0;
+  font-variant-numeric: tabular-nums;
 }
 
 @media screen and (min-width: 760px) {
   table {
-    display: table !important;
+    display: table;
   }
-}
-
-table thead th {
-  border: 1px solid var(--border-general);
 }
 
 th,
 td {
-  padding: 4px 8px;
-  border: 1px solid rgb(200, 200, 200);
+  padding: 0.4rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
   border: 1px solid var(--border-general);
 }
 
-th {
-  background-color: var(--table-th);
+thead th {
+  color: var(--heading);
+  font-weight: 700;
+  background-color: var(--card-bg);
+  border-bottom-width: 2px;
 }
 
-tr {
-  background-color: var(--table-tr);
+tbody tr:nth-child(even) {
+  background-color: var(--border-faint);
 }
 
+tbody tr:hover {
+  background-color: var(--table-row-hover);
+}
 
+/* Wide pages (`wide: true` in front matter): let tables and code blocks
+   break out of the text column so dense reference tables have room.
+   The element is centred on the column's axis and may extend past it. */
+.single-post.wide #post-content > table,
+.single-post.wide #post-content > .highlight,
+.single-post.wide #post-content > pre {
+  display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow-x: auto;
+}
+
+.single-post.wide #post-content > .highlight,
+.single-post.wide #post-content > pre {
+  width: min(1200px, 92vw);
+}
+
+.single-post.wide #post-content > table {
+  width: max-content;
+  max-width: min(1900px, 96vw);
+}
+
+/* Dense reference tables read better a touch smaller, and the extra
+   room lets wide ones (e.g. the 8-column syscall table) fit without
+   horizontal scrolling on a desktop. */
+.single-post.wide #post-content > table {
+  font-size: 0.85rem;
+}
+
+.single-post.wide #post-content > table :where(th, td) {
+  padding: 0.3rem 0.6rem;
+}

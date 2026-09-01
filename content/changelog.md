@@ -12,6 +12,9 @@ toc: false
 - Cleaned up the homepage post display a bit.
 - Removed the table of contents from posts.
 - Made the blog listing for tags match the rest of the site.
+- Improved the styling of the search box on the [search](/search) page.
+- Improved the resolution of the glider image in the header.
+- Improved the width of the tables of the [references](/references).
 
 ## August 15, 2026
 

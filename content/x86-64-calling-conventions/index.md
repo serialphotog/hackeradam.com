@@ -1,6 +1,7 @@
 ---
 title: "x86_64 Calling Conventions"
 description: "A quick reference to x86_64 calling conventions."
+wide: true
 ---
 
 Here is some basic documentation for the various calling conventions on x86_64 architectures. This information largely comes from [Wikipedia](https://en.wikipedia.org/wiki/X86_calling_conventions).

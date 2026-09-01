@@ -17,8 +17,7 @@
   --code-hl: #e0f2fe;
   --border-general: #e5e7eb;
   --border-faint: #f3f4f6;
-  --table-th: #f3f4f6;
-  --table-tr: #ffffff;
+  --table-row-hover: #e8f1fd;
   --color-border: #e5e7eb;
   --card-bg: #f8fafc;
   --card-hover-bg: #eff6ff;
@@ -46,8 +45,7 @@
   --code-hl: #5a5a5a;
   --border-general: #333333;
   --border-faint: #222222;
-  --table-th: #414141;
-  --table-tr: #1a1a1a;
+  --table-row-hover: #242424;
   --color-border: #333333;
   --card-bg: #1a1a1a;
   --card-hover-bg: #222222;
@@ -74,8 +72,7 @@
     --code-hl: #5a5a5a;
     --border-general: #333333;
     --border-faint: #222222;
-    --table-th: #414141;
-    --table-tr: #1a1a1a;
+    --table-row-hover: #242424;
     --color-border: #333333;
     --card-bg: #1a1a1a;
     --card-hover-bg: #222222;
@@ -219,14 +216,8 @@ article li + li,
   margin-top: 0.25em;
 }
 
-/* NOTE: fix for Inter font. */
 strong {
   font-weight: 600;
-}
-
-/* NOTE: fix for Inter font. */
-th {
-  font-weight: 500;
 }
 
 /* MISC */

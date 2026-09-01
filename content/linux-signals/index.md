@@ -1,6 +1,7 @@
 ---
 title: "Linux Signals Reference"
 description: "A quick reference to some of the signals on Linux."
+wide: true
 ---
 
 A common concept of Linux systems programming is the idea of sending and receiving signals. You can think of a signal as a software interrupt that's used to announce some sort of event, asynchronously, to a process.
