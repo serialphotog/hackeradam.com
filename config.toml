@@ -1,5 +1,4 @@
 baseURL = "https://hackeradam.com"
-languageCode = "en-us"
 title = "Adam Hacks"
 author = "Adam Thompson"
 theme = "h4x0r"
@@ -81,8 +80,12 @@ ignoreErrors = ["error-disable-taxonomy"]
     unsafe = true
 
 [taxonomies]
-    series = 'series'
     tags = 'tags'
+
+[languages]
+  [languages.en]
+    locale = "en-us"
+    label = "English"
 
 [minify]
     minifyOutput = true
