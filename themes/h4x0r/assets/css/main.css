@@ -1,8 +1,8 @@
 /* LIGHT THEME (default) */
 :root {
-  --background: #ffffff;
+  --background: #fdfdfc;
   --complimentary: #3584e4;
-  --heading: #000000;
+  --heading: #1a1a1a;
   --text: #333333;
   --text-body: #374151;
   --code: #333333;
@@ -12,7 +12,7 @@
   --link-visited: #3584e4;
   --heading-accent: #1e40af;
   --code-background: #f1f5f9;
-  --pre-background: #f8f9fa;
+  --pre-background: #f6f7f8;
   --code-border: transparent;
   --code-hl: #e0f2fe;
   --border-general: #e5e7eb;
@@ -23,60 +23,63 @@
   --card-hover-bg: #eff6ff;
   --card-hover-border: #7dd3fc;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --serif: Charter, "Bitstream Charter", "Iowan Old Style", "Source Serif Pro", Georgia, Cambria, "Times New Roman", serif;
   --mono: sfmono-regular, Consolas, "Liberation Mono", Menlo, "Courier New", monospace;
+  /* Reading measure for prose (~72 characters at the body serif). */
+  --measure: 44rem;
 }
 
 /* DARK THEME */
 :root[data-theme="dark"] {
-  --background: #000000;
+  --background: #0d0d0f;
   --complimentary: #60a5fa;
-  --heading: #ffffff;
-  --text: #ffffff;
-  --text-body: #ffffff;
-  --code: #ffffff;
+  --heading: #f5f5f5;
+  --text: #e6e6e6;
+  --text-body: #e0e0e0;
+  --code: #e6e6e6;
   --text-dim: #9ca3af;
-  --link: #60a5fa;
-  --link-hover: #93c5fd;
-  --link-visited: #60a5fa;
-  --heading-accent: #ffffff;
-  --code-background: #333333;
-  --pre-background: #1a1a1a;
-  --code-border: #333333;
+  --link: #8ab4f8;
+  --link-hover: #a9c7fa;
+  --link-visited: #8ab4f8;
+  --heading-accent: #8ab4f8;
+  --code-background: #2a2a2e;
+  --pre-background: #161618;
+  --code-border: #2a2a2e;
   --code-hl: #5a5a5a;
-  --border-general: #333333;
-  --border-faint: #222222;
-  --table-row-hover: #242424;
-  --color-border: #333333;
-  --card-bg: #1a1a1a;
-  --card-hover-bg: #222222;
-  --card-hover-border: #444444;
+  --border-general: #2e2e32;
+  --border-faint: #1f1f22;
+  --table-row-hover: #202024;
+  --color-border: #2e2e32;
+  --card-bg: #161618;
+  --card-hover-bg: #202024;
+  --card-hover-border: #3a3a40;
 }
 
 /* Fall back to the OS preference when no explicit choice has been made. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --background: #000000;
+    --background: #0d0d0f;
     --complimentary: #60a5fa;
-    --heading: #ffffff;
-    --text: #ffffff;
-    --text-body: #ffffff;
-    --code: #ffffff;
+    --heading: #f5f5f5;
+    --text: #e6e6e6;
+    --text-body: #e0e0e0;
+    --code: #e6e6e6;
     --text-dim: #9ca3af;
-    --link: #60a5fa;
-    --link-hover: #93c5fd;
-    --link-visited: #60a5fa;
-    --heading-accent: #ffffff;
-    --code-background: #333333;
-    --pre-background: #1a1a1a;
-    --code-border: #333333;
+    --link: #8ab4f8;
+    --link-hover: #a9c7fa;
+    --link-visited: #8ab4f8;
+    --heading-accent: #8ab4f8;
+    --code-background: #2a2a2e;
+    --pre-background: #161618;
+    --code-border: #2a2a2e;
     --code-hl: #5a5a5a;
-    --border-general: #333333;
-    --border-faint: #222222;
-    --table-row-hover: #242424;
-    --color-border: #333333;
-    --card-bg: #1a1a1a;
-    --card-hover-bg: #222222;
-    --card-hover-border: #444444;
+    --border-general: #2e2e32;
+    --border-faint: #1f1f22;
+    --table-row-hover: #202024;
+    --color-border: #2e2e32;
+    --card-bg: #161618;
+    --card-hover-bg: #202024;
+    --card-hover-border: #3a3a40;
   }
 }
 
@@ -91,7 +94,7 @@ body {
   margin: auto;
   max-width: 880px;
   padding: 0 2rem 2rem 2rem;
-  font-family: var(--mono);
+  font-family: var(--serif);
   font-size: 16px;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
@@ -103,6 +106,11 @@ body {
 
 main {
   hyphens: none;
+  /* Keep the reading column comfortably narrow; the masthead and footer
+     stay at the full body width. Wide tables and code blocks in posts
+     tagged `wide: true` still break out past this via tables.css. */
+  max-width: var(--measure);
+  margin-inline: auto;
 }
 
 /* BASIC HTML ELEMENTS */

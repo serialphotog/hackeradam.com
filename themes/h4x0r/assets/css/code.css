@@ -13,6 +13,7 @@
 pre {
   background-color: var(--pre-background);
   color: var(--code);
+  font-family: var(--mono);
   padding: 1rem;
   overflow-x: auto;
   margin: 0px;

@@ -62,6 +62,7 @@ nav.navigation > ul.navigation > li > a:not(.site-head-logo) {
   display: block;
   padding: 2px 8px;
   color: var(--heading);
+  font-family: var(--mono);
   font-size: 1rem;
   line-height: 1.9;
   text-decoration: underline;

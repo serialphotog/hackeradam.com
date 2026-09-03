@@ -8,6 +8,9 @@ toc: false
 ## September 03, 2026
 
 - Made some minor updates to the wording on the [about page](/about).
+- Made the prose a bit tighter to improve readability.
+- Made some minor enhancements to the fonts to make things more legible.
+- Slightly improved the text coloring in dark mode to negate halation on OLED screens.
 
 ## September 01, 2026
 
