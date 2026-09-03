@@ -5,6 +5,10 @@ draft: false
 toc: false
 ---
 
+## September 03, 2026
+
+- Made some minor updates to the wording on the [about page](/about).
+
 ## September 01, 2026
 
 - Improved the overall design of the site.
