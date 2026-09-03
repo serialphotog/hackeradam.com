@@ -1,88 +1,76 @@
+/* Site header: logo on the left, primary links in a single row beside it.
+   The header spans the full body width; the reading column below it is
+   narrower (see `main` in main.css). */
 .site-head {
-  border-bottom: 2px solid var(--border-general);
-  margin-bottom: 1.5rem;
-  margin-top: 2rem;
-  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  max-width: var(--measure);
+  margin: 2rem auto;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-general);
 }
 
 .site-head-logo {
   display: block;
   flex-shrink: 0;
-  margin: 0 12px 16px 0;
+  margin: 0;
   padding: 0;
 }
 
 .site-head-logo img {
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 48px;
+  height: 48px;
 }
 
-#navigation {
+.site-nav {
+  flex: 1 1 auto;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav li {
   margin: 0;
 }
 
-@media (max-width: 500px) {
-  ul.navigation {
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
-
-@media (min-width: 500px) {
-  ul.navigation {
-    -moz-column-count: 3;
-    column-count: 3;
-  }
-}
-
-@media (min-width: 700px) {
-  ul.navigation {
-    -moz-column-count: 4;
-    column-count: 4;
-  }
-}
-
-nav.navigation > ul.navigation > li {
-  display: block;
-  margin-bottom: 4px;
-  break-inside: avoid;
-  transition: background-color 0.1s ease;
-}
-
-nav.navigation > ul.navigation > li:hover {
-  background-color: var(--border-general);
-}
-
-nav.navigation > ul.navigation > li:first-child:hover {
-  background-color: transparent;
-}
-
-nav.navigation > ul.navigation > li > a:not(.site-head-logo) {
-  display: block;
-  padding: 2px 8px;
+.site-nav a,
+.site-nav a:visited {
+  display: inline-block;
+  padding: 0.1rem 0;
   color: var(--heading);
   font-family: var(--mono);
-  font-size: 1rem;
-  line-height: 1.9;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-nav.navigation > ul.navigation > li > a:visited {
-  color: var(--heading);
-}
-
-nav.navigation > ul.navigation > li:hover a {
+  font-size: 0.95rem;
   text-decoration: none;
 }
 
-@media (max-width: 700px) {
-  nav.navigation > ul.navigation > li > a {
-    line-height: 2.2;
+.site-nav a:hover {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 420px) {
+  .site-head {
+    gap: 0.6rem 1rem;
+  }
+
+  .site-nav ul {
+    gap: 0.25rem 1rem;
   }
 }

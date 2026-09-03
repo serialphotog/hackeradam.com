@@ -33,46 +33,42 @@ ignoreErrors = ["error-disable-taxonomy"]
         url = "/index.xml"
 
 [menu]
+    # Primary navigation (site header).
     [[menu.main]]
-        pageRef="/blog"
+        pageRef = "/blog"
         name = "Blog"
         weight = 10
     [[menu.main]]
         pageRef = "/references"
         name = "References"
-        weight = 18
+        weight = 20
     [[menu.main]]
         pageRef = "/search"
         name = "Search"
-        weight = 19
-    [[menu.main]]
-        pageRef="/about"
-        name = "About"
-        weight = 20
-    [[menu.main]]
-        pageRef="/blogroll"
-        name = "Blogroll"
         weight = 30
     [[menu.main]]
+        pageRef = "/about"
+        name = "About"
+        weight = 40
+
+    # Secondary navigation (site footer). GitHub and RSS are already
+    # present as footer social icons, so they are not repeated here.
+    [[menu.footer]]
+        pageRef = "/blogroll"
+        name = "Blogroll"
+        weight = 10
+    [[menu.footer]]
         url = "https://www.adamthompsonphoto.com"
         name = "Photography"
-        weight = 50
-    [[menu.main]]
-        name = "GitHub"
-        url = "https://github.com/serialphotog"
-        weight = 60
-    [[menu.main]]
+        weight = 20
+    [[menu.footer]]
         pageRef = "/faq"
         name = "FAQ"
-        weight = 70
-    [[menu.main]]
+        weight = 30
+    [[menu.footer]]
         pageRef = "/changelog"
         name = "Changelog"
-        weight = 75
-    [[menu.main]]
-        url = "/index.xml"
-        name = "RSS"
-        weight = 80
+        weight = 40
 
 [markup]
   # Syntax highlighting is configured in config/_default/markup.toml

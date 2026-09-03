@@ -1,4 +1,13 @@
 <footer class="site-footer">
+    {{ with .Site.Menus.footer }}
+        <nav class="footer-nav" aria-label="Secondary">
+            <ul>
+                {{ range sort . "Weight" }}
+                    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    {{ end }}
     <div class="footer-copyright">
         Copyright &copy; {{ now.Format "2006" }}, <a href="{{ .Site.Home.RelPermalink }}">Adam Thompson</a>.
     </div>

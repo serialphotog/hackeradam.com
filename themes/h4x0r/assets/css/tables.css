@@ -7,6 +7,14 @@ table {
   font-variant-numeric: tabular-nums;
 }
 
+/* Post tables are overwhelmingly code and data references (type
+   signatures, syscall numbers, opcode tables) — set them in mono
+   rather than inheriting the serif reading font. */
+#post-content table {
+  font-family: var(--mono);
+  font-size: 0.9rem;
+}
+
 @media screen and (min-width: 760px) {
   table {
     display: table;

@@ -1,5 +1,6 @@
 .site-footer {
-  margin-top: 4rem;
+  max-width: var(--measure);
+  margin: 4rem auto 0;
   padding: 2rem 0;
   text-align: left;
   font-size: 0.9rem;
@@ -14,6 +15,25 @@
 
 .site-footer a:hover {
   color: var(--heading);
+}
+
+/* Secondary navigation. */
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav li {
+  margin: 0;
+}
+
+.footer-nav a,
+.footer-nav a:visited {
+  font-family: var(--mono);
 }
 
 .footer-copyright {

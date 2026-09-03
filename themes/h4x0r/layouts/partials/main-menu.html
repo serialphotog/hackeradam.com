@@ -1,22 +1,19 @@
 <header class="site-head">
-    <div class="site-head-container">
-        <div id="navigation" class="navigation">
-            <nav class="navigation">
-                <ul class="navigation">
-                    <li>
-                        {{- $logo := .Site.Params.logo | default "site-logo.png" -}}
-                        <a class="site-head-logo" href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
-                            <img src="{{ relURL $logo }}" alt="{{ .Site.Params.logoAlt | default (printf "%s logo" .Site.Title) }}">
-                        </a>
-                    </li>
+    {{- $logo := .Site.Params.logo | default "site-logo.png" -}}
+    <a class="site-head-logo" href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
+        <img src="{{ relURL $logo }}" alt="{{ .Site.Params.logoAlt | default (printf "%s logo" .Site.Title) }}">
+    </a>
 
-                    {{ with .Site.Menus.main }}
-                        {{ range sort . "Weight" }}
-                            <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-                        {{ end }}
-                    {{ end }}
-                </ul>
-            </nav>
-        </div>
-    </div>
+    {{ with .Site.Menus.main }}
+        <nav class="site-nav" aria-label="Primary">
+            <ul>
+                {{ range sort . "Weight" }}
+                    {{ $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+                    <li>
+                        <a href="{{ .URL | relURL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </nav>
+    {{ end }}
 </header>
