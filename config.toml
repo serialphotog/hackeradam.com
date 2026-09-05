@@ -43,6 +43,10 @@ ignoreErrors = ["error-disable-taxonomy"]
         name = "References"
         weight = 20
     [[menu.main]]
+        pageRef = "/projects"
+        name = "Projects"
+        weight = 25
+    [[menu.main]]
         pageRef = "/search"
         name = "Search"
         weight = 30

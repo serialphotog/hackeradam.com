@@ -9,6 +9,7 @@
         (resources.Get "css/syntax.css")
         (resources.Get "css/tables.css")
         (resources.Get "css/misc.css")
+        (resources.Get "css/projects.css")
         (resources.Get "css/footer.css")
     | resources.Concat "style.css" | minify | fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $CSS.RelPermalink }}" media="all">
