@@ -370,10 +370,37 @@ $table-hover-dark: #212533;
 }
 
 // ---------------------------------------------------------------------------
+// ASCII / block art (wp-admin, /bin/sh easter eggs)
+// The theme styles every <pre> as a dark code block with 1.85 line-height,
+// which pulls the half-block rows apart and leaves near-invisible grey text.
+// ---------------------------------------------------------------------------
+.page-content pre.ascii-art {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin: 2.5rem auto;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e1e3e8;
+  border-radius: 6px;
+  // The art is drawn dark-on-light, so pin those colours in both themes.
+  background: #ffffff;
+  color: #14161c;
+  font-family: ui-monospace, "Cascadia Mono", "DejaVu Sans Mono",
+    "Liberation Mono", Consolas, monospace;
+  font-size: clamp(0.5rem, 2.2vw, 0.8rem);
+  line-height: 1; // half-blocks (▀ ▄) meet across rows
+  letter-spacing: 0;
+  white-space: pre;
+  text-align: left; // it's already a centred block; keep glyph columns straight
+  overflow-x: auto;
+}
+
+// ---------------------------------------------------------------------------
 // Dark mode — mirror the theme's mechanism (assets/sass/_dark.scss):
 // applied under both the media query (JS-disabled) and html.dark (JS toggle).
 // ---------------------------------------------------------------------------
 @mixin custom-dark {
+
   .page-content {
     th,
     td {

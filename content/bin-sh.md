@@ -1,5 +1,6 @@
 ---
-title: "wp-admin"
+title: "/bin/sh"
+url: "/bin/sh/"
 draft: false
 toc: false
 ---
