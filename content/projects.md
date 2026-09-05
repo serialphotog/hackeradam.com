@@ -29,6 +29,10 @@ projects:
     url: "https://github.com/serialphotog/Bare-Bones-Language"
     description: "A very bare bones programming language that compiles down to C."
     language: "C++"
+  - name: "color-print.h"
+    url: "https://github.com/serialphotog/color-print.h"
+    description: "A header-only library for printing to the console in color."
+    language: "C"
 ---
 
 A collection of tools and projects I've built, mostly to scratch my own itches.
