@@ -2,7 +2,7 @@
 codeFences = true		# code fencing for styling on-the-spot
 hl_Lines = ""			# highlight lines
 lineNoStart = 1			# starting line number
-lineNos = true			# line number
+lineNos = false			# line number
 lineNumbersInTable = false	# render line number in table
 noClasses = false		# use css classes (see assets/css/syntax.css)
 tabWidth = 8			# tab width

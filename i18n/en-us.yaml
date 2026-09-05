@@ -1,0 +1,6 @@
+## Project overrides for hugo-blog-awesome theme i18n strings.
+
+## FOOTER ##
+# Drop the "Powered by Hugo blog awesome" credit; keep the footer to just the copyright line.
+- id: "footer.disclaimer"
+  translation: ""

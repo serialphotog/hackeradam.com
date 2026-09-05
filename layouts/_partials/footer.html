@@ -1,0 +1,25 @@
+<footer class="footer">
+    {{ with .Site.Menus.footer }}
+    <nav class="footer-nav" aria-label="Secondary">
+        <ul>
+            {{ range sort . "Weight" }}
+            <li><a href="{{ .URL | relLangURL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+    {{ end }}
+
+    <div class="footer_social-icons">
+        {{- partial "socialIcons.html" site.Params.socialIcons -}}
+    </div>
+    <small class="footer_copyright">
+        © {{ now.Format "2006" }} {{ .Site.Params.author.name }}.
+        {{ T "footer.disclaimer" | safeHTML }}
+    </small>
+</footer>
+
+{{- if .Site.Params.goToTop -}}
+<a href="#" title="{{ T "footer.go_to_top" }}" id="totop">
+    {{ partial "svgs/arrowUp.svg" (dict "height" 48 "width" 48) . }}
+</a>
+{{- end -}}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">{{ .Title }}</h1>
+            </header>
+            <div class="page-content search-page">
+                {{ .Content }}
+
+                <form id="search" action="{{ relURL "search" }}" method="get" role="search">
+                    <label class="visually-hidden" for="search-input">Search site</label>
+                    <input type="search" id="search-input" name="query"
+                        placeholder="Search…" aria-controls="results" required>
+                    <button type="submit">Search</button>
+                </form>
+                <p id="search-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                <ul id="results"></ul>
+            </div>
+        </article>
+    </main>
+</div>
+
+{{ partial "search-index.html" . }}
+{{ end }}

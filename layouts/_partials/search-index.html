@@ -1,0 +1,15 @@
+{{- /* Client-side search index for the lunr.js search on /search/.
+       Ported from the previous theme. */ -}}
+{{- $store := dict -}}
+{{- range .Site.RegularPages -}}
+    {{- $entry := dict
+        "title" .Title
+        "tags" (.Params.tags | default (slice))
+        "content" (.Plain | htmlUnescape)
+        "url" .RelPermalink
+    -}}
+    {{- $store = merge $store (dict .RelPermalink $entry) -}}
+{{- end -}}
+<script>window.store = {{ $store | jsonify | safeJS }};</script>
+<script defer src="{{ relURL "/js/lunr.js" }}"></script>
+<script defer src="{{ relURL "/js/search.js" }}"></script>

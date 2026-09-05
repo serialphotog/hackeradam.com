@@ -1,0 +1,459 @@
+// ===========================================================================
+// Project overrides for the hugo-blog-awesome theme.
+// This file replaces the theme's (empty) assets/sass/_custom.scss and is
+// @import-ed last from main.scss, so every theme $variable / mixin is in scope.
+// ===========================================================================
+
+// Local tokens (the theme has no "card" or rich-table palette).
+$card-bg-light: #f5f6f8;
+$card-border-light: #e1e3e8;
+$card-bg-dark: #1a1c24;
+$card-border-dark: #2c2f3a;
+
+$table-border-light: #d5d8de;
+$table-head-bg-light: #edeff2;
+$table-head-rule-light: #bcc0c9;
+$table-stripe-light: #f6f7f9;
+$table-hover-light: #e9edf3;
+$table-border-dark: #2e313b;
+$table-head-bg-dark: #1e2029;
+$table-head-rule-dark: #3b3f4c;
+$table-stripe-dark: #17181f;
+$table-hover-dark: #212533;
+
+// ---------------------------------------------------------------------------
+// Wide reading column for dense reference articles (front matter: wide = true)
+// ---------------------------------------------------------------------------
+.wrapper.post.wide {
+  max-width: 1080px;
+}
+
+@media screen and (max-width: 1140px) {
+  .wrapper.post.wide {
+    max-width: calc(100vw - #{$spacing-full} * 2);
+  }
+}
+
+@include media-query($on-mobile) {
+  .wrapper.post.wide {
+    max-width: calc(100vw - #{$spacing-full});
+  }
+}
+
+// Let tables scroll inside the column instead of bursting the page.
+// Markdown tables are wrapped in .overflow-table by layouts/_markup/render-table.html;
+// raw <table class="table ..."> blocks in a couple of articles are handled directly.
+.page-content {
+  .overflow-table {
+    margin-top: $spacing-half;
+    margin-bottom: $spacing-half;
+
+    > table {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  > table,
+  table.table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  // Readable tables: the theme sets 14px text, 2px padding and near-invisible
+  // #ececec rules, which is unusable for the dense reference tables.
+  table {
+    border-collapse: collapse;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  th,
+  td {
+    padding: 8px 12px;
+    border: 1px solid $table-border-light;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  thead th {
+    color: $black;
+    font-weight: $bold-weight;
+    background: $table-head-bg-light;
+    border-bottom: 2px solid $table-head-rule-light;
+  }
+
+  tbody tr:nth-child(even) {
+    background: $table-stripe-light;
+  }
+
+  tbody tr:hover {
+    background: $table-hover-light;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Projects page
+// ---------------------------------------------------------------------------
+.projects-intro {
+  padding-top: 0;
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: $spacing-full 0;
+
+  @include media-query($on-mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// The theme appends a trailing "↗" to every external link inside .page-content.
+// It would render as a stray glyph after each card, so suppress it on the card
+// wrapper specifically (needs to out-specify `.page-content a[target="_blank"]::after`).
+.page-content a.project-card-link::after {
+  content: none;
+}
+
+.project-card-link {
+  display: flex; // inner card fills the grid cell (grid stretches this link)
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+
+    .project-card {
+      background: $white;
+      border-color: $gray;
+      box-shadow: 0 2px 14px rgba(13, 18, 43, 0.09);
+    }
+
+    .project-card-title {
+      color: $text-link-blue;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible .project-card {
+    outline: 3px solid rgba(0, 54, 199, 0.6);
+    outline-offset: 2px;
+  }
+}
+
+.project-card {
+  flex: 1; // fill .project-card-link (stretched to the row height by the grid)
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.1rem;
+  background: $card-bg-light;
+  border: 1px solid $card-border-light;
+  border-radius: 8px;
+  transition: background-color 75ms ease-in, border-color 75ms ease-in,
+    box-shadow 75ms ease-in;
+}
+
+.project-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.project-card-icon {
+  flex: 0 0 auto;
+  width: 15px;
+  height: 15px;
+  color: $gray;
+}
+
+// `.page-content h2` prefix needed to out-specify the theme's
+// `.page-content h2 { font-size: 22px; margin-top: 30px; letter-spacing: .03rem }`,
+// which was inflating the title and shoving it out of line with the icon.
+.page-content .project-card-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem;
+  font-weight: $bold-weight;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: $black;
+}
+
+.project-card-description {
+  margin: 0 0 0.9rem;
+  font-size: $small-font-size;
+  line-height: 1.6;
+  color: $text-base-color;
+  // Reserve two lines (the common case) so cards line up; clamp longer
+  // descriptions to three so an outlier can't blow the layout out.
+  min-height: calc(1.6em * 2);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  font-family: $mono-family;
+  font-size: $small-font-size;
+  color: $gray;
+}
+
+.project-card-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.project-card-status {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+}
+
+.lang-dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: $gray;
+
+  &.lang-c { background: #555555; }
+  &.lang-cpp { background: #f34b7d; }
+  &.lang-rust { background: #dea584; }
+  &.lang-go { background: #00add8; }
+  &.lang-python { background: #3572a5; }
+  &.lang-javascript { background: #f1e05a; }
+  &.lang-typescript { background: #3178c6; }
+  &.lang-shell { background: #89e051; }
+  &.lang-html { background: #e34c26; }
+  &.lang-lua { background: #000080; }
+  &.lang-zig { background: #ec915c; }
+  &.lang-assembly { background: #6e4c13; }
+}
+
+// ---------------------------------------------------------------------------
+// Search page (/search/) — ported lunr.js search
+// ---------------------------------------------------------------------------
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.search-page {
+  #search {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 32rem;
+    margin: 1.5rem 0;
+  }
+
+  #search-input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.5rem 0.7rem;
+    font: inherit;
+    color: $text-base-color;
+    background-color: $white;
+    border: 1px solid $light;
+    border-radius: 6px;
+
+    &:hover,
+    &:focus {
+      border-color: $gray;
+    }
+  }
+
+  #search button {
+    flex: 0 0 auto;
+    padding: 0.5rem 1.1rem;
+    font: inherit;
+    font-weight: $bold-weight;
+    color: $white;
+    background-color: $text-link-blue;
+    border: 1px solid $text-link-blue;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $text-link-blue-active;
+      border-color: $text-link-blue-active;
+    }
+  }
+
+  #search-status:not(:empty) {
+    margin: 1rem 0;
+    color: $gray;
+  }
+
+  #results {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      margin: 1rem 0;
+
+      p {
+        margin: 0.15rem 0;
+      }
+
+      p + p {
+        color: $gray;
+        font-size: $small-font-size;
+      }
+
+      a {
+        font-weight: $bold-weight;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Footer secondary navigation (menu.footer)
+// ---------------------------------------------------------------------------
+.footer-nav {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem 1.1rem;
+    margin: 0 0 0.9rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  a {
+    font-size: $small-font-size;
+    color: $text-base-color;
+    text-decoration: none;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+      color: $text-link-blue;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Dark mode — mirror the theme's mechanism (assets/sass/_dark.scss):
+// applied under both the media query (JS-disabled) and html.dark (JS toggle).
+// ---------------------------------------------------------------------------
+@mixin custom-dark {
+  .page-content {
+    th,
+    td {
+      border-color: $table-border-dark;
+    }
+
+    thead th {
+      color: $dark-white;
+      background: $table-head-bg-dark;
+      border-bottom-color: $table-head-rule-dark;
+    }
+
+    tbody tr:nth-child(even) {
+      background: $table-stripe-dark;
+    }
+
+    tbody tr:hover {
+      background: $table-hover-dark;
+    }
+  }
+
+  .project-card {
+    background: $card-bg-dark;
+    border-color: $card-border-dark;
+  }
+
+  .project-card-link:hover {
+    .project-card {
+      background: $card-bg-dark;
+      border-color: $dark-gray;
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+    }
+
+    .project-card-title {
+      color: $dark-text-link-blue;
+    }
+  }
+
+  .project-card-title {
+    color: $dark-white;
+  }
+
+  .project-card-description {
+    color: $dark-text-base-color;
+  }
+
+  .project-card-footer,
+  .project-card-icon {
+    color: $dark-gray;
+  }
+
+  .search-page {
+    #search-input {
+      color: $dark-text-base-color;
+      background-color: $dark-black;
+      border-color: $dark-light;
+
+      &:hover,
+      &:focus {
+        border-color: $dark-gray;
+      }
+    }
+
+    #search-status:not(:empty),
+    #results li p + p {
+      color: $dark-gray;
+    }
+  }
+
+  .footer-nav a {
+    color: $dark-text-base-color;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light) {
+    @include custom-dark;
+  }
+}
+
+html.dark {
+  @include custom-dark;
+}

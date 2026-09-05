@@ -8,6 +8,7 @@ toc: false
 ## September 05, 2026
 
 - Added the [projects page](/projects).
+- Rebased the design on a modified version of the [Hugo Blog Awesome theme](https://github.com/hugo-sid/hugo-blog-awesome).
 
 ## September 03, 2026
 

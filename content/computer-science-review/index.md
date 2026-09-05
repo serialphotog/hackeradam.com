@@ -1,7 +1,7 @@
 ---
 title: "Computer Science Review"
 description: "Free computer science review materials"
-hideToc: true
+toc: false
 ---
 
 Computer science is a vast topic that covers a number of different areas of study. Here you can find my ongoing attempt to write useful review content to help those pursuing a career in a computer science related field.
