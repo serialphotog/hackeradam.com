@@ -62,7 +62,7 @@
   padding: 0;
   border: 0;
   font-family: var(--sans);
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.3;
   color: var(--heading);
@@ -74,9 +74,9 @@
 
 .project-card-description {
   margin: 0 0 1rem 0;
-  font-family: var(--sans);
-  font-size: 0.95rem;
-  line-height: 1.55;
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--text-body);
 }
 
@@ -86,8 +86,8 @@
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
   margin-top: auto;
-  font-family: var(--sans);
-  font-size: 0.85rem;
+  font-family: var(--mono);
+  font-size: 0.9rem;
   color: var(--text-dim);
 }
 
@@ -99,9 +99,9 @@
 
 .project-card-status {
   font-family: var(--mono);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 
 .lang-dot {
