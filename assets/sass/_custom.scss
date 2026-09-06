@@ -263,6 +263,62 @@ $table-hover-dark: #212533;
   border: 0;
 }
 
+// ---------------------------------------------------------------------------
+// Tags index (/tags/)
+// ---------------------------------------------------------------------------
+.tags-intro {
+  padding-top: 0;
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+.tag-list {
+  list-style: none;
+  margin: $spacing-full 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tag-item {
+  margin: 0;
+}
+
+.page-content a.tag-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.3rem 0.7rem;
+  background: $card-bg-light;
+  border: 1px solid $card-border-light;
+  border-radius: 999px;
+  font-size: $small-font-size;
+  color: $text-base-color;
+  text-decoration: none;
+  transition: background-color 75ms ease-in, border-color 75ms ease-in,
+    color 75ms ease-in;
+
+  &:hover {
+    background: $white;
+    border-color: $gray;
+    color: $text-link-blue;
+    text-decoration: none;
+  }
+
+  &::after {
+    content: none;
+  }
+}
+
+.tag-count {
+  font-family: $mono-family;
+  font-size: 0.72rem;
+  color: $gray;
+}
+
 .search-page {
   #search {
     display: flex;
@@ -449,6 +505,22 @@ $table-hover-dark: #212533;
 
   .project-card-footer,
   .project-card-icon {
+    color: $dark-gray;
+  }
+
+  .page-content a.tag-link {
+    background: $card-bg-dark;
+    border-color: $card-border-dark;
+    color: $dark-text-base-color;
+
+    &:hover {
+      background: $card-bg-dark;
+      border-color: $dark-gray;
+      color: $dark-text-link-blue;
+    }
+  }
+
+  .tag-count {
     color: $dark-gray;
   }
 

@@ -6,8 +6,6 @@ theme = "hugo-blog-awesome"
 enableRobotsTXT = true
 enableEmoji = true
 
-disableKinds = ["taxonomy"]
-ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
   blog = "/blog/:slug/"
   tags = "/blog/:slug"
@@ -82,6 +80,10 @@ ignoreErrors = ["error-disable-taxonomy"]
         pageRef = "/faq"
         name = "FAQ"
         weight = 30
+    [[menu.footer]]
+        pageRef = "/tags"
+        name = "Tags"
+        weight = 35
     [[menu.footer]]
         pageRef = "/changelog"
         name = "Changelog"

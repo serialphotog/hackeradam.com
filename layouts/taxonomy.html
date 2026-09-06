@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">{{ .Title }}</h1>
+            </header>
+
+            {{ with .Content }}
+            <div class="page-content tags-intro">{{ . }}</div>
+            {{ end }}
+
+            {{ $terms := .Data.Terms.Alphabetical }}
+            {{ if $terms }}
+            <ul class="tag-list">
+                {{ range $terms }}
+                <li class="tag-item">
+                    <a class="tag-link" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+                    <span class="tag-count">{{ .Count }}</span>
+                </li>
+                {{ end }}
+            </ul>
+            {{ else }}
+            <p>No tags yet.</p>
+            {{ end }}
+        </article>
+    </main>
+</div>
+{{ end }}

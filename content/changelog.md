@@ -5,6 +5,10 @@ draft: false
 toc: false
 ---
 
+## September 06, 2026
+
+- Added the [tags page](/tags).
+
 ## September 05, 2026
 
 - Added the [projects page](/projects).

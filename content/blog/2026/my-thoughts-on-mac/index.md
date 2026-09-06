@@ -2,7 +2,7 @@
 title: "My Thoughts on Mac"
 description: "I've recently spent some time with a new Macbook Pro. Here are my thoughts after a few months of using it."
 date: '2026-07-28'
-tags: [Mac, MacOS]
+tags: [Mac, MacOS, "Opinion"]
 draft: false
 aliases:
   - /my-thoughts-on-mac/
