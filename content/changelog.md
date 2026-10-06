@@ -11,6 +11,7 @@ toc: false
 - Added a <a href="/slashes">/slashes page</a>.
 - Added a <a href="/ai">/ai page</a>.
 - Added a <a href="/nope">/nope page</a>.
+- Added a <a href="/interests">/interests page</a>.
 
 ## September 06, 2026
 

@@ -11,5 +11,6 @@ This is my **/slashes** page. A /slashes page is an index of all my "<a href="ht
 - <a href="/ai">/ai</a>
 - <a href="/blogroll">/blogroll</a>
 - <a href="/changelog">/changelog</a>
+- <a href="/interests">/interests</a>
 - <a href="/nope">/nope</a>
 - <a href="/slashes">/slashes</a>
