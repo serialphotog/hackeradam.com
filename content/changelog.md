@@ -5,6 +5,10 @@ draft: false
 toc: false
 ---
 
+## October 06, 2026
+
+- Added callout support to the theme.
+
 ## September 06, 2026
 
 - Added the [tags page](/tags).

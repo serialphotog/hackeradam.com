@@ -2,16 +2,22 @@
 title: "How I Automate Backblaze B2 Backups with Restic on Linux"
 description: "A quick walkthrough of how I handle automatic, off-site cloud backups to Backblaze B2 with Restic on Linux."
 date: '2025-11-06'
-tags: [Linux, Backups, Backblaze, Restic]
+tags: [Linux, Backups, Backblaze, Restic, Homelab]
 draft: false
 aliases:
   - /how-i-automate-backblaze-b2-backups-with-restic-on-linux/
 toc: true
 ---
 
+> [!NOTE] Update
+> I've since made <a href="/blog/revisiting-my-automated-linux-backups-with-restic/">a number of updates to this setup</a> to better align with the way my needs have changed. I highly recommend checkout out that post to see how I'm currently doing my Linux backups.
+
 It has now been a few months since I wrote on my photography blog about <a href="https://blog.adamthompsonphoto.com/why-im-ditching-windows-and-adobe/" target="_blank">finally removing Microsoft Windows from my photography workflow</a>. Being that I was already a very heavy user of Linux who only really used Windows on one machine to run the Adobe suite, this has been a pretty painless transition for me. Beyond having to figure out how to make my Photography workflow function under Linux (which is still an ongoing process), I had pretty much everything figured out.
 
 That was, except for automated, off-site backups.
+
+> [!NOTE] No Longer Using Linux for Photography
+> Unfortunately, I've come to the conclusion that, at least as it stands today, Linux simply lacks the tools necessary for professional-level photo work. I've since <a href="/blog/my-thoughts-on-mac/">switched to a Mac</a> for that kind of work.
 
 You see, up until this point, I haven't had to deal with this problem. My Linux machines mostly haven't had all that much data that I've *needed* to keep backed up. What data was indispensable, I could just sync to my desktop Windows computer (which was always powered on) and let the automated backup tools on there take care of the rest. Having moved my entire workflow completely to Linux, however, meant having to figure out how to make all of this work again. 
 
