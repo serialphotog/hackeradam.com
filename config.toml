@@ -28,7 +28,7 @@ enableEmoji = true
         name = "Adam Thompson"
         avatar = "glider.png"
         intro = "Adam Thompson"
-        description = "I'm a software/reverse engineer that loves poking at low-level systems."
+        description = "I'm a software forward/reverse engineer that loves poking at low-level systems."
 
     [[params.socialIcons]]
         name = "github"
