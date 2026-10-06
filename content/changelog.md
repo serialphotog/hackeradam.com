@@ -8,6 +8,8 @@ toc: false
 ## October 06, 2026
 
 - Added callout support to the theme.
+- Added a <a href="/slashes">/slashes page</a>.
+- Added a <a href="/ai">/ai page</a>.
 
 ## September 06, 2026
 

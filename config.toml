@@ -69,6 +69,10 @@ enableEmoji = true
     # Secondary navigation (site footer). GitHub and RSS are already
     # present as footer social icons, so they are not repeated here.
     [[menu.footer]]
+        pageRef = "/slashes"
+        name = "Slashes"
+        weigth = 5
+    [[menu.footer]]
         pageRef = "/blogroll"
         name = "Blogroll"
         weight = 10
