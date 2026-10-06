@@ -7,7 +7,7 @@ toc: false
 
 **Hello there!**
 
-My name is Adam Thompson. I am a software/reverse engineer and all around geek currently located in the beautiful state of Colorado. My primary interests are in security and low-level systems development, though I also enjoy developing one-off applications to fill whatever random itches I have that may need scratching.
+My name is Adam Thompson. I am a software forward/reverse engineer and all around geek currently located in the beautiful state of Colorado. My primary interests are in security and low-level systems development, though I also enjoy developing one-off applications to fill whatever random itches I have that may need scratching.
 
 This website serves as a place for me to occasionally write about my misadventures with technology or any other geeky topics that I may find interesting at the moment. Let's be honest, this blog largely serves as an excuse for me to document and share whatever I'm currently working on ;)
 
