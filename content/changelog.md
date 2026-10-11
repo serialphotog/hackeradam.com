@@ -5,6 +5,10 @@ draft: false
 toc: false
 ---
 
+## October 11, 2026
+
+- Added a [human.json](/human.json).
+
 ## October 06, 2026
 
 - Added callout support to the theme.
